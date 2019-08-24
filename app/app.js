@@ -10,27 +10,27 @@ import '@babel/polyfill'
 
 // Import all the third party stuff
 import React from 'react'
-import FontFaceObserver from 'fontfaceobserver'
+// import FontFaceObserver from 'fontfaceobserver'
 import ReactDOM from 'react-dom'
-import get from 'lodash/get'
+// import get from 'lodash/get'
 
-import { ApolloClient } from 'apollo-client'
-import { ApolloProvider } from 'react-apollo'
+// import { ApolloClient } from 'apollo-client'
+// import { ApolloProvider } from 'react-apollo'
 import { ConnectedRouter } from 'connected-react-router'
-import { InMemoryCache } from 'apollo-cache-inmemory'
-import { setContext } from 'apollo-link-context'
+// import { InMemoryCache } from 'apollo-cache-inmemory'
+// import { setContext } from 'apollo-link-context'
 
 import { Provider } from 'react-redux'
-import { createUploadLink } from 'apollo-upload-client'
+// import { createUploadLink } from 'apollo-upload-client'
 
 // Import root app
 import App from 'containers/App'
 
 // Import local storage
-import EFClocalStorage from 'utils/localStorage'
+// import EFClocalStorage from 'utils/localStorage'
 
 // Import BaseUrl
-import baseCleanURL from 'lib/ApiUrl'
+// import baseCleanURL from 'lib/ApiUrl'
 
 // Import history
 import history from 'utils/history'
@@ -51,12 +51,12 @@ import GlobaStyles from './global-styles'
 import { translationMessages } from './i18n'
 // Observe loading of Poppins (to remove Poppins, remove the <link> tag in
 // the index.html file and this observer)
-const openSansObserver = new FontFaceObserver('Poppins', {})
+// const openSansObserver = new FontFaceObserver('Poppins', {})
 
 // When Poppins is loaded, add a font-family using Poppins to the body
-openSansObserver.load().then(() => {
-  document.body.classList.add('fontLoaded')
-})
+// openSansObserver.load().then(() => {
+//   document.body.classList.add('fontLoaded')
+// })
 
 // Create redux store with history
 const initialState = {}
@@ -64,40 +64,42 @@ const store = configureStore(initialState, history)
 const MOUNT_NODE = document.getElementById('app')
 
 // Apollo client config
-const authLink = setContext((_, { headers }) => {
-  const storedUser = EFClocalStorage.getSession()
+// const authLink = setContext((_, { headers }) => {
+//   const storedUser = EFClocalStorage.getSession()
 
-  return {
-    headers: {
-      ...headers,
-      uid: get(storedUser, 'token.uid'),
-      'access-token': get(storedUser, 'token.accessToken'),
-      client: get(storedUser, 'token.client'),
-    },
-    uri: `https://${baseCleanURL}/${get(storedUser, 'role', '')}`,
-  }
-})
+//   return {
+//     headers: {
+//       ...headers,
+//       uid: get(storedUser, 'token.uid'),
+//       'access-token': get(storedUser, 'token.accessToken'),
+//       client: get(storedUser, 'token.client'),
+//     },
+//     uri: `https://${baseCleanURL}/${get(storedUser, 'role', '')}`,
+//   }
+// })
 
-const apolloClient = new ApolloClient({
-  link: authLink.concat(
-    createUploadLink({
-      uri: ``,
-    }),
-  ),
-  cache: new InMemoryCache(),
-})
+// const apolloClient = new ApolloClient({
+//   link: authLink.concat(
+//     createUploadLink({
+//       uri: ``,
+//     }),
+//   ),
+//   cache: new InMemoryCache(),
+// })
 
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
-      <GlobaStyles />
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <ApolloProvider client={apolloClient}>
+      <div>
+        <GlobaStyles />
+        <LanguageProvider messages={messages}>
+          <ConnectedRouter history={history}>
+            {/* {<ApolloProvider client={apolloClient}>} */}
             <App store={store} />
-          </ApolloProvider>
-        </ConnectedRouter>
-      </LanguageProvider>
+            {/* {</ApolloProvider>} */}
+          </ConnectedRouter>
+        </LanguageProvider>
+      </div>
     </Provider>,
     MOUNT_NODE,
   )
