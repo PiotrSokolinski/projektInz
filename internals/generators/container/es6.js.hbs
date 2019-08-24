@@ -1,0 +1,82 @@
+/**
+ *
+ * {{properCase name }}
+ *
+ */
+
+{{#if memo}}
+import React, { memo } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+{{#if wantHeaders}}
+import { Helmet } from 'react-helmet';
+{{/if}}
+{{#if wantMessages}}
+import { FormattedMessage } from 'react-intl';
+{{/if}}
+{{#if wantActionsAndReducer}}
+import { createStructuredSelector } from 'reselect';
+{{/if}}
+import { compose } from 'redux';
+
+{{#if wantActionsAndReducer}}
+import makeSelect{{properCase name}} from './selectors';
+import reducer from './reducer'; // eslint-disable-line no-unused-vars
+{{/if}}
+{{#if wantSaga}}
+import saga from './saga'; // eslint-disable-line no-unused-vars
+{{/if}}
+{{#if wantMessages}}
+import messages from './messages';
+{{/if}}
+
+// eslint-disable-next-line react/prefer-stateless-function
+export class {{ properCase name }} extends React.{{{ component }}} {
+  render() {
+    return (
+      <div>
+      {{#if wantHeaders}}
+        <Helmet>
+          <title>{{properCase name}}</title>
+          <meta name="description" content="Description of {{properCase name}}" />
+        </Helmet>
+      {{/if}}
+      {{#if wantMessages}}
+        <FormattedMessage {...messages.header} />
+      {{/if}}
+      </div>
+    );
+  }
+}
+
+{{ properCase name }}.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+{{#if wantActionsAndReducer}}
+const mapStateToProps = createStructuredSelector({
+  {{ camelCase name }}: makeSelect{{properCase name}}(),
+});
+{{/if}}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
+{{#if wantActionsAndReducer}}
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+{{else}}
+const withConnect = connect(null, mapDispatchToProps);
+{{/if}}
+
+export default compose(
+  withConnect,
+{{#if memo}}
+  memo,
+{{/if}}
+)({{ properCase name }});
