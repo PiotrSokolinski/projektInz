@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Box-al6wyn-1 bBTkVe"
+>
+  <img
+    alt="loginIcon"
+    class="styled__Avatar-al6wyn-9 zaPyc"
+    src="IMAGE_MOCK"
+  />
+  <h1
+    class="styled__Header-al6wyn-2 dXIdJm"
+  >
+    <span>
+      Sing in
+    </span>
+  </h1>
+  <form
+    autocomplete="off"
+  >
+    <div
+      class="styled__InputBox-al6wyn-3 juArMf"
+    >
+      <svg
+        aria-hidden="true"
+        class="styled__UserIcon-al6wyn-7 ggcOXx StyledIconBase-sc-bdy9j4 jbPeIR"
+        fill="currentColor"
+        focusable="false"
+        height="22"
+        viewBox="0 0 24 24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+        />
+      </svg>
+      <div
+        class="styled__Wrapper-al6wyn-11 gbYXzT"
+      >
+        <input
+          class="styled__Input-al6wyn-4 ecYVYH"
+          name="email"
+          type="email"
+          value=""
+        />
+        <label
+          class="styled__Label-al6wyn-5 koFebL"
+        >
+          E-mail address
+        </label>
+      </div>
+    </div>
+    <div
+      class="styled__InputBox-al6wyn-3 juArMf"
+    >
+      <svg
+        aria-hidden="true"
+        class="styled__LockIcon-al6wyn-8 keBdnB StyledIconBase-sc-bdy9j4 jbPeIR"
+        fill="currentColor"
+        focusable="false"
+        height="22"
+        viewBox="0 0 24 24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        />
+      </svg>
+      <div
+        class="styled__Wrapper-al6wyn-11 gbYXzT"
+      >
+        <input
+          class="styled__Input-al6wyn-4 ecYVYH"
+          name="password"
+          type="password"
+          value=""
+        />
+        <label
+          class="styled__Label-al6wyn-5 koFebL"
+        >
+          Password
+        </label>
+      </div>
+    </div>
+    <button
+      class="styled__Button-al6wyn-6 dpAknp"
+      type="submit"
+    >
+      <span>
+        Login
+      </span>
+    </button>
+    <a
+      class="styled__Link-al6wyn-10 dhqPmV"
+      href="/password-remind"
+    >
+      <span>
+        Lost your password?
+      </span>
+    </a>
+    <a
+      class="styled__Link-al6wyn-10 dhqPmV"
+      href="/register"
+    >
+      <span>
+        Don't have an account?
+      </span>
+    </a>
+  </form>
+</div>
+`;
