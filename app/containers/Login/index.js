@@ -39,6 +39,7 @@ const Login = ({ intl }) => {
           {({ errors, touched, values, handleChange, handleBlur, handleSubmit }) => (
             <form autoComplete="off">
               <PublicInput
+                id="emailField"
                 icon={Styled.UserIcon}
                 label={intl.formatMessage(messages.emailLabel)}
                 error={touched.email && errors.email}
@@ -51,6 +52,7 @@ const Login = ({ intl }) => {
                 }}
               />
               <PublicInput
+                id="passwordField"
                 icon={Styled.LockIcon}
                 label={intl.formatMessage(messages.passwordLabel)}
                 error={touched.password && errors.password}

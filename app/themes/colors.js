@@ -1,5 +1,5 @@
 const Colors = {
-  darkBlue: '#03a9f4',
+  cerulean: '#03a9f4',
   white: '#ffffff',
 }
 
