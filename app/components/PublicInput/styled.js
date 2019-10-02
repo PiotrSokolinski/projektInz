@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Help } from 'react-bulma-components/lib/components/form'
 import { Colors } from 'themes'
+
 export const Error = styled(Help)`
   top: -25px;
   position: relative;

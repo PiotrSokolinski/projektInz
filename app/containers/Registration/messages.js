@@ -17,18 +17,6 @@ export default defineMessages({
     id: `${scope}.buttonTitle`,
     defaultMessage: 'Create an account',
   },
-  emailPlaceholder: {
-    id: `${scope}.emailPlaceholder`,
-    defaultMessage: 'E-mail',
-  },
-  passwordPlaceholder: {
-    id: `${scope}.passwordPlaceholder`,
-    defaultMessage: 'Password',
-  },
-  repeatedPasswordPlaceholder: {
-    id: `${scope}.repeatedPasswordPlaceholder`,
-    defaultMessage: 'Retype password',
-  },
   emailLabel: {
     id: `${scope}.emailLabel`,
     defaultMessage: 'E-mail address',

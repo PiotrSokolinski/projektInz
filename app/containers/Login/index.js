@@ -64,15 +64,19 @@ const Login = ({ intl }) => {
                   onChange: handleChange,
                 }}
               />
-              <Button type="submit" onClick={handleSubmit}>
-                <FormattedMessage {...messages.buttonTitle} />
-              </Button>
-              <Styled.Link to="/password-remind">
-                <FormattedMessage {...messages.forgotPasswordMessage} />
-              </Styled.Link>
-              <Styled.Link to="/registration">
-                <FormattedMessage {...messages.noAccount} />
-              </Styled.Link>
+              <Styled.FooterContainer>
+                <Button type="submit" onClick={handleSubmit}>
+                  <FormattedMessage {...messages.buttonTitle} />
+                </Button>
+                <Styled.LinksContainer>
+                  <Styled.Link to="/password-remind">
+                    <FormattedMessage {...messages.forgotPasswordMessage} />
+                  </Styled.Link>
+                  <Styled.Link to="/registration">
+                    <FormattedMessage {...messages.noAccount} />
+                  </Styled.Link>
+                </Styled.LinksContainer>
+              </Styled.FooterContainer>
             </form>
           )}
         </Formik>

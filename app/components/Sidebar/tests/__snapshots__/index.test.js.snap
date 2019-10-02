@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-1etlmco-0 dMzpuT"
+>
+  <div
+    class="styled__HamburgerMenu-sc-1etlmco-1 kFoaQf"
+  >
+    <div />
+  </div>
+  <a
+    class="styled__LinkElement-sc-1etlmco-2 dEIZoa"
+    href="/"
+  >
+    <svg
+      aria-hidden="true"
+      class="styled__HomeIcon-sc-1etlmco-4 lVLeK StyledIconBase-sc-bdy9j4 cCvWXa"
+      fill="currentColor"
+      focusable="false"
+      height="40"
+      viewBox="0 0 576 512"
+      width="40"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0016 16l112.06-.29a16 16 0 0015.92-16V368a16 16 0 0116-16h64a16 16 0 0116 16v95.64a16 16 0 0016 16.05L464 480a16 16 0 0016-16V300L295.67 148.26a12.19 12.19 0 00-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 00-12-12h-56a12 12 0 00-12 12v72.61L318.47 43a48 48 0 00-61 0L4.34 251.47a12 12 0 00-1.6 16.9l25.5 31A12 12 0 0045.15 301l235.22-193.74a12.19 12.19 0 0115.3 0L530.9 301a12 12 0 0016.9-1.6l25.5-31a12 12 0 00-1.7-16.93z"
+        fill="currentColor"
+      />
+    </svg>
+    <div
+      class="styled__Text-sc-1etlmco-3 jqoBkU"
+    >
+      <span>
+        Home
+      </span>
+    </div>
+  </a>
+  <a
+    class="styled__LinkElement-sc-1etlmco-2 dEIZoa"
+    href="/123"
+  >
+    <svg
+      aria-hidden="true"
+      class="styled__TaskIcon-sc-1etlmco-5 gkVBSN StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="40"
+      viewBox="0 0 24 24"
+      width="40"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-3a1 1 0 00-1-1H9a1 1 0 00-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h3v2h8V5h3v15H5V5z"
+      />
+      <path
+        d="M11 13.586l-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+      />
+    </svg>
+    <div
+      class="styled__Text-sc-1etlmco-3 cOwkHa"
+    >
+      <span>
+        Tasks
+      </span>
+    </div>
+  </a>
+  <a
+    class="styled__LinkElement-sc-1etlmco-2 dEIZoa"
+    href="/1234"
+  >
+    <svg
+      aria-hidden="true"
+      class="styled__CalendarIcon-sc-1etlmco-6 cZVpdc StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="40"
+      viewBox="0 0 24 24"
+      width="40"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"
+      />
+      <path
+        d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"
+      />
+    </svg>
+    <div
+      class="styled__Text-sc-1etlmco-3 cOwkHa"
+    >
+      <span>
+        Calendar
+      </span>
+    </div>
+  </a>
+</div>
+`;

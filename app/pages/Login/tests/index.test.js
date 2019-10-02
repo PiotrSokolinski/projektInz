@@ -10,16 +10,16 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { IntlProvider } from 'react-intl'
 import { MemoryRouter } from 'react-router-dom'
-import Dashboard from '../index'
+import Login from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
-describe('<Dashboard />', () => {
+describe('<LoginPage />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Dashboard />
+          <Login />
         </MemoryRouter>
       </IntlProvider>,
     )
@@ -32,7 +32,7 @@ describe('<Dashboard />', () => {
     } = render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Dashboard />
+          <Login />
         </MemoryRouter>
       </IntlProvider>,
     )

@@ -12,6 +12,7 @@ export const StyledButton = styled.button`
   transition: 0.5s;
   font-size: 13px;
   width: 150px;
+  height: 40px;
   &:hover {
     transform: scale(1.1);
     filter: brightness(75%);

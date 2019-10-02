@@ -6,8 +6,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormattedMessage, injectIntl } from 'react-intl'
 import * as Yup from 'yup'
+import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
 import PublicInput from 'components/PublicInput'
 import messages from './messages'

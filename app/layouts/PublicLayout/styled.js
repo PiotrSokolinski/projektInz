@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Columns as BulmaColumns } from 'react-bulma-components/lib'
+import { Colors } from 'themes'
 
 export const Columns = styled(BulmaColumns)``
 
@@ -13,12 +14,9 @@ export const LandingLeftSection = styled.div`
   justify-content: center;
   box-sizing: border-box;
 `
-export const RightColumn = styled(BulmaColumns.Column)`
-  background: blue;
-`
 
 export const Container = styled.div`
-  background: #b3d9ff;
+  background: ${Colors.mountbattenPink};
   display: flex;
   height: 100vh;
   justify-content: center;

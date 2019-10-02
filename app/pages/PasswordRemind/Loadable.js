@@ -1,5 +1,5 @@
 /**
- * Asynchronously loads the component for PasswordRemind
+ * Asynchronously loads the component for PasswordRemindPage
  */
 
 import loadable from 'utils/loadable'

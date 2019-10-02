@@ -1,6 +1,6 @@
 /**
  *
- * Tests for LoginPage
+ * Tests for RegistrationPage
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -13,7 +13,7 @@ import { MemoryRouter } from 'react-router-dom'
 import Registration from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
-describe('<Registration />', () => {
+describe('<RegistrationPage />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(

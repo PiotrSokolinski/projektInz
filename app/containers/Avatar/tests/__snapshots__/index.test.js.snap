@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> Should render and match the snapshot 1`] = `
+<div>
+  <span>
+    This is the Avatar container!
+  </span>
+</div>
+`;

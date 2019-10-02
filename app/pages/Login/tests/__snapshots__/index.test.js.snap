@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Dashboard /> Should render and match the snapshot 1`] = `
+exports[`<LoginPage /> Should render and match the snapshot 1`] = `
 <div
   class="styled__Container-sc-1nk8n0k-1 ypRfd"
 >
   <div
-    class="styled__Box-sc-1nk8n0k-2 xIDSW"
+    class="styled__Box-sc-1nk8n0k-2 fzIccC"
   >
     <div
       class="styled__HeaderContainer-sc-1nk8n0k-6 ffQfwU"
@@ -101,30 +101,38 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           </label>
         </div>
       </div>
-      <button
-        class="styled__StyledButton-sc-1gb27vo-0 fRXmMC"
-        type="submit"
+      <div
+        class="styled__FooterContainer-sc-1nk8n0k-8 hPjMrs"
       >
-        <span>
-          Login
-        </span>
-      </button>
-      <a
-        class="styled__Link-sc-1nk8n0k-7 cpFNWy"
-        href="/password-remind"
-      >
-        <span>
-          Lost your password?
-        </span>
-      </a>
-      <a
-        class="styled__Link-sc-1nk8n0k-7 cpFNWy"
-        href="/registration"
-      >
-        <span>
-          Don't have an account?
-        </span>
-      </a>
+        <button
+          class="styled__StyledButton-sc-1gb27vo-0 MZlKF"
+          type="submit"
+        >
+          <span>
+            Login
+          </span>
+        </button>
+        <div
+          class="styled__LinksContainer-sc-1nk8n0k-9 fWZFME"
+        >
+          <a
+            class="styled__Link-sc-1nk8n0k-7 cpFNWy"
+            href="/password-remind"
+          >
+            <span>
+              Lost your password?
+            </span>
+          </a>
+          <a
+            class="styled__Link-sc-1nk8n0k-7 cpFNWy"
+            href="/registration"
+          >
+            <span>
+              Don't have an account?
+            </span>
+          </a>
+        </div>
+      </div>
     </form>
   </div>
 </div>

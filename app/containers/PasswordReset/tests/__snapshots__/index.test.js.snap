@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PasswordReset /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-yjfqfl-1 UmXoV"
+>
+  <div
+    class="styled__Box-yjfqfl-2 bzIPdi"
+  >
+    <div
+      class="styled__Header-yjfqfl-3 cbooOk"
+    >
+      <span>
+        Set a new password
+      </span>
+    </div>
+    <div
+      class="styled__InputBox-sc-1nwnwj1-1 iARNcM"
+    >
+      <div
+        class="styled__Wrapper-sc-1nwnwj1-4 gJixhu"
+      >
+        <input
+          class="styled__Input-sc-1nwnwj1-2 dfHhpa"
+          name="password"
+          type="password"
+          value=""
+        />
+        <label
+          class="styled__Label-sc-1nwnwj1-3 cYwlur"
+        >
+          Password
+        </label>
+      </div>
+    </div>
+    <div
+      class="styled__InputBox-sc-1nwnwj1-1 iARNcM"
+    >
+      <div
+        class="styled__Wrapper-sc-1nwnwj1-4 gJixhu"
+      >
+        <input
+          class="styled__Input-sc-1nwnwj1-2 dfHhpa"
+          name="repeatedPassword"
+          type="password"
+          value=""
+        />
+        <label
+          class="styled__Label-sc-1nwnwj1-3 cYwlur"
+        >
+          Retype password
+        </label>
+      </div>
+    </div>
+    <div
+      class="styled__ButtonsContainer-yjfqfl-5 jemEBa"
+    >
+      <button
+        class="styled__ResetButton-yjfqfl-0 bflPZk styled__StyledButton-sc-1gb27vo-0 MZlKF"
+        type="submit"
+      >
+        <span>
+          Reset password
+        </span>
+      </button>
+      <a
+        class="styled__Link-yjfqfl-4 lmmxOt"
+        href="/login"
+      >
+        <span>
+          Back to Login
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

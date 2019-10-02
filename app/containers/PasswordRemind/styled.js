@@ -14,6 +14,7 @@ export const Container = styled.div`
   align-items: center;
 `
 export const Box = styled.div`
+  min-width: 400px;
   padding: 40px;
   background: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
@@ -25,6 +26,7 @@ export const Header = styled.div`
   font-size: 30px;
   margin: 0 0 30px;
   padding: 0;
+  text-align: center;
 `
 
 export const Link = styled(RouterLink)`

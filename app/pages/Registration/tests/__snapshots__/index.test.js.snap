@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Registration /> Should render and match the snapshot 1`] = `
+exports[`<RegistrationPage /> Should render and match the snapshot 1`] = `
 <div
   class="styled__Container-sc-9wf7co-0 gFEkIM"
 >
   <div
-    class="styled__Box-sc-9wf7co-1 keKpWo"
+    class="styled__Box-sc-9wf7co-1 ejTQCA"
   >
     <div
       class="styled__Header-sc-9wf7co-2 fWXrPy"
@@ -116,7 +116,7 @@ exports[`<Registration /> Should render and match the snapshot 1`] = `
         class="styled__ButtonsContainer-sc-9wf7co-5 jTYyFT"
       >
         <button
-          class="styled__SubmitButton-sc-9wf7co-3 dsMqFG styled__StyledButton-sc-1gb27vo-0 fRXmMC"
+          class="styled__SubmitButton-sc-9wf7co-3 dsMqFG styled__StyledButton-sc-1gb27vo-0 MZlKF"
           type="submit"
         >
           <span>

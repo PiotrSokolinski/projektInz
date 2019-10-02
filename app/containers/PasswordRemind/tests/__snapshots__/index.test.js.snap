@@ -5,10 +5,10 @@ exports[`<PasswordRemind /> Should render and match the snapshot 1`] = `
   class="styled__Container-sc-1t1wmde-1 cNlBUe"
 >
   <div
-    class="styled__Box-sc-1t1wmde-2 iKFQHu"
+    class="styled__Box-sc-1t1wmde-2 icporI"
   >
     <div
-      class="styled__Header-sc-1t1wmde-3 cmKzkE"
+      class="styled__Header-sc-1t1wmde-3 eECtUy"
     >
       <span>
         Reset password
@@ -37,7 +37,7 @@ exports[`<PasswordRemind /> Should render and match the snapshot 1`] = `
       class="styled__ButtonsContainer-sc-1t1wmde-5 cLEAnk"
     >
       <button
-        class="styled__SendButton-sc-1t1wmde-0 dbcgEQ styled__StyledButton-sc-1gb27vo-0 fRXmMC"
+        class="styled__SendButton-sc-1t1wmde-0 dbcgEQ styled__StyledButton-sc-1gb27vo-0 MZlKF"
         type="submit"
       >
         <span>
