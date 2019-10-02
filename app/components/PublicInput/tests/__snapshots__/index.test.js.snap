@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PublicInput /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__InputBox-sc-1nwnwj1-1 iARNcM"
+>
+  <div
+    class="styled__Wrapper-sc-1nwnwj1-4 gJixhu"
+  >
+    <input
+      class="styled__Input-sc-1nwnwj1-2 dfHhpa"
+      value=""
+    />
+    <label
+      class="styled__Label-sc-1nwnwj1-3 cYwlur"
+    />
+  </div>
+</div>
+`;

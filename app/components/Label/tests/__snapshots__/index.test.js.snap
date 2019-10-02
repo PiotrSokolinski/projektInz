@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> Should render with error and match the snapshot 1`] = `
+<label
+  class="styled__StyledLabel-oaisvy-0 gsmrPq"
+>
+  Label
+</label>
+`;
+
+exports[`<Label /> Should render without error and match the snapshot 1`] = `
+<label
+  class="styled__StyledLabel-oaisvy-0 gJTorn"
+>
+  Label
+</label>
+`;

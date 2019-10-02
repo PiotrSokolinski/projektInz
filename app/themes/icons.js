@@ -1,6 +1,6 @@
 /* eslint-disable */
 const Icons = {
-  loginIcon: require('../assets/loginIcon.png'),
+  logoHousier: require('../assets/Housier.png'),
 }
 
 export default Icons
