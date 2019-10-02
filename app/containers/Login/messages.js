@@ -11,7 +11,7 @@ export const scope = 'app.containers.Login'
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'Sign in',
+    defaultMessage: 'Sing in',
   },
   buttonTitle: {
     id: `${scope}.buttonTitle`,

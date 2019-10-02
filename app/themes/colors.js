@@ -1,6 +1,5 @@
 const Colors = {
-  cerulean: '#03a9f4',
-  white: '#ffffff',
+  darkBlue: '#03a9f4',
 }
 
 export default Colors
