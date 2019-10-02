@@ -10,7 +10,7 @@ export const Input = styled.input`
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.02em;
-  border: 1px solid ${Colors.athensGray};
+  border: 1px solid ${Colors.white};
   box-sizing: border-box;
   outline: none;
 `

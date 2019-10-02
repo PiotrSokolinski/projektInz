@@ -1,8 +1,9 @@
 import React from 'react'
 import LoginPage from 'pages/Login/Loadable'
 import DashboardPage from 'pages/Dashboard/Loadable'
-import NotFoundPage from 'containers/NotFoundPage/Loadable'
+import NotFoundPage from 'pages/NotFoundPage/Loadable'
 import RegistrationPage from 'pages/Registration/Loadable'
+import PasswordRemindPage from 'pages/PasswordRemind/Loadable'
 import PublicLayout from 'layouts/PublicLayout'
 import { Switch, Route } from 'react-router-dom'
 
@@ -15,6 +16,11 @@ const PUBLIC_ROUTES = [
   {
     path: '/login',
     Component: LoginPage,
+    Layout: PublicLayout,
+  },
+  {
+    path: '/password-remind',
+    Component: PasswordRemindPage,
     Layout: PublicLayout,
   },
 ]

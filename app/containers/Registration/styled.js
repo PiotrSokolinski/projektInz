@@ -20,7 +20,7 @@ export const Header = styled.div`
   font-size: 30px;
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: ${Colors.white};
   text-align: center;
 `
 
@@ -30,14 +30,14 @@ export const SubmitButton = styled(Button)`
 export const Link = styled(RouterLink)`
   float: right;
   text-decoration: none;
-  color: white;
+  color: ${Colors.white};
   font-size: 12px;
   line-height: 20px;
   transition: 0.5s;
   align-self: center;
   margin-top: 15px;
   &:hover {
-    color: #03a9f4;
+    color: ${Colors.cerulean};
     transform: scale(1.1);
   }
 `

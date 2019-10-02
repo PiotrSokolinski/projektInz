@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import { Colors } from '../../themes/index'
 
 export const StyledLabel = styled.label`
-  color: ${props => (props.error ? Colors.flamingo : Colors.blueDianne)};
+  color: ${props => (props.error ? 'red' : 'blue')};
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;

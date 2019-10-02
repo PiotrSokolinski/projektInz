@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { Columns as BulmaColumns } from 'react-bulma-components/lib'
 
-import { Colors } from 'themes/index'
-
 export const Columns = styled(BulmaColumns)``
 
 export const Column = styled(BulmaColumns.Column)``

@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import * as Styled from './styled'
 import { Icons } from 'themes'
+
+import * as Styled from './styled'
 
 const LandingLeftSection = () => (
   <Styled.LandingLeftSection>
@@ -22,7 +23,7 @@ const PublicLayout = ({ children }) => (
 
 PublicLayout.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.object,
+  // location: PropTypes.object,
 }
 
 export default PublicLayout
