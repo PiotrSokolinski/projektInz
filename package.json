@@ -1,5 +1,5 @@
 {
-  "name": "e-family-care",
+  "name": "house-management",
   "license": "AGPL-3.0-or-later",
   "version": "0.1.0",
   "engines": {
@@ -97,7 +97,7 @@
     "reselect": "4.0.0",
     "sanitize.css": "10.0.0",
     "styled-components": "4.3.2",
-    "styled-icons": "^8.3.0",
+    "styled-icons": "8.3.0",
     "waait": "1.0.5",
     "yup": "0.27.0"
   },
