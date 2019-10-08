@@ -5,6 +5,9 @@ import NotFoundPage from 'pages/NotFoundPage/Loadable'
 import RegistrationPage from 'pages/Registration/Loadable'
 import PasswordRemindPage from 'pages/PasswordRemind/Loadable'
 import AvatarPage from 'pages/Avatar/Loadable'
+import SettingsPage from 'pages/Settings/Loadable'
+import CalendarPage from 'pages/Calendar/Loadable'
+import TasksPage from 'pages/Tasks/Loadable'
 import PasswordResetPage from 'pages/PasswordReset/Loadable'
 import PublicLayout from 'layouts/PublicLayout'
 import PrivateRoute from 'layouts/PrivateRoute'
@@ -48,6 +51,9 @@ const App = () => (
       />
     ))}
     <PrivateRoute exact path="/" component={DashboardPage} wrapper={PrivateLayout} />
+    <PrivateRoute exact path="/settings" component={SettingsPage} wrapper={PrivateLayout} />
+    <PrivateRoute exact path="/tasks" component={TasksPage} wrapper={PrivateLayout} />
+    <PrivateRoute exact path="/calendar" component={CalendarPage} wrapper={PrivateLayout} />
     <PrivateRoute exact path="/avatar" component={AvatarPage} wrapper={PublicLayout} />
     <Route component={NotFoundPage} />
   </Switch>

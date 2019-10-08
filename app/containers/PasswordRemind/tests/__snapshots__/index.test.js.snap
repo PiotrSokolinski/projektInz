@@ -37,7 +37,7 @@ exports[`<PasswordRemind /> Should render and match the snapshot 1`] = `
       class="styled__ButtonsContainer-sc-1t1wmde-5 cLEAnk"
     >
       <button
-        class="styled__SendButton-sc-1t1wmde-0 dbcgEQ styled__StyledButton-sc-1gb27vo-0 MZlKF"
+        class="styled__SendButton-sc-1t1wmde-0 dbcgEQ styled__StyledButton-sc-1gb27vo-0 cSvxQx"
         type="submit"
       >
         <span>

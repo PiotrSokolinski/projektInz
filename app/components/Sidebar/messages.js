@@ -21,4 +21,8 @@ export default defineMessages({
     id: `${scope}.calendar`,
     defaultMessage: 'Calendar',
   },
+  settings: {
+    id: `${scope}.settings`,
+    defaultMessage: 'Settings',
+  },
 })

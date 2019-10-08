@@ -116,7 +116,7 @@ exports[`<RegistrationPage /> Should render and match the snapshot 1`] = `
         class="styled__ButtonsContainer-sc-9wf7co-5 jTYyFT"
       >
         <button
-          class="styled__SubmitButton-sc-9wf7co-3 dsMqFG styled__StyledButton-sc-1gb27vo-0 MZlKF"
+          class="styled__SubmitButton-sc-9wf7co-3 dsMqFG styled__StyledButton-sc-1gb27vo-0 cSvxQx"
           type="submit"
         >
           <span>

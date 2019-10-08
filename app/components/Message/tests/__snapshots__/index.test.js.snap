@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-lr2zll-0 hiCLbP"
+>
+  <div
+    class="tiny styled__Container-vinm4t-0 lmbuMq"
+  >
+    <img
+      alt="avatar"
+      class="avatar-image"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="styled__MessageCloud-lr2zll-1 dxMckx"
+  />
+  <div
+    class="styled__MessageTime-lr2zll-2 gTomPT"
+  />
+</div>
+`;

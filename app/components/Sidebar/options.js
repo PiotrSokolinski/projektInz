@@ -1,7 +1,7 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import messages from './messages'
-import { HomeIcon, TaskIcon, CalendarIcon } from './styled'
+import { HomeIcon, TaskIcon, CalendarIcon, SettingsIcon } from './styled'
 
 export const options = [
   {
@@ -10,13 +10,18 @@ export const options = [
     Icon: HomeIcon,
   },
   {
-    to: '123',
+    to: '/tasks',
     label: <FormattedMessage {...messages.tasks} />,
     Icon: TaskIcon,
   },
   {
-    to: '1234',
+    to: '/calendar',
     label: <FormattedMessage {...messages.calendar} />,
     Icon: CalendarIcon,
+  },
+  {
+    to: '/settings',
+    label: <FormattedMessage {...messages.settings} />,
+    Icon: SettingsIcon,
   },
 ]

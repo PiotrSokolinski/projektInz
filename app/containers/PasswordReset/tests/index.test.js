@@ -17,11 +17,10 @@ import { DEFAULT_LOCALE } from '../../../i18n'
 describe('<PasswordReset />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
-    const dispatch = jest.fn()
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <PasswordReset dispatch={dispatch} />
+          <PasswordReset />
         </MemoryRouter>
       </IntlProvider>,
     )

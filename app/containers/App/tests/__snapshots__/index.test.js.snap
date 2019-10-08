@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Should render and match the snapshot 1`] = `
+<Switch>
+  <Route
+    path="/registration"
+    render={[Function]}
+  />
+  <Route
+    path="/login"
+    render={[Function]}
+  />
+  <Route
+    path="/password-remind"
+    render={[Function]}
+  />
+  <Route
+    path="/password-reset"
+    render={[Function]}
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
+    path="/"
+    wrapper={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PrivateLayout-sc-1x0e7mo-0",
+          "isStatic": true,
+          "rules": Array [
+            "height:100vh;overflow:auto;padding:50px 40px;padding-bottom:25px;width:100%;",
+          ],
+        },
+        "displayName": "PrivateLayout",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PrivateLayout-sc-1x0e7mo-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
+    path="/settings"
+    wrapper={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PrivateLayout-sc-1x0e7mo-0",
+          "isStatic": true,
+          "rules": Array [
+            "height:100vh;overflow:auto;padding:50px 40px;padding-bottom:25px;width:100%;",
+          ],
+        },
+        "displayName": "PrivateLayout",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PrivateLayout-sc-1x0e7mo-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
+    path="/tasks"
+    wrapper={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PrivateLayout-sc-1x0e7mo-0",
+          "isStatic": true,
+          "rules": Array [
+            "height:100vh;overflow:auto;padding:50px 40px;padding-bottom:25px;width:100%;",
+          ],
+        },
+        "displayName": "PrivateLayout",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PrivateLayout-sc-1x0e7mo-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
+    path="/calendar"
+    wrapper={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PrivateLayout-sc-1x0e7mo-0",
+          "isStatic": true,
+          "rules": Array [
+            "height:100vh;overflow:auto;padding:50px 40px;padding-bottom:25px;width:100%;",
+          ],
+        },
+        "displayName": "PrivateLayout",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PrivateLayout-sc-1x0e7mo-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
+    path="/avatar"
+    wrapper={[Function]}
+  />
+  <Route
+    component={[Function]}
+  />
+</Switch>
+`;

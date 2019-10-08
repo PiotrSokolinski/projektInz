@@ -8,8 +8,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyledButton } from './styled'
 // import CircleSpinner from '../CircleSpinner'
-const Button = ({ children, onClick, loading, disabled, inverted, ...otherProps }) => (
-  <StyledButton onClick={onClick} disabled={disabled} inverted={inverted} {...otherProps}>
+const Button = ({ children, onClick, loading, disabled, inverted, stable, ...otherProps }) => (
+  <StyledButton onClick={onClick} disabled={disabled} inverted={inverted} stable={stable} {...otherProps}>
     {/* {loading ? <CircleSpinner /> : children} */}
     {children}
   </StyledButton>
@@ -22,6 +22,7 @@ Button.propTypes = {
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
   inverted: PropTypes.bool,
+  stable: PropTypes.bool,
 }
 
 Button.defaultProps = {
@@ -30,6 +31,7 @@ Button.defaultProps = {
   loading: false,
   disabled: false,
   inverted: false,
+  stable: false,
 }
 
 export default Button

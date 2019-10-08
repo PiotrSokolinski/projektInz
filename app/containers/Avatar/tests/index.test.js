@@ -16,10 +16,9 @@ import { DEFAULT_LOCALE } from '../../../i18n'
 describe('<Avatar />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
-    const dispatch = jest.fn()
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
-        <Avatar dispatch={dispatch} />
+        <Avatar />
       </IntlProvider>,
     )
     expect(spy).not.toHaveBeenCalled()

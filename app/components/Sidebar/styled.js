@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Home } from 'styled-icons/fa-solid/Home'
 import { Task } from 'styled-icons/boxicons-regular/Task'
 import { Calendar } from 'styled-icons/boxicons-regular/Calendar'
+import { Settings } from 'styled-icons/material/Settings'
 import { Colors } from 'themes'
 
 export const Container = styled.div`
@@ -38,13 +39,13 @@ export const HamburgerMenu = styled.div`
     transition: all 0.2s ease-in-out;
   }
   &::after {
-    ${props => (props.isSidebarOpen ? 'transform: translateY(-6px) rotate(-135deg);;' : '')};
+    ${props => (props.isSidebarOpen ? 'transform: translateY(-6px) rotate(-135deg);' : '')};
   }
   &::before {
     ${props => (props.isSidebarOpen ? 'transform: translateY(12px) rotate(135deg);' : '')};
   }
   div {
-    ${props => (props.isSidebarOpen ? '  transform: scale(0);' : '')};
+    ${props => (props.isSidebarOpen ? 'transform: scale(0);' : '')};
   }
 `
 
@@ -71,6 +72,10 @@ export const TaskIcon = styled(Task)`
 `
 
 export const CalendarIcon = styled(Calendar)`
+  color: ${Colors.black};
+  ${props => (props.isActive ? `color: ${Colors.cerulean};` : '')};
+`
+export const SettingsIcon = styled(Settings)`
   color: ${Colors.black};
   ${props => (props.isActive ? `color: ${Colors.cerulean};` : '')};
 `

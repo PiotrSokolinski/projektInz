@@ -10,7 +10,7 @@ exports[`<Navbar /> Should render and match the snapshot 1`] = `
   >
     <img
       alt="logo"
-      class="styled__Logo-sc-1ln3xgg-6 gobqDk"
+      class="styled__Logo-sc-1ln3xgg-6 eWsFvG"
       src="IMAGE_MOCK"
     />
   </a>
@@ -24,9 +24,7 @@ exports[`<Navbar /> Should render and match the snapshot 1`] = `
       <div
         class="styled__Text-sc-1ln3xgg-3 jRxfut"
       >
-        <span>
-          Account Settings
-        </span>
+        Piotr Sokoliński
       </div>
       <svg
         aria-hidden="true"

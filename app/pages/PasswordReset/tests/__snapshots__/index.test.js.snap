@@ -56,7 +56,7 @@ exports[`<PasswordResetPage /> Should render and match the snapshot 1`] = `
       class="styled__ButtonsContainer-yjfqfl-5 jemEBa"
     >
       <button
-        class="styled__ResetButton-yjfqfl-0 bflPZk styled__StyledButton-sc-1gb27vo-0 MZlKF"
+        class="styled__ResetButton-yjfqfl-0 bflPZk styled__StyledButton-sc-1gb27vo-0 cSvxQx"
         type="submit"
       >
         <span>

@@ -18,9 +18,7 @@ const Navbar = () => (
     </Styled.LinkElement>
     <Styled.RightElementsContainer>
       <Styled.LinkElement to="/login">
-        <Styled.Text>
-          <FormattedMessage {...messages.settings} />
-        </Styled.Text>
+        <Styled.Text>Piotr Sokoliński</Styled.Text>
         <Styled.Account size="35" />
       </Styled.LinkElement>
       <Styled.LinkElement to="/login">
