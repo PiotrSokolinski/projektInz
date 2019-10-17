@@ -1,9 +1,183 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Settings /> Should render and match the snapshot 1`] = `
-<div>
-  <span>
-    This is the Settings container!
-  </span>
+<div
+  class="styled__Container-sc-170ur6l-3 ijqVZF"
+>
+  <div
+    class="styled__ContentWrapper-sc-170ur6l-4 eSuOxk"
+  >
+    <div
+      class="styled__Header-sc-170ur6l-5 hoXskc"
+    >
+      <span>
+        Account Settings
+      </span>
+    </div>
+    <div
+      class="styled__InformationWrapper-sc-170ur6l-7 fErXpo"
+    >
+      <div
+        class="styled__DetailsWrapper-sc-170ur6l-8 jRWOca"
+      >
+        <div
+          class="styled__PhotoWrapper-sc-170ur6l-6 cPLYOx"
+        >
+          <div
+            class="large styled__Container-vinm4t-0 gDIJTt"
+          >
+            <img
+              alt="avatar"
+              class="avatar-image"
+              src="IMAGE_MOCK"
+            />
+          </div>
+          <button
+            class="styled__EditPhotoButton-sc-170ur6l-0 jfrzYm styled__StyledButton-sc-1gb27vo-0 rmQmn"
+            tabindex="0"
+          >
+            <input
+              accept="image/*"
+              autocomplete="off"
+              style="display: none;"
+              tabindex="-1"
+              type="file"
+            />
+            <span>
+              Edit Profile Photo
+            </span>
+          </button>
+        </div>
+        <div
+          class="styled__InputsWrapper-sc-170ur6l-9 eYSjmw"
+        >
+          <div
+            class="field"
+            id="firstNameField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              First Name
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 cUZedP"
+                disabled=""
+                name="firstName"
+                type="text"
+                value="Piotr"
+              />
+            </div>
+            
+          </div>
+          <div
+            class="field"
+            id="lastNameField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              Last Name
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 cUZedP"
+                disabled=""
+                name="lastName"
+                type="text"
+                value="Sokolinski"
+              />
+            </div>
+            
+          </div>
+          <div
+            class="field"
+            id="nickField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              Nick
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 cUZedP"
+                disabled=""
+                name="nick"
+                type="text"
+                value="Piotrek"
+              />
+            </div>
+            
+          </div>
+          <button
+            class="styled__EditButton-sc-170ur6l-1 ideNsY styled__StyledButton-sc-1gb27vo-0 rmQmn"
+          >
+            <span>
+              Edit details
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="styled__EmailPasswordContainer-sc-170ur6l-11 gVsSNM"
+      >
+        <div
+          class="styled__ChangeHeader-sc-170ur6l-15 cOzhhn"
+        >
+          <span>
+            User's Credentials
+          </span>
+        </div>
+        <div
+          class="styled__ButtonsContainer-sc-170ur6l-12 lbmlbj"
+        >
+          <div
+            class="styled__ChangeContainer-sc-170ur6l-14 jChYfo"
+          >
+            <div
+              class="styled__ChangeTitle-sc-170ur6l-13 cEGeQC"
+            >
+              <span>
+                Chagne your e-mail address
+              </span>
+            </div>
+            <button
+              class="styled__ChangeButton-sc-170ur6l-2 guspLq styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+            >
+              <span>
+                Change e-mail
+              </span>
+            </button>
+          </div>
+          <div
+            class="styled__ChangeContainer-sc-170ur6l-14 jChYfo"
+          >
+            <div
+              class="styled__ChangeTitle-sc-170ur6l-13 cEGeQC"
+            >
+              <span>
+                Chagne your password
+              </span>
+            </div>
+            <button
+              class="styled__ChangeButton-sc-170ur6l-2 guspLq styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+            >
+              <span>
+                Change password
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

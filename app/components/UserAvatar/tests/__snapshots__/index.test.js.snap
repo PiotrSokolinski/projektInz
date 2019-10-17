@@ -2,7 +2,7 @@
 
 exports[`<UserAvatar /> Should render and match the snapshot 1`] = `
 <div
-  class="small styled__Container-vinm4t-0 lmbuMq"
+  class="small styled__Container-vinm4t-0 gDIJTt"
 >
   <img
     alt="avatar"

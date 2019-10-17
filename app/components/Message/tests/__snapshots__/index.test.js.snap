@@ -5,7 +5,7 @@ exports[`<Message /> Should render and match the snapshot 1`] = `
   class="styled__Container-lr2zll-0 hiCLbP"
 >
   <div
-    class="tiny styled__Container-vinm4t-0 lmbuMq"
+    class="tiny styled__Container-vinm4t-0 gDIJTt"
   >
     <img
       alt="avatar"
@@ -14,7 +14,7 @@ exports[`<Message /> Should render and match the snapshot 1`] = `
     />
   </div>
   <div
-    class="styled__MessageCloud-lr2zll-1 dxMckx"
+    class="styled__MessageCloud-lr2zll-1 jALbcv"
   />
   <div
     class="styled__MessageTime-lr2zll-2 gTomPT"

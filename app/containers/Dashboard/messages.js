@@ -9,8 +9,16 @@ import { defineMessages } from 'react-intl'
 export const scope = 'app.containers.Dashboard'
 
 export default defineMessages({
-  header: {
-    id: `${scope}.header`,
-    defaultMessage: 'This is the Dashboard container!',
+  membersList: {
+    id: `${scope}.membersList`,
+    defaultMessage: 'Group Members',
+  },
+  tasks: {
+    id: `${scope}.tasks`,
+    defaultMessage: 'Current Group Tasks',
+  },
+  settings: {
+    id: `${scope}.settings`,
+    defaultMessage: 'Group Settings',
   },
 })

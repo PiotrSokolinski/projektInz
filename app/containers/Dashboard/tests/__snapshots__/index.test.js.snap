@@ -24,7 +24,9 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           role="tab"
           tabindex="0"
         >
-          Group Members
+          <span>
+            Group Members
+          </span>
         </li>
         <li
           aria-controls="react-tabs-9"
@@ -34,7 +36,9 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           id="react-tabs-8"
           role="tab"
         >
-          Current Group Tasks
+          <span>
+            Current Group Tasks
+          </span>
         </li>
         <li
           aria-controls="react-tabs-11"
@@ -44,7 +48,9 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           id="react-tabs-10"
           role="tab"
         >
-          Group Settings
+          <span>
+            Group Settings
+          </span>
         </li>
       </ul>
       <div
@@ -53,7 +59,214 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         id="react-tabs-7"
         role="tabpanel"
       >
-        Content 1
+        <div
+          class="styled__Container-rz5z4n-0 knzFNx"
+        >
+          <div
+            class="styled__Container-tas46t-1 gkMLKc"
+          >
+            <div
+              class="styled__InfoWrapper-tas46t-2 jOqEjB"
+            >
+              <div
+                class="middle styled__Container-vinm4t-0 gDIJTt"
+              >
+                <img
+                  alt="avatar"
+                  class="avatar-image"
+                  src="IMAGE_MOCK"
+                />
+              </div>
+              <div
+                class="styled__FullName-tas46t-3 kDzbrN"
+              >
+                <span>
+                  Bob
+                </span>
+                <span>
+                  Doe
+                </span>
+              </div>
+              <div
+                class="styled__Number-tas46t-4 hJzDbi"
+              >
+                <b>
+                  <span>
+                    Tel. 
+                  </span>
+                </b>
+                123123123
+              </div>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="styled__Container-tas46t-1 gkMLKc"
+          >
+            <div
+              class="styled__InfoWrapper-tas46t-2 jOqEjB"
+            >
+              <div
+                class="middle styled__Container-vinm4t-0 gDIJTt"
+              >
+                <img
+                  alt="avatar"
+                  class="avatar-image"
+                  src="IMAGE_MOCK"
+                />
+              </div>
+              <div
+                class="styled__FullName-tas46t-3 kDzbrN"
+              >
+                <span>
+                  Bob
+                </span>
+                <span>
+                  Doe
+                </span>
+              </div>
+              <div
+                class="styled__Number-tas46t-4 hJzDbi"
+              >
+                <b>
+                  <span>
+                    Tel. 
+                  </span>
+                </b>
+                123123123
+              </div>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="styled__Container-tas46t-1 gkMLKc"
+          >
+            <div
+              class="styled__InfoWrapper-tas46t-2 jOqEjB"
+            >
+              <div
+                class="middle styled__Container-vinm4t-0 gDIJTt"
+              >
+                <img
+                  alt="avatar"
+                  class="avatar-image"
+                  src="IMAGE_MOCK"
+                />
+              </div>
+              <div
+                class="styled__FullName-tas46t-3 kDzbrN"
+              >
+                <span>
+                  Bob
+                </span>
+                <span>
+                  Doe
+                </span>
+              </div>
+              <div
+                class="styled__Number-tas46t-4 hJzDbi"
+              >
+                <b>
+                  <span>
+                    Tel. 
+                  </span>
+                </b>
+                123123123
+              </div>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </div>
+          <div
+            class="styled__Container-tas46t-1 gkMLKc"
+          >
+            <div
+              class="styled__InfoWrapper-tas46t-2 jOqEjB"
+            >
+              <div
+                class="middle styled__Container-vinm4t-0 gDIJTt"
+              >
+                <img
+                  alt="avatar"
+                  class="avatar-image"
+                  src="IMAGE_MOCK"
+                />
+              </div>
+              <div
+                class="styled__FullName-tas46t-3 kDzbrN"
+              >
+                <span>
+                  Bob
+                </span>
+                <span>
+                  Doe
+                </span>
+              </div>
+              <div
+                class="styled__Number-tas46t-4 hJzDbi"
+              >
+                <b>
+                  <span>
+                    Tel. 
+                  </span>
+                </b>
+                123123123
+              </div>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
       <div
         aria-labelledby="react-tabs-8"
@@ -86,7 +299,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__AvatarContainer-laciss-7 gWEXMY"
       >
         <div
-          class="small styled__Container-vinm4t-0 lmbuMq"
+          class="small styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -95,7 +308,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="small styled__Container-vinm4t-0 lmbuMq"
+          class="small styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -104,7 +317,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="small styled__Container-vinm4t-0 lmbuMq"
+          class="small styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -113,7 +326,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="small styled__Container-vinm4t-0 lmbuMq"
+          class="small styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -135,7 +348,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -144,7 +357,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -158,7 +371,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -167,7 +380,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -181,7 +394,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -190,7 +403,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -204,7 +417,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -213,7 +426,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -227,7 +440,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -236,7 +449,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -250,7 +463,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -259,7 +472,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -273,7 +486,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -282,7 +495,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -296,7 +509,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -305,7 +518,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -319,7 +532,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -328,7 +541,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -342,7 +555,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -351,7 +564,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -365,7 +578,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -374,7 +587,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -388,7 +601,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -397,7 +610,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -411,7 +624,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -420,7 +633,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -434,7 +647,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -443,7 +656,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -457,7 +670,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -466,7 +679,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -480,7 +693,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -489,7 +702,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -503,7 +716,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -512,7 +725,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -526,7 +739,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -535,7 +748,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -549,7 +762,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -558,7 +771,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -572,7 +785,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -581,7 +794,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -595,7 +808,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -604,7 +817,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>
@@ -618,7 +831,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -627,7 +840,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           Message
         </div>
@@ -641,7 +854,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 hiCLbP"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -650,7 +863,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 dxMckx"
+          class="styled__MessageCloud-lr2zll-1 jALbcv"
         >
           MessageMessage MessageMessa geMess ageMessag eMessa geMessag eMessageMessa geMessage MessageMessageM essageMessageMessag eMessageM essageMessa geMessageMessageMessageMessage Message MessageMe ssageMessageMessageMe ssageMessag eMessage
         </div>
@@ -664,7 +877,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
         class="styled__Container-lr2zll-0 gaFdcr"
       >
         <div
-          class="tiny styled__Container-vinm4t-0 lmbuMq"
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
         >
           <img
             alt="avatar"
@@ -673,7 +886,7 @@ exports[`<Dashboard /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 ikiUFs"
+          class="styled__MessageCloud-lr2zll-1 drMwnc"
         >
           Message
         </div>

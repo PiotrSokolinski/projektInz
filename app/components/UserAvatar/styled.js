@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { Colors } from '../../themes/index'
 
 export const Container = styled.div`
   align-items: center;
-  background-color: ${Colors.white};
+  background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 100vw;

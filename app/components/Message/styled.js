@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const MessageCloud = styled.div`
   background-color: ${props => (props.isOwner ? Colors.cerulean : Colors.athensGrayLight)};
-  width: 75%;
+  max-width: 75%;
   border-radius: 10px;
   padding: 10px;
   margin: 0 5px;

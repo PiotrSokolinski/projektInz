@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MembersList /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-rz5z4n-0 knzFNx"
+>
+  <div
+    class="styled__Container-tas46t-1 gkMLKc"
+  >
+    <div
+      class="styled__InfoWrapper-tas46t-2 jOqEjB"
+    >
+      <div
+        class="middle styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="styled__FullName-tas46t-3 kDzbrN"
+      >
+        <span>
+          Bob
+        </span>
+        <span>
+          Doe
+        </span>
+      </div>
+      <div
+        class="styled__Number-tas46t-4 hJzDbi"
+      >
+        <b>
+          <span>
+            Tel. 
+          </span>
+        </b>
+        123123123
+      </div>
+    </div>
+    <svg
+      aria-hidden="true"
+      class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="22"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="styled__Container-tas46t-1 gkMLKc"
+  >
+    <div
+      class="styled__InfoWrapper-tas46t-2 jOqEjB"
+    >
+      <div
+        class="middle styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="styled__FullName-tas46t-3 kDzbrN"
+      >
+        <span>
+          Bob
+        </span>
+        <span>
+          Doe
+        </span>
+      </div>
+      <div
+        class="styled__Number-tas46t-4 hJzDbi"
+      >
+        <b>
+          <span>
+            Tel. 
+          </span>
+        </b>
+        123123123
+      </div>
+    </div>
+    <svg
+      aria-hidden="true"
+      class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="22"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="styled__Container-tas46t-1 gkMLKc"
+  >
+    <div
+      class="styled__InfoWrapper-tas46t-2 jOqEjB"
+    >
+      <div
+        class="middle styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="styled__FullName-tas46t-3 kDzbrN"
+      >
+        <span>
+          Bob
+        </span>
+        <span>
+          Doe
+        </span>
+      </div>
+      <div
+        class="styled__Number-tas46t-4 hJzDbi"
+      >
+        <b>
+          <span>
+            Tel. 
+          </span>
+        </b>
+        123123123
+      </div>
+    </div>
+    <svg
+      aria-hidden="true"
+      class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="22"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="styled__Container-tas46t-1 gkMLKc"
+  >
+    <div
+      class="styled__InfoWrapper-tas46t-2 jOqEjB"
+    >
+      <div
+        class="middle styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="styled__FullName-tas46t-3 kDzbrN"
+      >
+        <span>
+          Bob
+        </span>
+        <span>
+          Doe
+        </span>
+      </div>
+      <div
+        class="styled__Number-tas46t-4 hJzDbi"
+      >
+        <b>
+          <span>
+            Tel. 
+          </span>
+        </b>
+        123123123
+      </div>
+    </div>
+    <svg
+      aria-hidden="true"
+      class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="22"
+      viewBox="0 0 24 24"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </div>
+</div>
+`;

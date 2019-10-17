@@ -13,7 +13,7 @@ exports[`<Input /> Should render with error and match the snapshot 1`] = `
     class="control"
   >
     <input
-      class="styled__Input-ms4xi4-0 cMqlpT"
+      class="styled__Input-ms4xi4-0 fbXGEM"
     />
   </div>
   <p
@@ -29,7 +29,7 @@ exports[`<Input /> Should render without error and match the snapshot 1`] = `
   class="field"
 >
   <label
-    class="styled__StyledLabel-oaisvy-0 gJTorn"
+    class="styled__StyledLabel-oaisvy-0 fCsvBu"
   >
     Label
   </label>
@@ -37,7 +37,7 @@ exports[`<Input /> Should render without error and match the snapshot 1`] = `
     class="control"
   >
     <input
-      class="styled__Input-ms4xi4-0 cMqlpT"
+      class="styled__Input-ms4xi4-0 fbXGEM"
     />
   </div>
 </div>

@@ -24,7 +24,6 @@ export const Container = styled.div`
 `
 export const TextChatHeader = styled.div`
   background: ${Colors.athensGrayLight};
-
   border-bottom: 1px solid ${Colors.nobel};
   display: flex;
   font-weight: bold;
