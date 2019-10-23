@@ -2,7 +2,7 @@
 
 exports[`<Sidebar /> Should render and match the snapshot 1`] = `
 <div
-  class="styled__Container-sc-1etlmco-0 dMzpuT"
+  class="styled__Container-sc-1etlmco-0 cDmsXm"
 >
   <div
     class="styled__HamburgerMenu-sc-1etlmco-1 kFoaQf"

@@ -11,15 +11,15 @@ export const TabsContainer = styled.div`
   width: 45vw;
   margin-right: 25px;
   .react-tabs__tab-list {
-    border-bottom: 1px solid ${Colors.nobel};
+    border-bottom: 1px solid ${Colors.edward};
   }
   .react-tabs__tab {
     padding: 6px 25px;
   }
   .react-tabs__tab--selected {
-    border: 1px solid ${Colors.nobel};
+    border: 1px solid ${Colors.edward};
     border-bottom: 1px solid transparent;
     font-weight: bold;
-    color: ${Colors.blueRibbon};
+    color: ${Colors.ecstasy};
   }
 `

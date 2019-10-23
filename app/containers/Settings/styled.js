@@ -26,7 +26,8 @@ export const Container = styled.div`
 export const ContentWrapper = styled.div`
   margin: 30px;
   width: 100%;
-  background: ${Colors.athensGrayLight};
+  background: ${Colors.concrete};
+  border-radius: 5px;
 `
 
 export const Header = styled.div`

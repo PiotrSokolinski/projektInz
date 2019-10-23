@@ -5,7 +5,7 @@ import Button from 'components/Button'
 import { Colors } from 'themes'
 
 export const AttachmentIcon = styled(Attachment)`
-  color: ${Colors.blueRibbon};
+  color: ${Colors.ecstasy};
   margin: 0 15px;
   cursor: pointer;
 `
@@ -16,15 +16,15 @@ export const SendButton = styled(Button)`
 `
 
 export const Container = styled.div`
-  border: 1px solid ${Colors.nobel};
+  border: 1px solid ${Colors.edward};
   margin-top: 20px;
   width: 45vw;
   display: flex;
   flex-direction: column;
 `
 export const TextChatHeader = styled.div`
-  background: ${Colors.athensGrayLight};
-  border-bottom: 1px solid ${Colors.nobel};
+  background: ${Colors.concrete};
+  border-bottom: 1px solid ${Colors.edward};
   display: flex;
   font-weight: bold;
   align-items: center;
@@ -38,9 +38,8 @@ export const Header = styled.div`
 `
 
 export const TextChatFooter = styled.div`
-  background: ${Colors.athensGrayLight};
-
-  border-top: 1px solid ${Colors.nobel};
+  background: ${Colors.concrete};
+  border-top: 1px solid ${Colors.edward};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +62,7 @@ export const AvatarContainer = styled.div`
 export const TextArea = styled(Textarea)`
   background: ${Colors.white};
   border-radius: 100px;
-  border: 1px solid ${Colors.nobel};
+  border: 1px solid ${Colors.edward};
   font-size: 13px;
   padding: 10px 20px;
   resize: none;
@@ -75,6 +74,6 @@ export const DayInformation = styled.div`
   display: flex;
   justify-content: center;
   font-weight: bold;
-  color: ${Colors.blueRibbon};
+  color: ${Colors.ecstasy};
   margin-top: 5px;
 `

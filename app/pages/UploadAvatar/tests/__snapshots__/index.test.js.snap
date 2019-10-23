@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadAvatarPage /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Wrapper-sc-1epazq9-0 fZEgli"
+>
+  <div
+    class="styled__Container-sc-1epazq9-2 cjtIvt"
+  >
+    <div
+      class="styled__Header-sc-1epazq9-3 cmdsgJ"
+    >
+      <span>
+        Welcome to Housier, please upload your photo.
+      </span>
+    </div>
+    <input
+      accept="image/*"
+      autocomplete="off"
+      style="display: none;"
+      tabindex="-1"
+      type="file"
+    />
+    <div
+      class="styled__Avatar-sc-1epazq9-1 hfLiFD"
+    >
+      <div
+        class="large styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+    <div
+      class="styled__ButtonsContainer-sc-1epazq9-6 gTfgqq"
+    >
+      <button
+        class="styled__Button-sc-1epazq9-5 lgEePc styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+      >
+        <span>
+          Upload Photo
+        </span>
+      </button>
+    </div>
+    <a
+      class="styled__SkipLink-sc-1epazq9-4 jKOMK"
+      href="/"
+    >
+      <span>
+        Skip for now
+      </span>
+    </a>
+  </div>
+</div>
+`;

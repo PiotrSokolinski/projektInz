@@ -2,10 +2,10 @@
 
 exports[`<TextChat /> Should render and match the snapshot 1`] = `
 <div
-  class="styled__Container-laciss-2 ffZdcs"
+  class="styled__Container-laciss-2 cccwVt"
 >
   <div
-    class="styled__TextChatHeader-laciss-3 jyyxCZ"
+    class="styled__TextChatHeader-laciss-3 grwLJx"
   >
     <div
       class="styled__Header-laciss-4 dVJEuL"
@@ -59,7 +59,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
     class="styled__TextChatBody-laciss-6 kcpCJR"
   >
     <div
-      class="styled__DayInformation-laciss-9 fWweLp"
+      class="styled__DayInformation-laciss-9 eAzLCE"
     >
       Tusday, 28.10.2019
     </div>
@@ -76,7 +76,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -145,7 +145,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -168,7 +168,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -237,7 +237,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -260,7 +260,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -329,7 +329,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -352,7 +352,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -421,7 +421,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -444,7 +444,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -513,7 +513,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -536,7 +536,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -605,7 +605,7 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__MessageCloud-lr2zll-1 drMwnc"
+        class="styled__MessageCloud-lr2zll-1 bemiEo"
       >
         Message
       </div>
@@ -617,17 +617,17 @@ exports[`<TextChat /> Should render and match the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="styled__TextChatFooter-laciss-5 cnAoYg"
+    class="styled__TextChatFooter-laciss-5 eOHjUx"
   >
     <textarea
-      class="styled__TextArea-laciss-8 exIibG"
+      class="styled__TextArea-laciss-8 kCuZhC"
       placeholder="Start typing..."
       spellcheck="false"
       style="height: 0px;"
     />
     <svg
       aria-hidden="true"
-      class="styled__AttachmentIcon-laciss-0 fRuilz StyledIconBase-sc-bdy9j4 jbPeIR"
+      class="styled__AttachmentIcon-laciss-0 iptRoQ StyledIconBase-sc-bdy9j4 jbPeIR"
       fill="currentColor"
       focusable="false"
       height="25"

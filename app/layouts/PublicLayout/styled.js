@@ -7,7 +7,7 @@ export const Columns = styled(BulmaColumns)``
 export const Column = styled(BulmaColumns.Column)``
 
 export const LandingLeftSection = styled.div`
-  background: white;
+  background: ${Colors.white};
   height: 100vh;
   display: flex;
   align-items: center;
@@ -22,8 +22,8 @@ export const Container = styled.div`
   justify-content: center;
   overflow: auto;
   box-sizing: border-box;
-  border-left: 100px solid white;
-  border-bottom: 100px solid transparent;
-  border-top: 100px solid transparent;
+  border-left: 75px solid white;
+  border-bottom: 75px solid transparent;
+  border-top: 75px solid transparent;
 `
 export const Image = styled.img``

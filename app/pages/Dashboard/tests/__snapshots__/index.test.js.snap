@@ -5,7 +5,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
   class="styled__Container-sc-1ujewzl-0 jgheUl"
 >
   <div
-    class="styled__TabsContainer-sc-1ujewzl-1 iPfpio"
+    class="styled__TabsContainer-sc-1ujewzl-1 kepsTH"
   >
     <div
       class="react-tabs"
@@ -60,10 +60,10 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
         role="tabpanel"
       >
         <div
-          class="styled__Container-rz5z4n-0 knzFNx"
+          class="styled__Container-rz5z4n-0 kJiukX"
         >
           <div
-            class="styled__Container-tas46t-1 gkMLKc"
+            class="styled__Container-tas46t-1 jCWCTG"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -100,7 +100,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </div>
             <svg
               aria-hidden="true"
-              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              class="styled__Delete-tas46t-0 ftpdIp StyledIconBase-sc-bdy9j4 jbPeIR"
               fill="currentColor"
               focusable="false"
               height="22"
@@ -109,12 +109,12 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                d="M21 14h-6a1 1 0 110-2h6a1 1 0 110 2zm-7-5c0 1.381-.56 2.631-1.464 3.535C11.631 13.44 10.381 14 9 14s-2.631-.56-3.536-1.465C4.56 11.631 4 10.381 4 9s.56-2.631 1.464-3.535C6.369 4.56 7.619 4 9 4s2.631.56 3.536 1.465A4.984 4.984 0 0114 9zm-5 6c-3.75 0-6 2-6 4 0 1 2.25 2 6 2 3.518 0 6-1 6-2 0-2-2.354-4-6-4z"
               />
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 gkMLKc"
+            class="styled__Container-tas46t-1 jCWCTG"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -151,7 +151,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </div>
             <svg
               aria-hidden="true"
-              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              class="styled__Delete-tas46t-0 ftpdIp StyledIconBase-sc-bdy9j4 jbPeIR"
               fill="currentColor"
               focusable="false"
               height="22"
@@ -160,12 +160,12 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                d="M21 14h-6a1 1 0 110-2h6a1 1 0 110 2zm-7-5c0 1.381-.56 2.631-1.464 3.535C11.631 13.44 10.381 14 9 14s-2.631-.56-3.536-1.465C4.56 11.631 4 10.381 4 9s.56-2.631 1.464-3.535C6.369 4.56 7.619 4 9 4s2.631.56 3.536 1.465A4.984 4.984 0 0114 9zm-5 6c-3.75 0-6 2-6 4 0 1 2.25 2 6 2 3.518 0 6-1 6-2 0-2-2.354-4-6-4z"
               />
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 gkMLKc"
+            class="styled__Container-tas46t-1 jCWCTG"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -202,7 +202,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </div>
             <svg
               aria-hidden="true"
-              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              class="styled__Delete-tas46t-0 ftpdIp StyledIconBase-sc-bdy9j4 jbPeIR"
               fill="currentColor"
               focusable="false"
               height="22"
@@ -211,12 +211,12 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                d="M21 14h-6a1 1 0 110-2h6a1 1 0 110 2zm-7-5c0 1.381-.56 2.631-1.464 3.535C11.631 13.44 10.381 14 9 14s-2.631-.56-3.536-1.465C4.56 11.631 4 10.381 4 9s.56-2.631 1.464-3.535C6.369 4.56 7.619 4 9 4s2.631.56 3.536 1.465A4.984 4.984 0 0114 9zm-5 6c-3.75 0-6 2-6 4 0 1 2.25 2 6 2 3.518 0 6-1 6-2 0-2-2.354-4-6-4z"
               />
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 gkMLKc"
+            class="styled__Container-tas46t-1 jCWCTG"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -253,7 +253,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </div>
             <svg
               aria-hidden="true"
-              class="styled__Dots-tas46t-0 cKdgDu StyledIconBase-sc-bdy9j4 jbPeIR"
+              class="styled__Delete-tas46t-0 ftpdIp StyledIconBase-sc-bdy9j4 jbPeIR"
               fill="currentColor"
               focusable="false"
               height="22"
@@ -262,7 +262,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                d="M21 14h-6a1 1 0 110-2h6a1 1 0 110 2zm-7-5c0 1.381-.56 2.631-1.464 3.535C11.631 13.44 10.381 14 9 14s-2.631-.56-3.536-1.465C4.56 11.631 4 10.381 4 9s.56-2.631 1.464-3.535C6.369 4.56 7.619 4 9 4s2.631.56 3.536 1.465A4.984 4.984 0 0114 9zm-5 6c-3.75 0-6 2-6 4 0 1 2.25 2 6 2 3.518 0 6-1 6-2 0-2-2.354-4-6-4z"
               />
             </svg>
           </div>
@@ -283,10 +283,10 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="styled__Container-laciss-2 ffZdcs"
+    class="styled__Container-laciss-2 cccwVt"
   >
     <div
-      class="styled__TextChatHeader-laciss-3 jyyxCZ"
+      class="styled__TextChatHeader-laciss-3 grwLJx"
     >
       <div
         class="styled__Header-laciss-4 dVJEuL"
@@ -340,7 +340,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
       class="styled__TextChatBody-laciss-6 kcpCJR"
     >
       <div
-        class="styled__DayInformation-laciss-9 fWweLp"
+        class="styled__DayInformation-laciss-9 eAzLCE"
       >
         Tusday, 28.10.2019
       </div>
@@ -357,7 +357,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -426,7 +426,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -449,7 +449,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -518,7 +518,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -541,7 +541,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -610,7 +610,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -633,7 +633,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -702,7 +702,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -725,7 +725,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -794,7 +794,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -817,7 +817,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -886,7 +886,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
           />
         </div>
         <div
-          class="styled__MessageCloud-lr2zll-1 drMwnc"
+          class="styled__MessageCloud-lr2zll-1 bemiEo"
         >
           Message
         </div>
@@ -898,17 +898,17 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="styled__TextChatFooter-laciss-5 cnAoYg"
+      class="styled__TextChatFooter-laciss-5 eOHjUx"
     >
       <textarea
-        class="styled__TextArea-laciss-8 exIibG"
+        class="styled__TextArea-laciss-8 kCuZhC"
         placeholder="Start typing..."
         spellcheck="false"
         style="height: 0px;"
       />
       <svg
         aria-hidden="true"
-        class="styled__AttachmentIcon-laciss-0 fRuilz StyledIconBase-sc-bdy9j4 jbPeIR"
+        class="styled__AttachmentIcon-laciss-0 iptRoQ StyledIconBase-sc-bdy9j4 jbPeIR"
         fill="currentColor"
         focusable="false"
         height="25"

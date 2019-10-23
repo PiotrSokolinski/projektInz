@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 import { Colors } from 'themes'
-import { DotsHorizontalRounded } from 'styled-icons/boxicons-regular/DotsHorizontalRounded'
+import { UserDelete } from 'styled-icons/typicons/UserDelete'
 
-export const Dots = styled(DotsHorizontalRounded)`
+export const Delete = styled(UserDelete)`
   margin-right: 15px;
   cursor: pointer;
+  color: ${Colors.ecstasy};
 `
 
 export const Container = styled.div`
-  border: 1px solid ${Colors.silverChalice};
+  border: 1px solid ${Colors.edward};
   border-radius: 15px;
   background: ${Colors.white};
   margin: 15px 10px;

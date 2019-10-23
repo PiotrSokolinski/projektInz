@@ -14,8 +14,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-  border-right: 1px solid ${Colors.silverChalice};
-  background: ${Colors.aquaHaze};
+  border-right: 1px solid ${Colors.edward};
+  background: ${Colors.concrete};
   a:first-of-type {
     margin-top: 25px;
   }

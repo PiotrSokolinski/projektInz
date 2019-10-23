@@ -13,4 +13,12 @@ export default defineMessages({
     id: `${scope}.tel`,
     defaultMessage: 'Tel. ',
   },
+  modalTitle: {
+    id: `${scope}.modalTitle`,
+    defaultMessage: 'Are you sure you want to delete John?',
+  },
+  modalDescription: {
+    id: `${scope}.modalDescription`,
+    defaultMessage: 'You have to confirm deletion of the John.',
+  },
 })

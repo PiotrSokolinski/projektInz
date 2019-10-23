@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> Should render and match the snapshot 1`] = `
+<div
+  class="field"
+>
+  <label
+    class="styled__StyledLabel-oaisvy-0 fCsvBu"
+  >
+    Label
+  </label>
+  <div
+    class="control"
+  >
+    <textarea
+      class="styled__TextArea-sc-1u3hlpt-0 dCvwWm"
+    />
+  </div>
+</div>
+`;

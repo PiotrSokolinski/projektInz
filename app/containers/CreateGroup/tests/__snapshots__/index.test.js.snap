@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateGroup /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-86b866-0 kWKTt"
+>
+  <div
+    class="styled__FormContainer-sc-86b866-2 kGFCfi"
+  >
+    <div
+      class="styled__UploadAvatar-sc-86b866-1 eSzXW"
+    >
+      <input
+        accept="image/*"
+        autocomplete="off"
+        style="display: none;"
+        tabindex="-1"
+        type="file"
+      />
+      <div
+        class="big styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <button
+        class="styled__UploadButton-sc-86b866-4 rDlnv styled__StyledButton-sc-1gb27vo-0 kximKa"
+        type="button"
+      >
+        <span>
+          Upload group's photo
+        </span>
+      </button>
+    </div>
+    <div
+      class="styled__InputsContainer-sc-86b866-3 ixdCMb"
+    >
+      <div
+        class="field"
+        id="groupNameField"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Group name
+        </label>
+        <div
+          class="control"
+        >
+          <input
+            class="styled__Input-ms4xi4-0 jirwCh"
+            name="name"
+            placeholder="Type a group name"
+            type="text"
+            value=""
+          />
+        </div>
+        
+      </div>
+      <div
+        class="styled__AddressWrapper-sc-86b866-6 eoyyLB"
+      >
+        <div
+          class="styled__AddressInputContainer-sc-86b866-7 clwutD"
+        >
+          <div
+            class="field"
+            id="addressField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              Address
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 jirwCh"
+                name="address"
+                placeholder="Type an address"
+                type="text"
+                value=""
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div
+          class="styled__ApartmentNumberInput-sc-86b866-8 dRikUe"
+        >
+          <div
+            class="field"
+            id="apartmentNumberField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              Number
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 jirwCh"
+                name="apartmentNumber"
+                placeholder="e.g 27"
+                type="text"
+                value=""
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__CodeAndCityContainer-sc-86b866-9 ggCzzT"
+      >
+        <div
+          class="styled__ZipCodeContainer-sc-86b866-11 kfWEOg"
+        >
+          <div
+            class="field"
+            id="zipCodeField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              Zip Code
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 jirwCh"
+                min="0"
+                name="zipCode"
+                placeholder="XX-XXX"
+                type="number"
+                value=""
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div
+          class="styled__CityInputContainer-sc-86b866-10 esNRIK"
+        >
+          <div
+            class="field"
+            id="cityField"
+          >
+            <label
+              class="styled__StyledLabel-oaisvy-0 fCsvBu"
+            >
+              City
+            </label>
+            <div
+              class="control"
+            >
+              <input
+                class="styled__Input-ms4xi4-0 jirwCh"
+                name="city"
+                placeholder="Type a city"
+                type="text"
+                value=""
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div
+        class="field"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Country
+        </label>
+        <div
+          class="react-select css-2b097c-container"
+        >
+          <div
+            class="select__control css-1288s75-control"
+          >
+            <div
+              class="select__value-container css-1hwfws3"
+            >
+              <div
+                class="select__placeholder css-1wa3eu0-placeholder"
+              >
+                Select a country...
+              </div>
+              <div
+                class="css-1g6gooi"
+              >
+                <div
+                  class="select__input"
+                  style="display: inline-block;"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    autocorrect="off"
+                    id="react-select-3-input"
+                    spellcheck="false"
+                    style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                    tabindex="0"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="select__indicators css-1wy0on6"
+            >
+              <span
+                class="select__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-19bqh2r"
+                  focusable="false"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  width="20"
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <input
+            name="countryField"
+            type="hidden"
+            value=""
+          />
+        </div>
+        
+      </div>
+    </div>
+    <button
+      class="styled__SubmitButton-sc-86b866-5 QChvN styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+      type="submit"
+    >
+      <span>
+        Create a new group
+      </span>
+    </button>
+  </div>
+</div>
+`;

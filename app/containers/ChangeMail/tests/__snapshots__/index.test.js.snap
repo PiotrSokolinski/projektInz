@@ -14,7 +14,7 @@ exports[`<ChangeMail /> Should render and match the snapshot 1`] = `
     class="control"
   >
     <input
-      class="styled__Input-ms4xi4-0 fbXGEM"
+      class="styled__Input-ms4xi4-0 jirwCh"
       name="email"
       type="password"
       value=""

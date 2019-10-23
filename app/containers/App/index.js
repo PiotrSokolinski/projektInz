@@ -8,7 +8,9 @@ import AvatarPage from 'pages/Avatar/Loadable'
 import SettingsPage from 'pages/Settings/Loadable'
 import CalendarPage from 'pages/Calendar/Loadable'
 import TasksPage from 'pages/Tasks/Loadable'
+import CreateGroupPage from 'pages/CreateGroup/Loadable'
 import PasswordResetPage from 'pages/PasswordReset/Loadable'
+import UploadAvatarPage from 'pages/UploadAvatar/Loadable'
 import PublicLayout from 'layouts/PublicLayout'
 import PrivateRoute from 'layouts/PrivateRoute'
 import PrivateLayout from 'layouts/PrivateLayout'
@@ -51,6 +53,8 @@ const App = () => (
       />
     ))}
     <PrivateRoute exact path="/" component={DashboardPage} wrapper={PrivateLayout} />
+    <PrivateRoute exact path="/create-group" component={CreateGroupPage} wrapper={PublicLayout} />
+    <PrivateRoute exact path="/upload-avatar" component={UploadAvatarPage} wrapper={PublicLayout} />
     <PrivateRoute exact path="/settings" component={SettingsPage} wrapper={PrivateLayout} />
     <PrivateRoute exact path="/tasks" component={TasksPage} wrapper={PrivateLayout} />
     <PrivateRoute exact path="/calendar" component={CalendarPage} wrapper={PrivateLayout} />

@@ -5,7 +5,7 @@ exports[`<Settings /> Should render and match the snapshot 1`] = `
   class="styled__Container-sc-170ur6l-3 ijqVZF"
 >
   <div
-    class="styled__ContentWrapper-sc-170ur6l-4 eSuOxk"
+    class="styled__ContentWrapper-sc-170ur6l-4 gfeprs"
   >
     <div
       class="styled__Header-sc-170ur6l-5 hoXskc"
@@ -64,7 +64,7 @@ exports[`<Settings /> Should render and match the snapshot 1`] = `
               class="control"
             >
               <input
-                class="styled__Input-ms4xi4-0 cUZedP"
+                class="styled__Input-ms4xi4-0 dxWdyE"
                 disabled=""
                 name="firstName"
                 type="text"
@@ -86,7 +86,7 @@ exports[`<Settings /> Should render and match the snapshot 1`] = `
               class="control"
             >
               <input
-                class="styled__Input-ms4xi4-0 cUZedP"
+                class="styled__Input-ms4xi4-0 dxWdyE"
                 disabled=""
                 name="lastName"
                 type="text"
@@ -108,7 +108,7 @@ exports[`<Settings /> Should render and match the snapshot 1`] = `
               class="control"
             >
               <input
-                class="styled__Input-ms4xi4-0 cUZedP"
+                class="styled__Input-ms4xi4-0 dxWdyE"
                 disabled=""
                 name="nick"
                 type="text"

@@ -11,10 +11,10 @@ export const Input = styled.input`
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.02em;
-  border: 1px solid ${Colors.silverChalice};
+  border: 1px solid ${Colors.edward};
   box-sizing: border-box;
   outline: none;
-  ${props => props.disabled && `background: ${Colors.silverChalice};`}
+  ${props => props.disabled && `background: ${Colors.alto};`}
 `
 
 export const Image = styled.img`

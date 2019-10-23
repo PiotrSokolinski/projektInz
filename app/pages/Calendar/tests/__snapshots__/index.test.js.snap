@@ -1,9 +1,1197 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarPage /> Should render and match the snapshot 1`] = `
-<div>
-  <span>
-    This is the Calendar container!
-  </span>
+<div
+  class="styled__Container-sc-73hcgs-0 hbesej"
+>
+  <svg
+    aria-hidden="true"
+    class="styled__LeftArrow-sc-73hcgs-8 AZiC StyledIconBase-sc-bdy9j4 jbPeIR"
+    fill="currentColor"
+    focusable="false"
+    height="30"
+    viewBox="0 0 24 24"
+    width="30"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-5v4l-5-5 5-5v4h5v2z"
+    />
+  </svg>
+  <div
+    class="styled__CalendarContainer-sc-73hcgs-1 kWbvcr"
+  >
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        21.10.19
+         
+        <span>
+          Monday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        22.10.19
+         
+        <span>
+          Tuesday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        23.10.19
+         
+        <span>
+          Wednesday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        24.10.19
+         
+        <span>
+          Thursday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        25.10.19
+         
+        <span>
+          Friday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        26.10.19
+         
+        <span>
+          Saturday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+    <div
+      class="styled__CalendarDay-sc-73hcgs-2 ilqHLB"
+    >
+      <div
+        class="styled__DayName-sc-73hcgs-3 kaTKue"
+      >
+        27.10.19
+         
+        <span>
+          Sunday
+        </span>
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        0
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        1
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        2
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        3
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        4
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        5
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        6
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        7
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        8
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        9
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        10
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        11
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        12
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        13
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        14
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        15
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        16
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        17
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        18
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        19
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        20
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        21
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        22
+        :00
+      </div>
+      <div
+        class="styled__CalendarHour-sc-73hcgs-4 cwCFII"
+      >
+        23
+        :00
+      </div>
+    </div>
+  </div>
+  <div
+    class="styled__CalendarOptionsContainer-sc-73hcgs-10 gbUrJw"
+  >
+    <svg
+      aria-hidden="true"
+      class="styled__RightArrow-sc-73hcgs-9 ivlzeY StyledIconBase-sc-bdy9j4 jbPeIR"
+      fill="currentColor"
+      focusable="false"
+      height="30"
+      viewBox="0 0 24 24"
+      width="30"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 15v-4H7v-2h5V7l5 5-5 5z"
+      />
+    </svg>
+    <div
+      class="styled__ActionsContainer-sc-73hcgs-5 dBreAa"
+    >
+      <div
+        class="styled__Action-sc-73hcgs-6 iRWOtc"
+      >
+        <div
+          class="styled__ActionTitle-sc-73hcgs-12 ebOnzd"
+        >
+          <span>
+            Add Event
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="styled__AddEvent-sc-73hcgs-7 hOaoru StyledIconBase-sc-bdy9j4 jbPeIR"
+          fill="currentColor"
+          focusable="false"
+          height="50"
+          viewBox="0 0 24 24"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm11-6h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zM5 7h14v2H5V7z"
+          />
+        </svg>
+      </div>
+      <div
+        class="styled__Action-sc-73hcgs-6 iRWOtc"
+      >
+        <div
+          class="styled__ActionTitle-sc-73hcgs-12 ebOnzd"
+        >
+          <span>
+            Change date
+          </span>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="styled__ChangeDate-sc-73hcgs-11 jGHBjF StyledIconBase-sc-bdy9j4 jbPeIR"
+          fill="currentColor"
+          focusable="false"
+          height="40"
+          viewBox="0 0 16 16"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 6h2v2H5zm3 0h2v2H8zm3 0h2v2h-2zm-9 6h2v2H2zm3 0h2v2H5zm3 0h2v2H8zM5 9h2v2H5zm3 0h2v2H8zm3 0h2v2h-2zM2 9h2v2H2zm11-9v1h-2V0H4v1H2V0H0v16h15V0h-2zm1 15H1V4h13v11z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
 </div>
 `;
