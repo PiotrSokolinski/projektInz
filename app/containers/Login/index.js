@@ -5,18 +5,20 @@
  */
 
 import React from 'react'
+import * as Yup from 'yup'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
-import * as Yup from 'yup'
 import { Formik } from 'formik'
+
 import Button from 'components/Button'
 import PublicInput from 'components/PublicInput'
+
 import messages from './messages'
 import * as Styled from './styled'
 
 const initialValues = { email: '', password: '' }
 
-const validationSchema = ({ intl }) =>
+const validationSchema = intl =>
   Yup.object().shape({
     email: Yup.string()
       .email(intl.formatMessage(messages.emailInvalidError))
@@ -37,7 +39,7 @@ const Login = ({ intl, history }) => {
             <FormattedMessage {...messages.header} />
           </Styled.Header>
         </Styled.HeaderContainer>
-        <Formik onSubmit={submitLoginForm} initialValues={initialValues} validationSchema={validationSchema({ intl })}>
+        <Formik onSubmit={submitLoginForm} initialValues={initialValues} validationSchema={validationSchema(intl)}>
           {({ errors, touched, values, handleChange, handleBlur, handleSubmit }) => (
             <form autoComplete="off">
               <PublicInput

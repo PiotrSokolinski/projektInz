@@ -35,6 +35,8 @@ const MemberTile = ({ member: { avatarUrl, firstName, lastName, number }, intl }
       </Styled.InfoWrapper>
       <Styled.Delete size="22" onClick={openModal} />
       <ConfirmationBox
+        avatarUrl={avatarUrl}
+        name={`${firstName} ${lastName}`}
         title={intl.formatMessage(messages.modalTitle)}
         description={intl.formatMessage(messages.modalDescription)}
         visible={isModalVisible}

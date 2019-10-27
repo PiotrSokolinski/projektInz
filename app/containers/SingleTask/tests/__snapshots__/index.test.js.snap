@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleTask /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__SingleTaskContainer-phousv-2 sZbZA"
+>
+  <div
+    class="styled__InfoContainer-phousv-3 eHHDhm"
+  >
+    <div
+      class="styled__TaskName-phousv-4 bupyFw"
+    >
+      <span>
+        Name: Task Name
+      </span>
+    </div>
+    <div
+      class="styled__Status-phousv-5 dShLoI"
+    >
+      <span>
+        Status:
+      </span>
+      <div
+        class="styled__Dot-phousv-6 hLLxni"
+      />
+      Done
+    </div>
+  </div>
+  <div
+    class="styled__InfoContainer-phousv-3 eHHDhm"
+  >
+    <div
+      class="styled__PersonContainer-phousv-7 cVJQRW"
+    >
+      <div
+        class="styled__FullNameContainer-phousv-8 jvNBev"
+      >
+        <span>
+          Author: John Doe
+        </span>
+      </div>
+      <div
+        class="tiny styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+    <div
+      class="styled__PersonContainer-phousv-7 cVJQRW"
+    >
+      <div
+        class="styled__FullNameContainer-phousv-8 jvNBev"
+      >
+        <span>
+          Assignee: John Doe
+        </span>
+      </div>
+      <div
+        class="tiny styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="styled__ShowMoreContainer-phousv-9 flzkyG"
+  >
+    <div
+      class="styled__ShowMoreButton-phousv-10 fQaDDG"
+    >
+      <span>
+        Show more...
+      </span>
+      <svg
+        aria-hidden="true"
+        class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+        fill="currentColor"
+        focusable="false"
+        height="22"
+        viewBox="0 0 24 24"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

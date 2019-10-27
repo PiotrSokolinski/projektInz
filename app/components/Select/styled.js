@@ -31,6 +31,20 @@ export const customStyles = {
   menuPortal: base => ({ ...base, zIndex: 9999 }),
 }
 
+export const customStylesWithoutElements = {
+  control: provided => ({
+    ...provided,
+    borderWidth: '0',
+    boxShadow: '0',
+    border: `none`,
+    color: `${Colors.black}`,
+    '&:hover': {
+      borderColor: `transparent`,
+    },
+  }),
+  menuPortal: base => ({ ...base, zIndex: 9999 }),
+}
+
 export const Image = styled.img`
   position: relative;
   top: 2px;

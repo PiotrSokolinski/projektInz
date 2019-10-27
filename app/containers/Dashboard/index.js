@@ -10,13 +10,14 @@ import { FormattedMessage } from 'react-intl'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 
+import CurrentGroupTasks from 'containers/CurrentGroupTasks'
+import EventInformation from 'components/EventInformation'
 import InformationTile from 'components/InformationTile'
-import TextChat from 'containers/TextChat'
 import MembersList from 'containers/MembersList'
-import UserAvatar from 'components/UserAvatar'
 import Modal from 'components/Modal'
 import TaskInformation from 'components/TaskInformation'
-import EventInformation from 'components/EventInformation'
+import TextChat from 'containers/TextChat'
+import UserAvatar from 'components/UserAvatar'
 
 import messages from './messages'
 import * as Styled from './styled'
@@ -53,12 +54,23 @@ const Dashboard = () => {
             <InformationTile icon={Styled.TaskIcon} onOpen={openModalTask} />
             <InformationTile icon={Styled.EventAvailableIcon} onOpen={openModalEvent} />
           </TabPanel>
-          <TabPanel>Content 2</TabPanel>
+          <TabPanel>
+            <CurrentGroupTasks />
+          </TabPanel>
           <TabPanel>Content 3</TabPanel>
         </Tabs>
       </Styled.TabsContainer>
       <TextChat />
-      <Modal visible={isModalTaskVisible} title="Title of the task" onClose={closeModalTask}>
+      <Modal
+        visible={isModalTaskVisible}
+        title={
+          <Styled.ModalTitleContainer>
+            Title of the task
+            <Styled.Arrow size="35" priority="High" />
+          </Styled.ModalTitleContainer>
+        }
+        onClose={closeModalTask}
+      >
         <TaskInformation />
       </Modal>
       <Modal visible={isModalEventVisible} title="Title of the event" onClose={closeModalEvent}>

@@ -122,7 +122,7 @@ Modal.propTypes = {
   description: PropTypes.string,
   maxWidth: PropTypes.number,
   onClose: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   visible: PropTypes.bool,
 }
 

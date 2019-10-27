@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 import { Tasks } from 'styled-icons/fa-solid/Tasks'
 import { EventAvailable } from 'styled-icons/material/EventAvailable'
+import { ArrowUp } from 'styled-icons/feather/ArrowUp'
+
 import { Colors } from 'themes'
 
 export const TaskIcon = styled(Tasks)`
@@ -44,4 +46,41 @@ export const GroupName = styled.div`
   font-size: 19px;
   font-weight: bold;
   margin-left: 20px;
+`
+
+const getArrowPosition = props => {
+  switch (props.priority) {
+    case 'High':
+      return ''
+    case 'Medium':
+      return 'rotate(-90deg)'
+    case 'Low':
+      return 'rotate(-180deg)'
+    default:
+      return ''
+  }
+}
+
+const getArrowColor = props => {
+  switch (props.priority) {
+    case 'High':
+      return 'red'
+    case 'Medium':
+      return 'orange'
+    case 'Low':
+      return 'green'
+    default:
+      return 'red'
+  }
+}
+
+export const Arrow = styled(ArrowUp)`
+  margin-left: 8px;
+  transform: ${props => getArrowPosition(props)};
+  color: ${props => getArrowColor(props)};
+`
+
+export const ModalTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
 `

@@ -7,7 +7,7 @@ export const TextArea = styled.textarea`
   width: 100%;
   border: 1px solid ${Colors.silverChalice};
   border-radius: 5px;
-  height: 100px;
+  height: 150px;
   padding: 10px 15px;
   font-size: 15px;
   line-height: 140%;

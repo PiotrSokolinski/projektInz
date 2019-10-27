@@ -19,7 +19,7 @@ exports[`<ConfirmationBox /> Should render and match the snapshot 1`] = `
         <h1
           class="modal-title styled__Title-sc-1gkpoto-4 kvaykP"
         >
-          Title
+          Title Name?
         </h1>
         <h3
           class="styled__Description-sc-1gkpoto-5 jbdhCY"
@@ -52,7 +52,10 @@ exports[`<ConfirmationBox /> Should render and match the snapshot 1`] = `
         >
           <div
             class="styled__Title-kv2xcc-1 caoTAC"
-          />
+          >
+            Name
+            .
+          </div>
           <div
             class="middle styled__Container-vinm4t-0 gDIJTt"
           >

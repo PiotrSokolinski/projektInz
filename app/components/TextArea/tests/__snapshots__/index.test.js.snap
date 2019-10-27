@@ -13,7 +13,7 @@ exports[`<TextArea /> Should render and match the snapshot 1`] = `
     class="control"
   >
     <textarea
-      class="styled__TextArea-sc-1u3hlpt-0 dCvwWm"
+      class="styled__TextArea-sc-1u3hlpt-0 fDkCgw"
     />
   </div>
 </div>

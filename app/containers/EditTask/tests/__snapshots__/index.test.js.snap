@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditTask /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-10buivu-1 cqjkaE"
+>
+  <div
+    class="styled__Wrapper-sc-10buivu-2 fBkSiJ"
+  >
+    <div
+      class="field"
+      id="taskNameField"
+    >
+      <label
+        class="styled__StyledLabel-oaisvy-0 fCsvBu"
+      >
+        Task name
+      </label>
+      <div
+        class="control"
+      >
+        <input
+          class="styled__Input-ms4xi4-0 jirwCh"
+          name="taskName"
+          placeholder="Type the task name"
+          type="text"
+          value="Task Name"
+        />
+      </div>
+      
+    </div>
+    <div
+      class="field"
+      id="taskDescriptionField"
+    >
+      <label
+        class="styled__StyledLabel-oaisvy-0 fCsvBu"
+      >
+        Description
+      </label>
+      <div
+        class="control"
+      >
+        <textarea
+          class="styled__TextArea-sc-1u3hlpt-0 fDkCgw"
+          name="taskDescription"
+          placeholder="Type the task description"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </textarea>
+      </div>
+    </div>
+    <div
+      class="field styled__SelectDropdown-sc-10buivu-5 bTmljo"
+      id="assigneeSelect"
+    >
+      <label
+        class="styled__StyledLabel-oaisvy-0 fCsvBu"
+      >
+        Assignee
+      </label>
+      <div
+        class="react-select css-2b097c-container"
+      >
+        <div
+          class="select__control css-1288s75-control"
+        >
+          <div
+            class="select__value-container select__value-container--has-value css-1hwfws3"
+          >
+            <div
+              class="select__single-value css-1uccc91-singleValue"
+            >
+              <div
+                class="styled__LabelContainer-sc-10buivu-7 jJKqYz"
+              >
+                <div
+                  class="styled__SelectName-sc-10buivu-10 iBvtMW"
+                >
+                  John
+                </div>
+                <div
+                  class="tiny styled__Container-vinm4t-0 gDIJTt"
+                >
+                  <img
+                    alt="avatar"
+                    class="avatar-image"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+              </div>
+            </div>
+            <input
+              class="css-62g3xt-dummyInput"
+              id="react-select-5-input"
+              readonly=""
+              tabindex="0"
+              value=""
+            />
+          </div>
+          <div
+            class="select__indicators css-1wy0on6"
+          >
+            <span
+              class="select__indicator-separator css-1okebmr-indicatorSeparator"
+            />
+            <div
+              aria-hidden="true"
+              class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-19bqh2r"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <input
+          name="assignee"
+          type="hidden"
+          value="John"
+        />
+      </div>
+      
+    </div>
+    <div
+      class="styled__SelectsContainer-sc-10buivu-4 fOwZEQ"
+    >
+      <div
+        class="field styled__SelectDropdown-sc-10buivu-5 bTmljo"
+        id="statusSelect"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Status
+        </label>
+        <div
+          class="react-select css-2b097c-container"
+        >
+          <div
+            class="select__control css-1288s75-control"
+          >
+            <div
+              class="select__value-container select__value-container--has-value css-1hwfws3"
+            >
+              <div
+                class="select__single-value css-1uccc91-singleValue"
+              >
+                <div
+                  class="styled__LabelContainer-sc-10buivu-7 jJKqYz"
+                >
+                  <div
+                    class="styled__Dot-sc-10buivu-8 ggTfWt"
+                    size="22"
+                  />
+                   Done
+                </div>
+              </div>
+              <input
+                class="css-62g3xt-dummyInput"
+                id="react-select-6-input"
+                readonly=""
+                tabindex="0"
+                value=""
+              />
+            </div>
+            <div
+              class="select__indicators css-1wy0on6"
+            >
+              <span
+                class="select__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-19bqh2r"
+                  focusable="false"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  width="20"
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <input
+            name="status"
+            type="hidden"
+            value="Done"
+          />
+        </div>
+        
+      </div>
+      <div
+        class="field styled__SelectDropdown-sc-10buivu-5 bTmljo"
+        id="prioritySelect"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Priority
+        </label>
+        <div
+          class="react-select css-2b097c-container"
+        >
+          <div
+            class="select__control css-1288s75-control"
+          >
+            <div
+              class="select__value-container select__value-container--has-value css-1hwfws3"
+            >
+              <div
+                class="select__single-value css-1uccc91-singleValue"
+              >
+                <div
+                  class="styled__LabelContainer-sc-10buivu-7 jJKqYz"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="styled__Arrow-sc-10buivu-6 eXZEHR StyledIconBase-sc-bdy9j4 jbPeIR"
+                    fill="none"
+                    focusable="false"
+                    height="22"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="12"
+                      x2="12"
+                      y1="19"
+                      y2="5"
+                    />
+                    <polyline
+                      points="5 12 12 5 19 12"
+                    />
+                  </svg>
+                   High
+                </div>
+              </div>
+              <input
+                class="css-62g3xt-dummyInput"
+                id="react-select-7-input"
+                readonly=""
+                tabindex="0"
+                value=""
+              />
+            </div>
+            <div
+              class="select__indicators css-1wy0on6"
+            >
+              <span
+                class="select__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-19bqh2r"
+                  focusable="false"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  width="20"
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <input
+            name="priority"
+            type="hidden"
+            value="High"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="styled__NonEditableInfo-sc-10buivu-9 iiYQHD"
+    >
+      <div
+        class="styled__InfoContainer-sc-10buivu-12 etDPXa"
+      >
+        <div
+          class="styled__FullNameContainer-sc-10buivu-11 diqocm"
+        >
+          <span>
+            Author: John Doe
+          </span>
+        </div>
+        <div
+          class="tiny styled__Container-vinm4t-0 gDIJTt"
+        >
+          <img
+            alt="avatar"
+            class="avatar-image"
+            src="IMAGE_MOCK"
+          />
+        </div>
+      </div>
+      <div
+        class="styled__InfoContainer-sc-10buivu-12 etDPXa"
+      >
+        <span>
+          Created at:
+        </span>
+        <div
+          class="styled__CreatedAt-sc-10buivu-13 imqzJw"
+        >
+          27/10/2019 20:36:45
+        </div>
+      </div>
+    </div>
+    <div
+      class="styled__ButtonContainer-sc-10buivu-0 ctuxKm"
+    >
+      <button
+        class="styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+        type="submit"
+      >
+        <span>
+          Save changes
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

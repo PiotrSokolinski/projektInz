@@ -10,7 +10,7 @@ import { Help, Field } from 'react-bulma-components/lib/components/form'
 import ReactSelect /* , { components } */ from 'react-select'
 // import get from 'lodash/get'
 import Label from '../Label'
-import { customStyles /* , Image */ } from './styled'
+import { customStyles, customStylesWithoutElements /* , Image */ } from './styled'
 
 const Select = ({
   backgroundColor,
@@ -22,34 +22,32 @@ const Select = ({
   className,
   id,
   insideModal,
+  withoutElements,
   ...restProps
-}) => (
-  // const customComponents = {
-  //   IndicatorSeparator: () => null,
-  //   DropdownIndicator: props => (
-  //     <components.DropdownIndicator {...props}>
-  //       <Image src={icon} isOpen={get(props, 'selectProps.menuIsOpen', false)} />
-  //     </components.DropdownIndicator>
-  //   ),
-  // }
-  <Field className={className} id={id}>
-    {label && <Label label={label} error={error} />}
-    {/* <SelectWrapper backgroundColor={backgroundColor} error={error}> */}
-    <ReactSelect
-      styles={customStyles}
-      // components={customComponents}
-      classNamePrefix="select"
-      className="react-select"
-      menuPortalTarget={insideModal && document.getElementById('modal-overlay')}
-      isDisabled={disabled}
-      {...selectProps}
-      {...restProps}
-    />
-    {/* </SelectWrapper> */}
-    {error && <Help color="danger">{error}</Help>}
-  </Field>
-)
-
+}) => {
+  const customComponents = {
+    IndicatorSeparator: () => null,
+    DropdownIndicator: () => null,
+  }
+  return (
+    <Field className={className} id={id}>
+      {label && <Label label={label} error={error} />}
+      {/* <SelectWrapper backgroundColor={backgroundColor} error={error}> */}
+      <ReactSelect
+        styles={withoutElements ? customStylesWithoutElements : customStyles}
+        components={withoutElements ? customComponents : null}
+        classNamePrefix="select"
+        className="react-select"
+        menuPortalTarget={insideModal && document.getElementById('modal-overlay')}
+        isDisabled={disabled}
+        {...selectProps}
+        {...restProps}
+      />
+      {/* </SelectWrapper> */}
+      {error && <Help color="danger">{error}</Help>}
+    </Field>
+  )
+}
 Select.propTypes = {
   label: PropTypes.string,
   selectProps: PropTypes.shape({
@@ -64,6 +62,7 @@ Select.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   insideModal: PropTypes.bool,
+  withoutElements: PropTypes.bool,
 }
 
 Select.defaultProps = {
@@ -76,6 +75,7 @@ Select.defaultProps = {
   disabled: false,
   error: '',
   insideModal: false,
+  withoutElements: false,
 }
 
 export default Select

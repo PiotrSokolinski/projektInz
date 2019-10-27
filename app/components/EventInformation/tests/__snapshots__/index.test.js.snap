@@ -10,14 +10,14 @@ exports[`<EventInformation /> Should render and match the snapshot 1`] = `
     <div
       class="styled__Date-sc-1hllk44-1 eYgBLJ"
     >
-      26/10/2019
+      27/10/2019
     </div>
     <div
       class="styled__Time-sc-1hllk44-2 dAegMl"
     >
-      10:11
+      10:08
       -
-      10:11
+      10:08
     </div>
   </div>
   <div

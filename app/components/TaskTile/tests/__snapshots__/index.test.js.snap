@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaskTile /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-184074l-0 bVlVEA"
+>
+  <div
+    class="styled__Name-sc-184074l-1 kOpHSu"
+  >
+    Task Name
+  </div>
+  <div
+    class="field styled__StatusSelect-sc-184074l-5 ddLUjA"
+    id="statusSelect"
+  >
+    <div
+      class="react-select css-2b097c-container"
+    >
+      <div
+        class="select__control css-g95vz9-control"
+      >
+        <div
+          class="select__value-container select__value-container--has-value css-1hwfws3"
+        >
+          <div
+            class="select__single-value css-1uccc91-singleValue"
+          >
+            <div
+              class="styled__LabelContainer-sc-184074l-4 bNTAEt"
+            >
+              <div
+                class="styled__Dot-sc-184074l-3 cRjzDn"
+                size="22"
+              />
+               To Do
+            </div>
+          </div>
+          <input
+            class="css-62g3xt-dummyInput"
+            id="react-select-3-input"
+            readonly=""
+            tabindex="0"
+            value=""
+          />
+        </div>
+        <div
+          class="select__indicators css-1wy0on6"
+        />
+      </div>
+      <input
+        name="status"
+        type="hidden"
+        value="To Do"
+      />
+    </div>
+    
+  </div>
+  <svg
+    aria-hidden="true"
+    class="styled__TrashIcon-sc-184074l-2 jvDCxm StyledIconBase-sc-bdy9j4 jbPeIR"
+    fill="currentColor"
+    focusable="false"
+    height="22"
+    viewBox="0 0 24 24"
+    width="22"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M17.004 20l-.001-12h-10v12h10.001zm-4.001-10h2v8h-2v-8zm-4 0h2v8h-2v-8zm0-6h6v2h-6z"
+      fill="none"
+    />
+    <path
+      d="M5.003 20c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V8h2V6h-4V4c0-1.103-.897-2-2-2h-6c-1.103 0-2 .897-2 2v2h-4v2h2v12zm4-16h6v2h-6V4zm-1 4h9l.001 12H7.003V8h1z"
+    />
+    <path
+      d="M9.003 10h2v8h-2zm4 0h2v8h-2z"
+    />
+  </svg>
+</div>
+`;

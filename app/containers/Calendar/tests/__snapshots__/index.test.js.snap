@@ -29,16 +29,6 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           <span
             class="styled__StyledTitle-sc-19sf2iw-8 ibmpRd"
           >
-            Sa., 26.10
-          </span>
-        </div>
-        <div
-          class="styled__StyledWeekCalendarHeaderColumn-sc-19sf2iw-3 cjqjnM"
-          style="width: 0px;"
-        >
-          <span
-            class="styled__StyledTitle-sc-19sf2iw-8 ibmpRd"
-          >
             Su., 27.10
           </span>
         </div>
@@ -92,6 +82,16 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             Fr., 01.11
           </span>
         </div>
+        <div
+          class="styled__StyledWeekCalendarHeaderColumn-sc-19sf2iw-3 cjqjnM"
+          style="width: 0px;"
+        >
+          <span
+            class="styled__StyledTitle-sc-19sf2iw-8 ibmpRd"
+          >
+            Sa., 02.11
+          </span>
+        </div>
       </div>
     </div>
     <div
@@ -101,7 +101,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
       <div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             00:00
@@ -109,7 +109,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             01:00
@@ -117,7 +117,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             02:00
@@ -125,7 +125,15 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
+        >
+          <span>
+            02:00
+          </span>
+        </div>
+        <div
+          class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             03:00
@@ -133,7 +141,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             04:00
@@ -141,7 +149,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             05:00
@@ -149,7 +157,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             06:00
@@ -157,7 +165,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             07:00
@@ -165,7 +173,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             08:00
@@ -173,7 +181,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             09:00
@@ -181,7 +189,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             10:00
@@ -189,7 +197,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             11:00
@@ -197,7 +205,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             12:00
@@ -205,7 +213,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             13:00
@@ -213,7 +221,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             14:00
@@ -221,7 +229,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             15:00
@@ -229,7 +237,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             16:00
@@ -237,7 +245,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             17:00
@@ -245,7 +253,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             18:00
@@ -253,7 +261,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             19:00
@@ -261,7 +269,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             20:00
@@ -269,7 +277,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             21:00
@@ -277,7 +285,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             22:00
@@ -285,7 +293,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
         </div>
         <div
           class="styled__StyledWeekCalendarScaleCell-sc-19sf2iw-9 foqqjF"
-          style="height: 25px; line-height: 25px;"
+          style="height: 30px; line-height: 30px;"
         >
           <span>
             23:00
@@ -308,7 +316,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -319,7 +327,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -330,7 +338,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -341,7 +349,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -352,7 +360,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -363,7 +371,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -374,7 +382,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -385,7 +393,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -396,7 +404,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -407,7 +415,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -418,7 +426,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -429,7 +437,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -440,7 +448,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -451,7 +459,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -462,7 +470,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -473,7 +481,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -484,7 +492,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -495,7 +503,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -506,7 +514,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -517,7 +525,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -528,7 +536,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -539,7 +547,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -550,7 +558,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -561,7 +569,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -577,7 +596,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -588,7 +607,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -599,7 +618,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -610,7 +629,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -621,7 +640,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -632,7 +651,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -643,7 +662,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -654,7 +673,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -665,7 +684,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -676,7 +695,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -687,7 +706,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -698,7 +717,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -709,7 +728,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -720,7 +739,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -731,7 +750,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -742,7 +761,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -753,7 +772,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -764,7 +783,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -775,7 +794,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -786,7 +805,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -797,7 +816,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -808,7 +827,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -819,7 +838,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -830,7 +849,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -846,7 +876,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -857,7 +887,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -868,7 +898,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -879,7 +909,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -890,7 +920,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -901,7 +931,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -912,7 +942,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -923,7 +953,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -934,7 +964,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -945,7 +975,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -956,7 +986,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -967,7 +997,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -978,7 +1008,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -989,7 +1019,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1000,7 +1030,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1011,7 +1041,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1022,7 +1052,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1033,7 +1063,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1044,7 +1074,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1055,7 +1085,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1066,7 +1096,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1077,7 +1107,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1088,7 +1118,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1099,7 +1129,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1115,7 +1156,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1126,7 +1167,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1137,7 +1178,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1148,7 +1189,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1159,7 +1200,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1170,7 +1211,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1181,7 +1222,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1192,7 +1233,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1203,7 +1244,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1214,7 +1255,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1225,7 +1266,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1236,7 +1277,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1247,7 +1288,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1258,7 +1299,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1269,7 +1310,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1280,7 +1321,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1291,7 +1332,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1302,7 +1343,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1313,7 +1354,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1324,7 +1365,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1335,7 +1376,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1346,7 +1387,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1357,7 +1398,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1368,7 +1409,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1384,7 +1436,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1395,7 +1447,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1406,7 +1458,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1417,7 +1469,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1428,7 +1480,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1439,7 +1491,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1450,7 +1502,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1461,7 +1513,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1472,7 +1524,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1483,7 +1535,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1494,7 +1546,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1505,7 +1557,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1516,7 +1568,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1527,7 +1579,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1538,7 +1590,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1549,7 +1601,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1560,7 +1612,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1571,7 +1623,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1582,7 +1634,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1593,7 +1645,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1604,7 +1656,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1615,7 +1667,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1626,7 +1678,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1637,7 +1689,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1653,7 +1716,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1664,7 +1727,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1675,7 +1738,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1686,7 +1749,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1697,7 +1760,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1708,7 +1771,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1719,7 +1782,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1730,7 +1793,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1741,7 +1804,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1752,7 +1815,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1763,7 +1826,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1774,7 +1837,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1785,7 +1848,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1796,7 +1859,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1807,7 +1870,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1818,7 +1881,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1829,7 +1892,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1840,7 +1903,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1851,7 +1914,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1862,7 +1925,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1873,7 +1936,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1884,7 +1947,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1895,7 +1958,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1906,7 +1969,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1922,7 +1996,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
           >
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1933,7 +2007,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1944,7 +2018,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1955,7 +2029,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1966,7 +2040,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1977,7 +2051,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1988,7 +2062,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -1999,7 +2073,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2010,7 +2084,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2021,7 +2095,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2032,7 +2106,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2043,7 +2117,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2054,7 +2128,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2065,7 +2139,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2076,7 +2150,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2087,7 +2161,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2098,7 +2172,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2109,7 +2183,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2120,7 +2194,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2131,7 +2205,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2142,7 +2216,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2153,7 +2227,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2164,7 +2238,7 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
@@ -2175,7 +2249,18 @@ exports[`<Calendar /> Should render and match the snapshot 1`] = `
             </div>
             <div
               class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
-              style="height: 25px;"
+              style="height: 30px;"
+            >
+              <div
+                class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"
+                role="presentation"
+              >
+                 
+              </div>
+            </div>
+            <div
+              class="styled__StyledCalendarBodyCell-sc-19sf2iw-5 fplceH"
+              style="height: 30px;"
             >
               <div
                 class="styled__StyledDayCell-sc-19sf2iw-0 iPzvZA"

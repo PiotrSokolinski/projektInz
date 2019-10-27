@@ -1,9 +1,905 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tasks /> Should render and match the snapshot 1`] = `
-<div>
-  <span>
-    This is the Tasks container!
-  </span>
+<div
+  class="styled__Container-sc-16i0j5g-0 eNKMWO"
+>
+  <div
+    class="styled__Container-sc-1wap8ho-1 AOYTN"
+  >
+    <div
+      class="styled__Wrapper-sc-1wap8ho-2 ivrgfo"
+    >
+      <div
+        class="styled__Header-sc-1wap8ho-3 jRZvgQ"
+      >
+        <span>
+          Create a new task
+        </span>
+      </div>
+      <div
+        class="field"
+        id="taskNameField"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Task name
+        </label>
+        <div
+          class="control"
+        >
+          <input
+            class="styled__Input-ms4xi4-0 jirwCh"
+            name="taskName"
+            placeholder="Type the task name"
+            type="text"
+            value=""
+          />
+        </div>
+        
+      </div>
+      <div
+        class="field"
+        id="taskDescriptionField"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Description
+        </label>
+        <div
+          class="control"
+        >
+          <textarea
+            class="styled__TextArea-sc-1u3hlpt-0 fDkCgw"
+            name="taskDescription"
+            placeholder="Type the task description"
+          />
+        </div>
+      </div>
+      <div
+        class="styled__SelectsContainer-sc-1wap8ho-4 gpUWKE"
+      >
+        <div
+          class="field styled__SelectDropdown-sc-1wap8ho-5 kPzqsd"
+          id="assigneeSelect"
+        >
+          <label
+            class="styled__StyledLabel-oaisvy-0 fCsvBu"
+          >
+            Assignee
+          </label>
+          <div
+            class="react-select css-2b097c-container"
+          >
+            <div
+              class="select__control css-1288s75-control"
+            >
+              <div
+                class="select__value-container css-1hwfws3"
+              >
+                <div
+                  class="select__placeholder css-1wa3eu0-placeholder"
+                >
+                  Select assignee...
+                </div>
+                <input
+                  class="css-62g3xt-dummyInput"
+                  id="react-select-5-input"
+                  readonly=""
+                  tabindex="0"
+                  value=""
+                />
+              </div>
+              <div
+                class="select__indicators css-1wy0on6"
+              >
+                <span
+                  class="select__indicator-separator css-1okebmr-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-19bqh2r"
+                    focusable="false"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <input
+              name="assignee"
+              type="hidden"
+              value=""
+            />
+          </div>
+          
+        </div>
+        <div
+          class="field styled__SelectDropdown-sc-1wap8ho-5 kPzqsd"
+          id="prioritySelect"
+        >
+          <label
+            class="styled__StyledLabel-oaisvy-0 fCsvBu"
+          >
+            Priority
+          </label>
+          <div
+            class="react-select css-2b097c-container"
+          >
+            <div
+              class="select__control css-1288s75-control"
+            >
+              <div
+                class="select__value-container select__value-container--has-value css-1hwfws3"
+              >
+                <div
+                  class="select__single-value css-1uccc91-singleValue"
+                >
+                  <div
+                    class="styled__LabelContainer-sc-1wap8ho-7 hKYYna"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="styled__Arrow-sc-1wap8ho-6 bqGdQa StyledIconBase-sc-bdy9j4 jbPeIR"
+                      fill="none"
+                      focusable="false"
+                      height="22"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      viewBox="0 0 24 24"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="19"
+                        y2="5"
+                      />
+                      <polyline
+                        points="5 12 12 5 19 12"
+                      />
+                    </svg>
+                     High
+                  </div>
+                </div>
+                <input
+                  class="css-62g3xt-dummyInput"
+                  id="react-select-6-input"
+                  readonly=""
+                  tabindex="0"
+                  value=""
+                />
+              </div>
+              <div
+                class="select__indicators css-1wy0on6"
+              >
+                <span
+                  class="select__indicator-separator css-1okebmr-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-19bqh2r"
+                    focusable="false"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <input
+              name="priority"
+              type="hidden"
+              value="High"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="styled__ButtonContainer-sc-1wap8ho-0 ebeBWS"
+      >
+        <button
+          class="styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+          type="submit"
+        >
+          <span>
+            Create a task
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="styled__TasksContainer-sc-16i0j5g-1 lkkglN"
+  >
+    <div
+      class="styled__SearchAndSelectContainer-sc-16i0j5g-4 ZFbrE"
+    >
+      <div
+        class="styled__SearchInputContainer-sc-16i0j5g-3 heyuBs"
+      >
+        <div
+          class="field"
+        >
+          <label
+            class="styled__StyledLabel-oaisvy-0 fCsvBu"
+          >
+            Search
+          </label>
+          <div
+            class="control"
+          >
+            <input
+              class="styled__Input-ms4xi4-0 jirwCh"
+              name="searchbox"
+              placeholder="Search by name"
+              type="text"
+              value=""
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="field styled__SelectInput-sc-16i0j5g-2 hwhpup"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Group member
+        </label>
+        <div
+          class="react-select css-2b097c-container"
+        >
+          <div
+            class="select__control css-1288s75-control"
+          >
+            <div
+              class="select__value-container select__value-container--has-value css-1hwfws3"
+            >
+              <div
+                class="select__single-value css-1uccc91-singleValue"
+              >
+                All
+              </div>
+              <input
+                class="css-62g3xt-dummyInput"
+                id="react-select-7-input"
+                readonly=""
+                tabindex="0"
+                value=""
+              />
+            </div>
+            <div
+              class="select__indicators css-1wy0on6"
+            >
+              <span
+                class="select__indicator-separator css-1okebmr-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="css-19bqh2r"
+                  focusable="false"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  width="20"
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <input
+            name="accountType"
+            type="hidden"
+            value="all"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="styled__TasksList-sc-16i0j5g-5 beWATx"
+    >
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 hLLxni"
+            />
+            Done
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 gsIApg"
+            />
+            To Do
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 hLLxni"
+            />
+            Done
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 hmlRFy"
+            />
+            In Progress
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 hmlRFy"
+            />
+            In Progress
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="styled__SingleTaskContainer-phousv-2 sZbZA"
+      >
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__TaskName-phousv-4 bupyFw"
+          >
+            <span>
+              Name: Task Name
+            </span>
+          </div>
+          <div
+            class="styled__Status-phousv-5 dShLoI"
+          >
+            <span>
+              Status:
+            </span>
+            <div
+              class="styled__Dot-phousv-6 hmlRFy"
+            />
+            In Progress
+          </div>
+        </div>
+        <div
+          class="styled__InfoContainer-phousv-3 eHHDhm"
+        >
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Author: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+          <div
+            class="styled__PersonContainer-phousv-7 cVJQRW"
+          >
+            <div
+              class="styled__FullNameContainer-phousv-8 jvNBev"
+            >
+              <span>
+                Assignee: John Doe
+              </span>
+            </div>
+            <div
+              class="tiny styled__Container-vinm4t-0 gDIJTt"
+            >
+              <img
+                alt="avatar"
+                class="avatar-image"
+                src="IMAGE_MOCK"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="styled__ShowMoreContainer-phousv-9 flzkyG"
+        >
+          <div
+            class="styled__ShowMoreButton-phousv-10 fQaDDG"
+          >
+            <span>
+              Show more...
+            </span>
+            <svg
+              aria-hidden="true"
+              class="styled__ArrowDown-phousv-0 fiXBOw StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.414 10.656a2 2 0 00-2.828 0L14 12.242V5a2 2 0 00-4 0v7.242l-1.586-1.586a2 2 0 10-2.828 2.828L12 19.898l6.414-6.414a2 2 0 000-2.828z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

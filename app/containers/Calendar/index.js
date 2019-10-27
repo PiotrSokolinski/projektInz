@@ -228,6 +228,7 @@ const Calendar = () => {
         onIntervalRemove={handleEventRemove}
         scaleUnit={60}
         scaleHeaderTitle="Time"
+        cellHeight={30}
       />
       <Styled.CalendarOptionsContainer>
         <Styled.ActionsContainer>

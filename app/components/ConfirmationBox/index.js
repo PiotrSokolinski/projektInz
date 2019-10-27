@@ -14,12 +14,15 @@ import UserAvatar from 'components/UserAvatar'
 import * as Styled from './styled'
 import messages from './messages'
 
-const ConfirmationBox = ({ title, description, visible, onClose }) => (
-  <Modal title={title} visible={visible} onClose={onClose}>
+const ConfirmationBox = ({ title, description, visible, onClose, name, avatarUrl }) => (
+  <Modal title={`${title} ${name}?`} visible={visible} onClose={onClose}>
     <Styled.Container>
       <Styled.InfoContainer>
-        <Styled.Title>{description}</Styled.Title>
-        <UserAvatar size="middle" image="" />
+        <Styled.Title>
+          {description}
+          {name}.
+        </Styled.Title>
+        {avatarUrl || (avatarUrl === '' && <UserAvatar size="middle" image={avatarUrl} />)}
       </Styled.InfoContainer>
       <Styled.ButtonsContainer>
         <Styled.ConfirmButton>
@@ -38,6 +41,8 @@ ConfirmationBox.propTypes = {
   visible: PropTypes.bool,
   onClose: PropTypes.func,
   description: PropTypes.string,
+  name: PropTypes.string,
+  avatarUrl: PropTypes.string,
 }
 
 ConfirmationBox.defaultProps = {

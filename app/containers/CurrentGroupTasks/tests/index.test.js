@@ -1,6 +1,6 @@
 /**
  *
- * Tests for ConfirmationBox
+ * Tests for CurrentGroupTasks
  *
  * @see https://github.com/react-boilerplate/react-boilerplate/tree/master/docs/testing
  *
@@ -10,15 +10,15 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { IntlProvider } from 'react-intl'
 
-import ConfirmationBox from '../index'
+import CurrentGroupTasks from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
-describe('<ConfirmationBox />', () => {
+describe('<CurrentGroupTasks />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
-        <ConfirmationBox title="Title" name="Name" avatarUrl="" />
+        <CurrentGroupTasks />
       </IntlProvider>,
     )
     expect(spy).not.toHaveBeenCalled()
@@ -29,7 +29,7 @@ describe('<ConfirmationBox />', () => {
       container: { firstChild },
     } = render(
       <IntlProvider locale={DEFAULT_LOCALE}>
-        <ConfirmationBox title="Title" name="Name" avatarUrl="" />
+        <CurrentGroupTasks />
       </IntlProvider>,
     )
     expect(firstChild).toMatchSnapshot()
