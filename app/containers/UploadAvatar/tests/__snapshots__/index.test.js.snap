@@ -47,7 +47,7 @@ exports[`<UploadAvatar /> Should render and match the snapshot 1`] = `
     </div>
     <a
       class="styled__SkipLink-sc-1epazq9-4 jKOMK"
-      href="/"
+      href="/create-group"
     >
       <span>
         Skip for now

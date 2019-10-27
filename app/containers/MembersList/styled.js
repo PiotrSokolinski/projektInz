@@ -6,4 +6,16 @@ export const Container = styled.div`
   padding: 10px 0;
   border: 1px solid ${Colors.edward};
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+`
+
+export const TextButton = styled.button`
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: ${Colors.ecstasy};
+  background: transparent;
+  cursor: pointer;
 `

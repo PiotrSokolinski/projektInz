@@ -15,12 +15,15 @@ import Login from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
 describe('<Login />', () => {
+  const history = {
+    push: jest.fn(),
+  }
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Login />
+          <Login history={history} />
         </MemoryRouter>
       </IntlProvider>,
     )
@@ -33,7 +36,7 @@ describe('<Login />', () => {
     } = render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Login />
+          <Login history={history} />
         </MemoryRouter>
       </IntlProvider>,
     )

@@ -28,7 +28,7 @@ const validationSchema = intl =>
     name: Yup.string().required(intl.formatMessage(messages.nameError)),
   })
 
-const CreateGroup = ({ intl }) => {
+const CreateGroup = ({ intl, history }) => {
   // eslint-disable-next-line no-unused-vars
   const [avatar, setAvatar] = useState(null)
   const [country, setCountry] = useState('')
@@ -47,13 +47,18 @@ const CreateGroup = ({ intl }) => {
     }
     return null
   }
-  const createGroup = () => {}
+  const createGroup = () => {
+    history.push('/invite')
+  }
   const changeZipCodeValue = (event, setFieldValue) => {
     const { value } = event.target
     if (value.length <= 5) setFieldValue('zipCode', value)
   }
   return (
     <Styled.Container>
+      <Styled.Header>
+        <FormattedMessage {...messages.header} />
+      </Styled.Header>
       <Formik initialValues={initialValues} onSubmit={createGroup} validationSchema={validationSchema(intl)}>
         {formikProps => {
           const {
@@ -180,6 +185,7 @@ const CreateGroup = ({ intl }) => {
 
 CreateGroup.propTypes = {
   intl: PropTypes.object,
+  history: PropTypes.object,
 }
 
 export default injectIntl(CreateGroup)

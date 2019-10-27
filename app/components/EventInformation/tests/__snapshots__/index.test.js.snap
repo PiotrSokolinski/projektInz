@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventInformation /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-1hllk44-0 hlplpO"
+>
+  <div
+    class="styled__DateContainer-sc-1hllk44-3 egEexW"
+  >
+    <div
+      class="styled__Date-sc-1hllk44-1 eYgBLJ"
+    >
+      26/10/2019
+    </div>
+    <div
+      class="styled__Time-sc-1hllk44-2 dAegMl"
+    >
+      10:11
+      -
+      10:11
+    </div>
+  </div>
+  <div
+    class="styled__Title-sc-1hllk44-5 dNDBdO"
+  >
+    <span>
+      Description
+    </span>
+  </div>
+  <div
+    class="styled__Description-sc-1hllk44-4 jrVeIJ"
+  >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to PageMaker including versions of Lorem Ipsum.
+  </div>
+  <div
+    class="styled__Title-sc-1hllk44-5 jiYyLv"
+  >
+    <span>
+      Invited members
+    </span>
+  </div>
+  <div
+    class="styled__InvitedMembersList-sc-1hllk44-6 juViIt"
+  >
+    <div
+      class="styled__InvitedMemberContainer-sc-1hllk44-7 clBYPS"
+    >
+      <div
+        class="styled__FullName-sc-1hllk44-8 jbQiHk"
+      >
+        John
+         
+        Doe
+      </div>
+      <div
+        class="tiny styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+    <div
+      class="styled__InvitedMemberContainer-sc-1hllk44-7 clBYPS"
+    >
+      <div
+        class="styled__FullName-sc-1hllk44-8 jbQiHk"
+      >
+        John
+         
+        Doe
+      </div>
+      <div
+        class="tiny styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

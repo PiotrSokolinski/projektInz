@@ -24,8 +24,10 @@ const validationSchema = ({ intl }) =>
     password: Yup.string().required(intl.formatMessage(messages.passwordEmptyError)),
   })
 
-const Login = ({ intl }) => {
-  const submitLoginForm = () => {}
+const Login = ({ intl, history }) => {
+  const submitLoginForm = () => {
+    history.push('/')
+  }
   return (
     <Styled.Container>
       <Styled.Box>
@@ -87,6 +89,7 @@ const Login = ({ intl }) => {
 
 Login.propTypes = {
   intl: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired,
 }
 
 export default injectIntl(Login)

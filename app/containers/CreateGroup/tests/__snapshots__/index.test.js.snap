@@ -5,6 +5,13 @@ exports[`<CreateGroup /> Should render and match the snapshot 1`] = `
   class="styled__Container-sc-86b866-0 kWKTt"
 >
   <div
+    class="styled__Header-sc-86b866-12 fSQRgm"
+  >
+    <span>
+      Create your group in our system
+    </span>
+  </div>
+  <div
     class="styled__FormContainer-sc-86b866-2 kGFCfi"
   >
     <div

@@ -15,7 +15,7 @@ import * as Styled from './styled'
 
 const initialValues = { firstName: '', lastName: '', email: '', password: '', repeatedPassword: '' }
 
-const validationSchema = ({ intl }) =>
+const validationSchema = intl =>
   Yup.object().shape({
     email: Yup.string()
       .email(intl.formatMessage(messages.emailInvalidError))
@@ -28,8 +28,10 @@ const validationSchema = ({ intl }) =>
       .required(intl.formatMessage(messages.passwordConfirmEmpty)),
   })
 
-const Registration = ({ intl }) => {
-  const submitRegistrationForm = () => {}
+const Registration = ({ intl, history }) => {
+  const submitRegistrationForm = () => {
+    history.push('/upload-avatar')
+  }
   return (
     <Styled.Container>
       <Styled.Box>
@@ -39,7 +41,7 @@ const Registration = ({ intl }) => {
         <Formik
           onSubmit={submitRegistrationForm}
           initialValues={initialValues}
-          validationSchema={validationSchema({ intl })}
+          validationSchema={validationSchema(intl)}
         >
           {({ errors, touched, values, handleChange, handleBlur, handleSubmit }) => (
             <form autoComplete="off">
@@ -121,6 +123,7 @@ const Registration = ({ intl }) => {
 
 Registration.propTypes = {
   intl: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired,
 }
 
 Registration.defaultProps = {}

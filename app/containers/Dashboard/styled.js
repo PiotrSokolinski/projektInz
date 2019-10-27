@@ -1,5 +1,15 @@
 import styled from 'styled-components'
+
+import { Tasks } from 'styled-icons/fa-solid/Tasks'
+import { EventAvailable } from 'styled-icons/material/EventAvailable'
 import { Colors } from 'themes'
+
+export const TaskIcon = styled(Tasks)`
+  color: ${Colors.black};
+`
+export const EventAvailableIcon = styled(EventAvailable)`
+  color: ${Colors.black};
+`
 
 export const Container = styled.div`
   display: flex;
@@ -22,4 +32,16 @@ export const TabsContainer = styled.div`
     font-weight: bold;
     color: ${Colors.ecstasy};
   }
+`
+
+export const GroupInfoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+`
+
+export const GroupName = styled.div`
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 20px;
 `

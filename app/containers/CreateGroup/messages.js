@@ -9,8 +9,12 @@ import { defineMessages } from 'react-intl'
 export const scope = 'app.containers.CreateGroup'
 
 export default defineMessages({
-  photo: {
+  header: {
     id: `${scope}.header`,
+    defaultMessage: `Create your group in our system`,
+  },
+  photo: {
+    id: `${scope}.photo`,
     defaultMessage: `Upload group's photo`,
   },
   nameError: {

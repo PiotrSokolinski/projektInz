@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaskInformation /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-1ayn9pc-0 jagQoH"
+>
+  <div
+    class="styled__DescriptionTitle-sc-1ayn9pc-3 eZeqmN"
+  >
+    <span>
+      Description
+    </span>
+  </div>
+  <div
+    class="styled__Description-sc-1ayn9pc-2 fqDBCq"
+  >
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to PageMaker including versions of Lorem Ipsum.
+  </div>
+  <div
+    class="styled__AuthorContainer-sc-1ayn9pc-4 bQfJnM"
+  >
+    <span>
+      Author: 
+      <b>
+        Piotr Sokolinski
+      </b>
+    </span>
+    <span>
+      Created at: 
+      <b>
+        26/10/2019 10:11:15
+      </b>
+    </span>
+  </div>
+</div>
+`;

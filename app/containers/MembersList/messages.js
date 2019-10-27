@@ -13,4 +13,8 @@ export default defineMessages({
     id: `${scope}.header`,
     defaultMessage: 'This is the MembersList container!',
   },
+  invite: {
+    id: `${scope}.invite`,
+    defaultMessage: '+Invite a new person',
+  },
 })

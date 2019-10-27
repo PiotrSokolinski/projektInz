@@ -8,8 +8,10 @@ import { WholePageContainer } from './styled'
 
 const CREATE_GROUP_PATHNAME = '/create-group'
 const UPLOAD_AVATAR_PATHNAME = '/upload-avatar'
+const INVITE_PATHNAME = '/invite'
 
-const isPublicLayout = location => includes([CREATE_GROUP_PATHNAME, UPLOAD_AVATAR_PATHNAME], location.pathname)
+const isPublicLayout = location =>
+  includes([CREATE_GROUP_PATHNAME, UPLOAD_AVATAR_PATHNAME, INVITE_PATHNAME], location.pathname)
 
 const PrivateRoute = ({ component: Component, store, wrapper: Wrapper, ...props }) => (
   <Route

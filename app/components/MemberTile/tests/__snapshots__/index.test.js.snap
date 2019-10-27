@@ -2,7 +2,7 @@
 
 exports[`<MemberTile /> Should render and match the snapshot 1`] = `
 <div
-  class="styled__Container-tas46t-1 jCWCTG"
+  class="styled__Container-tas46t-1 fmCTkC"
 >
   <div
     class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -17,7 +17,7 @@ exports[`<MemberTile /> Should render and match the snapshot 1`] = `
       />
     </div>
     <div
-      class="styled__FullName-tas46t-3 kDzbrN"
+      class="styled__FullName-tas46t-3 iZXHQn"
     >
       <span>
         Piotr

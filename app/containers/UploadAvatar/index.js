@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import Dropzone from 'react-dropzone'
 import head from 'lodash/head'
 import isEmpty from 'lodash/isEmpty'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 
 import UserAvatar from 'components/UserAvatar'
@@ -16,13 +16,14 @@ import UserAvatar from 'components/UserAvatar'
 import messages from './messages'
 import * as Styled from './styled'
 
-const UploadAvatar = (/* { history } */) => {
+const UploadAvatar = ({ history }) => {
   const dropzoneRef = useRef(null)
   const onUploadButtonClick = () => {
     dropzoneRef.current.open()
   }
 
   const onSaveButtonClick = () /* async files */ => {
+    history.push('/create-group')
     // const result = await assignAvatar({
     //   variables: {
     //     avatar: head(files),
@@ -69,7 +70,7 @@ const UploadAvatar = (/* { history } */) => {
             </>
           )}
         </Dropzone>
-        <Styled.SkipLink to="/">
+        <Styled.SkipLink to="/create-group">
           <FormattedMessage {...messages.skip} />
         </Styled.SkipLink>
       </Styled.Container>
@@ -77,6 +78,8 @@ const UploadAvatar = (/* { history } */) => {
   )
 }
 
-UploadAvatar.propTypes = {}
+UploadAvatar.propTypes = {
+  history: PropTypes.object,
+}
 
 export default injectIntl(UploadAvatar)

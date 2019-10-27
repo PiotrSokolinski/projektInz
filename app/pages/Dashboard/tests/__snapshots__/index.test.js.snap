@@ -2,11 +2,29 @@
 
 exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
 <div
-  class="styled__Container-sc-1ujewzl-0 jgheUl"
+  class="styled__Container-sc-1ujewzl-2 dMamqq"
 >
   <div
-    class="styled__TabsContainer-sc-1ujewzl-1 kepsTH"
+    class="styled__TabsContainer-sc-1ujewzl-3 dgLCPK"
   >
+    <div
+      class="styled__GroupInfoContainer-sc-1ujewzl-4 khqiLk"
+    >
+      <div
+        class="middle styled__Container-vinm4t-0 gDIJTt"
+      >
+        <img
+          alt="avatar"
+          class="avatar-image"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="styled__GroupName-sc-1ujewzl-5 byLQFQ"
+      >
+        Group name
+      </div>
+    </div>
     <div
       class="react-tabs"
       data-tabs="true"
@@ -60,10 +78,10 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
         role="tabpanel"
       >
         <div
-          class="styled__Container-rz5z4n-0 kJiukX"
+          class="styled__Container-rz5z4n-0 cptscf"
         >
           <div
-            class="styled__Container-tas46t-1 jCWCTG"
+            class="styled__Container-tas46t-1 fmCTkC"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -78,7 +96,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
                 />
               </div>
               <div
-                class="styled__FullName-tas46t-3 kDzbrN"
+                class="styled__FullName-tas46t-3 iZXHQn"
               >
                 <span>
                   Bob
@@ -114,7 +132,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 jCWCTG"
+            class="styled__Container-tas46t-1 fmCTkC"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -129,7 +147,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
                 />
               </div>
               <div
-                class="styled__FullName-tas46t-3 kDzbrN"
+                class="styled__FullName-tas46t-3 iZXHQn"
               >
                 <span>
                   Bob
@@ -165,7 +183,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 jCWCTG"
+            class="styled__Container-tas46t-1 fmCTkC"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -180,7 +198,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
                 />
               </div>
               <div
-                class="styled__FullName-tas46t-3 kDzbrN"
+                class="styled__FullName-tas46t-3 iZXHQn"
               >
                 <span>
                   Bob
@@ -216,7 +234,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
             </svg>
           </div>
           <div
-            class="styled__Container-tas46t-1 jCWCTG"
+            class="styled__Container-tas46t-1 fmCTkC"
           >
             <div
               class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -231,7 +249,7 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
                 />
               </div>
               <div
-                class="styled__FullName-tas46t-3 kDzbrN"
+                class="styled__FullName-tas46t-3 iZXHQn"
               >
                 <span>
                   Bob
@@ -266,6 +284,102 @@ exports[`<DashboardPage /> Should render and match the snapshot 1`] = `
               />
             </svg>
           </div>
+          <button
+            class="styled__TextButton-rz5z4n-1 dgtYWU"
+          >
+            <span>
+              +Invite a new person
+            </span>
+          </button>
+        </div>
+        <div
+          class="styled__Container-ca47cf-1 ZkUxJ"
+        >
+          <div
+            class="styled__InfoContainer-ca47cf-2 ioAGxW"
+          >
+            <svg
+              aria-hidden="true"
+              class="styled__TaskIcon-sc-1ujewzl-0 JKZMI StyledIconBase-sc-bdy9j4 cCvWXa"
+              fill="currentColor"
+              focusable="false"
+              height="40"
+              viewBox="0 0 512 512"
+              width="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M139.61 35.5a12 12 0 00-17 0L58.93 98.81l-22.7-22.12a12 12 0 00-17 0L3.53 92.41a12 12 0 000 17l47.59 47.4a12.78 12.78 0 0017.61 0l15.59-15.62L156.52 69a12.09 12.09 0 00.09-17zm0 159.19a12 12 0 00-17 0l-63.68 63.72-22.7-22.1a12 12 0 00-17 0L3.53 252a12 12 0 000 17L51 316.5a12.77 12.77 0 0017.6 0l15.7-15.69 72.2-72.22a12 12 0 00.09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 000-96zm432 16H208a16 16 0 00-16 16v32a16 16 0 0016 16h288a16 16 0 0016-16v-32a16 16 0 00-16-16zm0-320H208a16 16 0 00-16 16v32a16 16 0 0016 16h288a16 16 0 0016-16V80a16 16 0 00-16-16zm0 160H208a16 16 0 00-16 16v32a16 16 0 0016 16h288a16 16 0 0016-16v-32a16 16 0 00-16-16z"
+                fill="currentColor"
+              />
+            </svg>
+            <div
+              class="styled__Title-ca47cf-3 lmCbnz"
+            >
+              <span>
+                You are up to date!
+              </span>
+            </div>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="styled__EyeIcon-ca47cf-0 jqmOuv StyledIconBase-sc-bdy9j4 jbPeIR"
+            fill="currentColor"
+            focusable="false"
+            height="22"
+            viewBox="0 0 16 16"
+            width="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="styled__Container-ca47cf-1 ZkUxJ"
+        >
+          <div
+            class="styled__InfoContainer-ca47cf-2 ioAGxW"
+          >
+            <svg
+              aria-hidden="true"
+              class="styled__EventAvailableIcon-sc-1ujewzl-1 kyOzNH StyledIconBase-sc-bdy9j4 jbPeIR"
+              fill="currentColor"
+              focusable="false"
+              height="40"
+              viewBox="0 0 24 24"
+              width="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.53 11.06L15.47 10l-4.88 4.88-2.12-2.12-1.06 1.06L10.59 17l5.94-5.94zM19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 002 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"
+              />
+            </svg>
+            <div
+              class="styled__Title-ca47cf-3 lmCbnz"
+            >
+              <span>
+                You are up to date!
+              </span>
+            </div>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="styled__EyeIcon-ca47cf-0 jqmOuv StyledIconBase-sc-bdy9j4 jbPeIR"
+            fill="currentColor"
+            focusable="false"
+            height="22"
+            viewBox="0 0 16 16"
+            width="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+              fill-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
       <div

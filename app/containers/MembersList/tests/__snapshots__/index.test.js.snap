@@ -2,10 +2,10 @@
 
 exports[`<MembersList /> Should render and match the snapshot 1`] = `
 <div
-  class="styled__Container-rz5z4n-0 kJiukX"
+  class="styled__Container-rz5z4n-0 cptscf"
 >
   <div
-    class="styled__Container-tas46t-1 jCWCTG"
+    class="styled__Container-tas46t-1 fmCTkC"
   >
     <div
       class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -20,7 +20,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__FullName-tas46t-3 kDzbrN"
+        class="styled__FullName-tas46t-3 iZXHQn"
       >
         <span>
           Bob
@@ -56,7 +56,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="styled__Container-tas46t-1 jCWCTG"
+    class="styled__Container-tas46t-1 fmCTkC"
   >
     <div
       class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -71,7 +71,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__FullName-tas46t-3 kDzbrN"
+        class="styled__FullName-tas46t-3 iZXHQn"
       >
         <span>
           Bob
@@ -107,7 +107,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="styled__Container-tas46t-1 jCWCTG"
+    class="styled__Container-tas46t-1 fmCTkC"
   >
     <div
       class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -122,7 +122,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__FullName-tas46t-3 kDzbrN"
+        class="styled__FullName-tas46t-3 iZXHQn"
       >
         <span>
           Bob
@@ -158,7 +158,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
     </svg>
   </div>
   <div
-    class="styled__Container-tas46t-1 jCWCTG"
+    class="styled__Container-tas46t-1 fmCTkC"
   >
     <div
       class="styled__InfoWrapper-tas46t-2 jOqEjB"
@@ -173,7 +173,7 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="styled__FullName-tas46t-3 kDzbrN"
+        class="styled__FullName-tas46t-3 iZXHQn"
       >
         <span>
           Bob
@@ -208,5 +208,12 @@ exports[`<MembersList /> Should render and match the snapshot 1`] = `
       />
     </svg>
   </div>
+  <button
+    class="styled__TextButton-rz5z4n-1 dgtYWU"
+  >
+    <span>
+      +Invite a new person
+    </span>
+  </button>
 </div>
 `;

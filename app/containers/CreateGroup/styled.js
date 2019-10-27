@@ -61,3 +61,13 @@ export const CityInputContainer = styled.div`
 export const ZipCodeContainer = styled.div`
   flex: 1;
 `
+
+export const Header = styled.div`
+  color: ${Colors.black};
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+`

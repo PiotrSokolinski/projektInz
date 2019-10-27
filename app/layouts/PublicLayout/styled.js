@@ -22,8 +22,8 @@ export const Container = styled.div`
   justify-content: center;
   overflow: auto;
   box-sizing: border-box;
-  border-left: 75px solid white;
-  border-bottom: 75px solid transparent;
-  border-top: 75px solid transparent;
+  border-left: 50px solid white;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
 `
 export const Image = styled.img``

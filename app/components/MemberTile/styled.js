@@ -12,7 +12,7 @@ export const Container = styled.div`
   border: 1px solid ${Colors.edward};
   border-radius: 15px;
   background: ${Colors.white};
-  margin: 15px 10px;
+  margin: 8px 10px;
   height: 75px;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ export const InfoWrapper = styled.div`
 
 export const FullName = styled.div`
   margin-left: 20px;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bold;
   color: ${Colors.black};
   span {

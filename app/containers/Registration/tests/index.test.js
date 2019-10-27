@@ -15,12 +15,15 @@ import Registration from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
 describe('<Registration />', () => {
+  const history = {
+    push: jest.fn(),
+  }
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Registration />
+          <Registration history={history} />
         </MemoryRouter>
       </IntlProvider>,
     )
@@ -33,7 +36,7 @@ describe('<Registration />', () => {
     } = render(
       <IntlProvider locale={DEFAULT_LOCALE}>
         <MemoryRouter>
-          <Registration />
+          <Registration history={history} />
         </MemoryRouter>
       </IntlProvider>,
     )

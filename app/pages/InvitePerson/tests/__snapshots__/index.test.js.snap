@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InvitePersonPage /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-sc-8rh9hn-1 btOcn"
+>
+  <div
+    class="styled__Wrapper-sc-8rh9hn-2 cjoMDU"
+  >
+    <div
+      class="styled__Header-sc-8rh9hn-3 hkuBJo"
+    >
+      <span>
+        Invite first members to your group
+      </span>
+    </div>
+    <div
+      class="styled__InputsContainer-sc-8rh9hn-4 josHuZ"
+    >
+      <div
+        class="field"
+        id="person1Field"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Person 1
+        </label>
+        <div
+          class="control"
+        >
+          <input
+            class="styled__Input-ms4xi4-0 jirwCh"
+            name="person1"
+            placeholder="e.g. john.smith@contact.com"
+            type="text"
+            value=""
+          />
+        </div>
+        
+      </div>
+      <div
+        class="field"
+        id="person1Field"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Person 2
+        </label>
+        <div
+          class="control"
+        >
+          <input
+            class="styled__Input-ms4xi4-0 jirwCh"
+            name="person2"
+            placeholder="e.g. john.smith@contact.com"
+            type="text"
+            value=""
+          />
+        </div>
+        
+      </div>
+      <div
+        class="field"
+        id="person1Field"
+      >
+        <label
+          class="styled__StyledLabel-oaisvy-0 fCsvBu"
+        >
+          Person 3
+        </label>
+        <div
+          class="control"
+        >
+          <input
+            class="styled__Input-ms4xi4-0 jirwCh"
+            name="person3"
+            placeholder="e.g. john.smith@contact.com"
+            type="text"
+            value=""
+          />
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="styled__ButtonsContainer-sc-8rh9hn-5 ezVEjx"
+    >
+      <button
+        class="styled__StyledButton-sc-1gb27vo-0 cSvxQx"
+        type="submit"
+      >
+        <span>
+          Send invitations
+        </span>
+      </button>
+      <a
+        class="styled__Link-sc-8rh9hn-6 bqXjqR"
+        href="/"
+      >
+        <span>
+          Skip for now
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

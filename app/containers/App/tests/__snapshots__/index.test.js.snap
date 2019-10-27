@@ -53,6 +53,12 @@ exports[`<App /> Should render and match the snapshot 1`] = `
   <PrivateRoute
     component={[Function]}
     exact={true}
+    path="/invite"
+    wrapper={[Function]}
+  />
+  <PrivateRoute
+    component={[Function]}
+    exact={true}
     path="/upload-avatar"
     wrapper={[Function]}
   />
