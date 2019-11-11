@@ -69,9 +69,8 @@ const TaskTile = ({ task, intl }) => {
       <ConfirmationBox
         visible={isModalDeleteVisible}
         title={intl.formatMessage(messages.title)}
-        description={intl.formatMessage(messages.description)}
+        description={intl.formatMessage(messages.description, { taskName: task.taskName })}
         onClose={closeDeleteModal}
-        name={task.taskName}
       />
       <Modal title="Details" visible={isModalTaskVisible} onClose={closeTaskModal}>
         <EditTask task={task} />

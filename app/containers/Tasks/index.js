@@ -129,20 +129,16 @@ const selectOptions = [
     label: 'All',
   },
   {
-    value: 'John',
-    label: 'John',
+    value: 'To Do',
+    label: 'To Do',
   },
   {
-    value: 'John2',
-    label: 'John2',
+    value: 'In Progress',
+    label: 'In Progress',
   },
   {
-    value: 'John3',
-    label: 'John3',
-  },
-  {
-    value: 'John4',
-    label: 'John4',
+    value: 'Done',
+    label: 'Done',
   },
 ]
 

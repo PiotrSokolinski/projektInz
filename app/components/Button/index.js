@@ -7,11 +7,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyledButton } from './styled'
-// import CircleSpinner from '../CircleSpinner'
+import CircleSpinner from '../CircleSpinner'
 const Button = ({ children, onClick, loading, disabled, inverted, stable, ...otherProps }) => (
   <StyledButton onClick={onClick} disabled={disabled} inverted={inverted} stable={stable} {...otherProps}>
-    {/* {loading ? <CircleSpinner /> : children} */}
-    {children}
+    {loading ? <CircleSpinner /> : children}
   </StyledButton>
 )
 

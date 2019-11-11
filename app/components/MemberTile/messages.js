@@ -15,10 +15,10 @@ export default defineMessages({
   },
   modalTitle: {
     id: `${scope}.modalTitle`,
-    defaultMessage: 'Are you sure you want to delete ',
+    defaultMessage: 'Please confirm',
   },
   modalDescription: {
     id: `${scope}.modalDescription`,
-    defaultMessage: 'You have to confirm deletion of the ',
+    defaultMessage: 'Are you sure you want to delete ',
   },
 })

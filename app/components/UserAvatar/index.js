@@ -11,10 +11,10 @@ import { Icons } from 'themes'
 
 import { Container } from './styled'
 
-const UserAvatar = ({ image, size }) => {
+const UserAvatar = ({ image, size, withBorder, borderColor }) => {
   const imageHasUrl = image !== '' && image !== null && image !== undefined
   return (
-    <Container className={size}>
+    <Container className={size} withBorder={withBorder} borderColor={borderColor}>
       <img className="avatar-image" src={(imageHasUrl && image) || Icons.emptyAvatar} alt="avatar" />
     </Container>
   )
@@ -23,11 +23,14 @@ const UserAvatar = ({ image, size }) => {
 UserAvatar.propTypes = {
   image: PropTypes.any,
   size: PropTypes.oneOf(['tiny', 'small', 'middle', 'big', 'large']),
+  withBorder: PropTypes.bool,
+  borderColor: PropTypes.string,
 }
 
 UserAvatar.defaultProps = {
   image: Icons.emptyAvatar,
   size: 'small',
+  withBorder: false,
 }
 
 export default UserAvatar

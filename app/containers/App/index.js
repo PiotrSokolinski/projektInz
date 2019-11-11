@@ -12,6 +12,7 @@ import RegistrationPage from 'pages/Registration/Loadable'
 import SettingsPage from 'pages/Settings/Loadable'
 import TasksPage from 'pages/Tasks/Loadable'
 import UploadAvatarPage from 'pages/UploadAvatar/Loadable'
+import LogoutPage from 'pages/Logout/Loadable'
 import PublicLayout from 'layouts/PublicLayout'
 import PrivateRoute from 'layouts/PrivateRoute'
 import PrivateLayout from 'layouts/PrivateLayout'
@@ -40,7 +41,7 @@ const PUBLIC_ROUTES = [
   },
 ]
 
-const App = () => (
+const App = ({ store }) => (
   <Switch>
     {PUBLIC_ROUTES.map(({ path, Component, Layout }, index) => (
       <Route
@@ -53,14 +54,15 @@ const App = () => (
         )}
       />
     ))}
-    <PrivateRoute exact path="/" component={DashboardPage} wrapper={PrivateLayout} />
-    <PrivateRoute exact path="/create-group" component={CreateGroupPage} wrapper={PublicLayout} />
-    <PrivateRoute exact path="/invite" component={InvitePersonPage} wrapper={PublicLayout} />
-    <PrivateRoute exact path="/upload-avatar" component={UploadAvatarPage} wrapper={PublicLayout} />
-    <PrivateRoute exact path="/settings" component={SettingsPage} wrapper={PrivateLayout} />
-    <PrivateRoute exact path="/tasks" component={TasksPage} wrapper={PrivateLayout} />
-    <PrivateRoute exact path="/calendar" component={CalendarPage} wrapper={PrivateLayout} />
-    <PrivateRoute exact path="/avatar" component={AvatarPage} wrapper={PublicLayout} />
+    <PrivateRoute exact path="/" component={DashboardPage} wrapper={PrivateLayout} store={store} />
+    <PrivateRoute exact path="/create-group" component={CreateGroupPage} wrapper={PublicLayout} store={store} />
+    <PrivateRoute exact path="/invite" component={InvitePersonPage} wrapper={PublicLayout} store={store} />
+    <PrivateRoute exact path="/upload-avatar" component={UploadAvatarPage} wrapper={PublicLayout} store={store} />
+    <PrivateRoute exact path="/settings" component={SettingsPage} wrapper={PrivateLayout} store={store} />
+    <PrivateRoute exact path="/tasks" component={TasksPage} wrapper={PrivateLayout} store={store} />
+    <PrivateRoute exact path="/calendar" component={CalendarPage} wrapper={PrivateLayout} store={store} />
+    <PrivateRoute exact path="/avatar" component={AvatarPage} wrapper={PublicLayout} store={store} />
+    <PrivateRoute exact path="/logout" component={LogoutPage} wrapper={PrivateLayout} store={store} />
     <Route component={NotFoundPage} />
   </Switch>
 )

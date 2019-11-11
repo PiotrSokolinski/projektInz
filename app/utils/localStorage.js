@@ -2,7 +2,7 @@ import { checkAccessLocalStorage } from './LocalStorageAccess'
 
 export const USER_DATA_FILENAME = 'user_data'
 
-const localStorage = () => {
+const appLocalStorage = () => {
   const getSession = () => (checkAccessLocalStorage() ? JSON.parse(localStorage.getItem(USER_DATA_FILENAME)) : null)
   const removeSession = () => (checkAccessLocalStorage() ? localStorage.removeItem(USER_DATA_FILENAME) : null)
   const saveSession = data =>
@@ -22,4 +22,4 @@ const localStorage = () => {
   }
 }
 
-export default localStorage()
+export default appLocalStorage()

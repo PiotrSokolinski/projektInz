@@ -17,4 +17,40 @@ export default defineMessages({
     id: `${scope}.eventDescription`,
     defaultMessage: 'Short event description',
   },
+  nameEmptyError: {
+    id: `${scope}.nameEmptyError`,
+    defaultMessage: 'Event name is required',
+  },
+  descriptionEmptyError: {
+    id: `${scope}.descriptionEmptyError`,
+    defaultMessage: 'Event description is required',
+  },
+  startDateError: {
+    id: `${scope}.startDateError`,
+    defaultMessage: 'Start date is required',
+  },
+  endDateError: {
+    id: `${scope}.endDateError`,
+    defaultMessage: 'End date is required',
+  },
+  startTimeError: {
+    id: `${scope}.startTimeError`,
+    defaultMessage: 'Start time is required',
+  },
+  endTimeError: {
+    id: `${scope}.endTimeError`,
+    defaultMessage: 'End time is required',
+  },
+  save: {
+    id: `${scope}.save`,
+    defaultMessage: 'Save event',
+  },
+  selectLabel: {
+    id: `${scope}.selectLabel`,
+    defaultMessage: 'Send invitations',
+  },
+  selectPlaceholder: {
+    id: `${scope}.selectPlaceholder`,
+    defaultMessage: 'Select members',
+  },
 })

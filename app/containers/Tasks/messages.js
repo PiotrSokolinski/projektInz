@@ -15,7 +15,7 @@ export default defineMessages({
   },
   selectLabel: {
     id: `${scope}.selectLabel`,
-    defaultMessage: 'Group member',
+    defaultMessage: 'Task status',
   },
   searchLabel: {
     id: `${scope}.searchLabel`,

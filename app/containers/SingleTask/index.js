@@ -10,17 +10,23 @@ import get from 'lodash/get'
 import { FormattedMessage } from 'react-intl'
 
 import UserAvatar from 'components/UserAvatar'
+import Modal from 'components/Modal'
+import EditTask from 'containers/EditTask'
 
 import messages from './messages'
 import * as Styled from './styled'
 
 const SingleTask = ({ task }) => {
   const [isShowMore, setIsShowMore] = useState(false)
+  const [isModalTaskVisible, setIsModalTaskVisible] = useState(false)
+  const openTaskModal = () => setIsModalTaskVisible(true)
+  const closeTaskModal = () => setIsModalTaskVisible(false)
   const toggleShowMore = () => setIsShowMore(!isShowMore)
+
   return (
     <Styled.SingleTaskContainer>
       <Styled.InfoContainer>
-        <Styled.TaskName>
+        <Styled.TaskName onClick={openTaskModal}>
           <FormattedMessage {...messages.taskName} values={{ name: get(task, 'taskName', '') }} />
         </Styled.TaskName>
         <Styled.Status>
@@ -74,6 +80,9 @@ const SingleTask = ({ task }) => {
           <Styled.ArrowDown size="22" isShowMore={isShowMore} />
         </Styled.ShowMoreButton>
       </Styled.ShowMoreContainer>
+      <Modal title="Details" visible={isModalTaskVisible} onClose={closeTaskModal}>
+        <EditTask task={task} />
+      </Modal>
     </Styled.SingleTaskContainer>
   )
 }

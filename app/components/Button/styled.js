@@ -19,7 +19,7 @@ export const StyledButton = styled.button`
   border: none;
   outline: none;
   color: ${Colors.white};
-  background: ${Colors.cerulean};
+  background: ${props => (props.disabled ? Colors.edward : Colors.cerulean)};
   cursor: pointer;
   border-radius: 5px;
   transition: 0.5s;

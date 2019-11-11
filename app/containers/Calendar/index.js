@@ -172,27 +172,46 @@
 
 // export default Calendar
 
-import React, { useState } from 'react'
+import React, { useState, useReducer } from 'react'
+import dayjs from 'dayjs'
+import 'dayjs/locale/en-gb'
 import WeekCalendar from 'containers/WeekCalendar'
 import { FormattedMessage } from 'react-intl'
 import ReactCalendar from 'react-calendar'
+import moment from 'moment'
 
 import Modal from 'components/Modal'
 import NewEvent from 'containers/NewEvent'
+import CalendarUsersList from 'containers/CalendarUsersList'
 
 import messages from './messages'
 import * as Styled from './styled'
+import reducer from './reducer'
+
+dayjs.locale('en-gb')
+
+const DAYS_NUMBER = 7
+const initialState = []
 
 const Calendar = () => {
   const [modalEventVisible, setModalEventVisible] = useState(false)
   const [modalCalendarVisible, setModalCalendarVisible] = useState(false)
+  const [modalUsersVisible, setModalUsersVisible] = useState(false)
   const [lastUid, setLastUid] = useState(1)
   const [selectedIntervals, setSelectedIntervals] = useState([])
+  const [weekFirstDay, setFirstDay] = useState(
+    moment()
+      .startOf('isoWeek')
+      .startOf('day'),
+  )
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const setModalEventOpen = () => setModalEventVisible(true)
   const setModalEventClose = () => setModalEventVisible(false)
   const setModalCalendarOpen = () => setModalCalendarVisible(true)
   const setModalCalendarClose = () => setModalCalendarVisible(false)
+  const setModalUsersOpen = () => setModalUsersVisible(true)
+  const setModalUsersClose = () => setModalUsersVisible(false)
 
   const handleEventRemove = event => {
     const index = selectedIntervals.findIndex(interval => interval.uid === event.uid)
@@ -219,17 +238,41 @@ const Calendar = () => {
     setLastUid(lastUid + newIntervals.length)
   }
 
+  const setNextWeek = () => {
+    setFirstDay(moment(weekFirstDay).add(DAYS_NUMBER, 'days'))
+  }
+  const setPreviousWeek = () => {
+    setFirstDay(moment(weekFirstDay).subtract(DAYS_NUMBER, 'days'))
+  }
+
+  const onDateChange = date => {
+    setFirstDay(
+      moment(date)
+        .startOf('isoWeek')
+        .startOf('day'),
+    )
+    setModalCalendarClose()
+  }
+
+  const saveUsers = () => {
+    console.log('state', state)
+    setModalUsersClose()
+  }
+
   return (
     <Styled.Container>
+      <Styled.LeftArrow size="30" onClick={setPreviousWeek} />
       <WeekCalendar
+        firstDay={weekFirstDay}
         selectedIntervals={selectedIntervals}
         onIntervalSelect={handleSelect}
         onIntervalUpdate={handleEventUpdate}
         onIntervalRemove={handleEventRemove}
         scaleUnit={60}
-        scaleHeaderTitle="Time"
         cellHeight={30}
+        dayFormat="dddd DD.MM.YY"
       />
+      <Styled.RightArrow size="30" onClick={setNextWeek} />
       <Styled.CalendarOptionsContainer>
         <Styled.ActionsContainer>
           <Styled.Action>
@@ -244,13 +287,22 @@ const Calendar = () => {
             </Styled.ActionTitle>
             <Styled.ChangeDate size="40" onClick={setModalCalendarOpen} />
           </Styled.Action>
+          <Styled.Action>
+            <Styled.ActionTitle>
+              <FormattedMessage {...messages.changeDate} />
+            </Styled.ActionTitle>
+            <Styled.UsersIcon size="40" onClick={setModalUsersOpen} />
+          </Styled.Action>
         </Styled.ActionsContainer>
       </Styled.CalendarOptionsContainer>
       <Modal visible={modalEventVisible} title="Add new event" onClose={setModalEventClose}>
         <NewEvent />
       </Modal>
       <Modal visible={modalCalendarVisible} title="Select a date to display" onClose={setModalCalendarClose}>
-        <ReactCalendar onChange={() => {}} value={new Date()} />
+        <ReactCalendar onChange={onDateChange} value={new Date()} />
+      </Modal>
+      <Modal visible={modalUsersVisible} title="Select users to display" onClose={setModalUsersClose}>
+        <CalendarUsersList dispatch={dispatch} onSave={saveUsers} />
       </Modal>
     </Styled.Container>
   )

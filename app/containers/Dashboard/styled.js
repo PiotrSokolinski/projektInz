@@ -22,6 +22,7 @@ export const TabsContainer = styled.div`
   margin-top: 20px;
   width: 45vw;
   margin-right: 25px;
+  overflow: auto;
   .react-tabs__tab-list {
     border-bottom: 1px solid ${Colors.edward};
   }

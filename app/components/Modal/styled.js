@@ -55,6 +55,7 @@ export const Description = styled.h3`
   line-height: 140%;
   letter-spacing: 0.02em;
   flex: 1;
+  ${props => props.isConfirmation && 'margin-top: 30px;'}
 `
 
 export const CloseButton = styled.button`

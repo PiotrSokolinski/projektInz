@@ -8,6 +8,9 @@ export const Container = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  &.inputs-container {
+    margin-top: -20px;
+  }
 `
 
 export const TextButton = styled.button`

@@ -3,11 +3,18 @@ import { CalendarPlus } from 'styled-icons/boxicons-solid/CalendarPlus'
 import { RightArrowCircle } from 'styled-icons/boxicons-solid/RightArrowCircle'
 import { LeftArrowCircle } from 'styled-icons/boxicons-solid/LeftArrowCircle'
 import { Calendar } from 'styled-icons/icomoon/Calendar'
+import { Users } from 'styled-icons/fa-solid/Users'
 
 import { Colors } from 'themes'
 
+export const UsersIcon = styled(Users)`
+  color: ${Colors.ecstasy};
+  cursor: pointer;
+`
+
 export const Container = styled.div`
   height: calc(100vh - 75px);
+  padding-top: 20px;
   display: flex;
   .react-calendar {
     width: auto;

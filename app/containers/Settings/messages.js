@@ -21,10 +21,10 @@ export default defineMessages({
     id: `${scope}.lastNameLabel`,
     defaultMessage: 'Last Name',
   },
-  nickLabel: {
-    id: `${scope}.nickLabel`,
-    defaultMessage: 'Nick',
-  },
+  // nickLabel: {
+  //   id: `${scope}.nickLabel`,
+  //   defaultMessage: 'Nick',
+  // },
   editPhoto: {
     id: `${scope}.editPhoto`,
     defaultMessage: 'Edit Profile Photo',
@@ -44,14 +44,6 @@ export default defineMessages({
   submitChanges: {
     id: `${scope}.submitChanges`,
     defaultMessage: 'Submit changes',
-  },
-  changeMailTitle: {
-    id: `${scope}.changeMailTitle`,
-    defaultMessage: 'Chagne your e-mail address',
-  },
-  chagnePasswordTitle: {
-    id: `${scope}.chagnePasswordTitle`,
-    defaultMessage: 'Chagne your password',
   },
   changeMail: {
     id: `${scope}.changeMail`,

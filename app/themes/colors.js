@@ -15,6 +15,10 @@ const Colors = {
   ecstasy: '#f7881e',
   radicalRed: '#ff3860',
   mountainMeadow: '#23d160',
+  red: '#ff0000',
+  errorBackground: 'rgba(239,70,47,0.2)',
+  warningBackground: 'rgba(255,124,68,0.2)',
+  transparentBlack: 'rgba(0,0,0,0.4)',
 }
 
 export default Colors

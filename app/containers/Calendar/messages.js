@@ -45,4 +45,8 @@ export default defineMessages({
     id: `${scope}.changeDate`,
     defaultMessage: 'Change date',
   },
+  chooseMember: {
+    id: `${scope}.chooseMember`,
+    defaultMessage: 'Choose member',
+  },
 })

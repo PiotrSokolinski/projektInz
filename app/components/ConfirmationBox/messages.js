@@ -9,12 +9,12 @@ import { defineMessages } from 'react-intl'
 export const scope = 'app.components.ConfirmationBox'
 
 export default defineMessages({
-  yes: {
-    id: `${scope}.yes`,
-    defaultMessage: 'Yes ',
+  cancel: {
+    id: `${scope}.cancel`,
+    defaultMessage: 'Cancel',
   },
-  no: {
-    id: `${scope}.no`,
-    defaultMessage: 'No',
+  confirmCanceling: {
+    id: `${scope}.confirmCanceling`,
+    defaultMessage: `Confirm`,
   },
 })

@@ -8,12 +8,8 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import messages from './messages'
+import NotFoundContainer from 'containers/NotFound'
 
-export default function NotFound() {
-  return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
-  )
-}
+const NotFound = props => <NotFoundContainer {...props} />
+
+export default NotFound

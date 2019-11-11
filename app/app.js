@@ -14,14 +14,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // import get from 'lodash/get'
 
-// import { ApolloClient } from 'apollo-client'
-// import { ApolloProvider } from 'react-apollo'
+import { ApolloClient } from 'apollo-client'
+import { ApolloProvider } from 'react-apollo'
 import { ConnectedRouter } from 'connected-react-router'
-// import { InMemoryCache } from 'apollo-cache-inmemory'
-// import { setContext } from 'apollo-link-context'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+import { setContext } from 'apollo-link-context'
 
 import { Provider } from 'react-redux'
-// import { createUploadLink } from 'apollo-upload-client'
+import { createUploadLink } from 'apollo-upload-client'
 
 // Import root app
 import App from 'containers/App'
@@ -64,28 +64,28 @@ const store = configureStore(initialState, history)
 const MOUNT_NODE = document.getElementById('app')
 
 // Apollo client config
-// const authLink = setContext((_, { headers }) => {
-//   const storedUser = EFClocalStorage.getSession()
+const authLink = setContext((_, { headers }) => {
+  //const storedUser = EFClocalStorage.getSession()
 
-//   return {
-//     headers: {
-//       ...headers,
-//       uid: get(storedUser, 'token.uid'),
-//       'access-token': get(storedUser, 'token.accessToken'),
-//       client: get(storedUser, 'token.client'),
-//     },
-//     uri: `https://${baseCleanURL}/${get(storedUser, 'role', '')}`,
-//   }
-// })
+  return {
+    headers: {
+      ...headers,
+      // uid: get(storedUser, 'token.uid'),
+      // 'access-token': get(storedUser, 'token.accessToken'),
+      // client: get(storedUser, 'token.client'),
+    },
+    uri: 'http://localhost:5000/graphql',
+  }
+})
 
-// const apolloClient = new ApolloClient({
-//   link: authLink.concat(
-//     createUploadLink({
-//       uri: ``,
-//     }),
-//   ),
-//   cache: new InMemoryCache(),
-// })
+const apolloClient = new ApolloClient({
+  link: authLink.concat(
+    createUploadLink({
+      uri: ``,
+    }),
+  ),
+  cache: new InMemoryCache(),
+})
 
 const render = messages => {
   ReactDOM.render(
@@ -94,9 +94,9 @@ const render = messages => {
         <GlobaStyles />
         <LanguageProvider messages={messages}>
           <ConnectedRouter history={history}>
-            {/* {<ApolloProvider client={apolloClient}>} */}
-            <App store={store} />
-            {/* {</ApolloProvider>} */}
+            <ApolloProvider client={apolloClient}>
+              <App store={store} />
+            </ApolloProvider>
           </ConnectedRouter>
         </LanguageProvider>
       </div>

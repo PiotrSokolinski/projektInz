@@ -5,13 +5,23 @@
  */
 
 import React from 'react'
+import get from 'lodash/get'
+import isEmpty from 'lodash/isEmpty'
+import head from 'lodash/head'
 import PropTypes from 'prop-types'
 import * as Yup from 'yup'
 import { FormattedMessage, injectIntl } from 'react-intl'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
+import { connect } from 'react-redux'
+import appLocalStorage from 'utils/localStorage'
+import { compose, Mutation } from 'react-apollo'
 import { Formik } from 'formik'
+import InformationBox from 'components/InformationBox'
 import PublicInput from 'components/PublicInput'
 import messages from './messages'
 import * as Styled from './styled'
+import REGISTER_MUTATION from './register.gql'
+import UserActions from '../../redux/UserRedux'
 
 const initialValues = { firstName: '', lastName: '', email: '', password: '', repeatedPassword: '' }
 
@@ -28,9 +38,26 @@ const validationSchema = intl =>
       .required(intl.formatMessage(messages.passwordConfirmEmpty)),
   })
 
-const Registration = ({ intl, history }) => {
-  const submitRegistrationForm = () => {
-    history.push('/upload-avatar')
+const Registration = ({ intl, history, registerAction, loading, errors, storeUserData }) => {
+  const submitRegistrationForm = async (values, actions) => {
+    const data = {
+      email: values.email,
+      firstName: values.firstName,
+      lastName: values.lastName,
+      password: values.password,
+    }
+    const result = await registerAction({
+      variables: { data },
+    })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+
+    if (!isEmpty(mutationData)) {
+      const userData = mutationData.register
+      appLocalStorage.saveSession(userData)
+      storeUserData(userData)
+      history.push('/upload-avatar')
+    }
   }
   return (
     <Styled.Container>
@@ -43,7 +70,7 @@ const Registration = ({ intl, history }) => {
           initialValues={initialValues}
           validationSchema={validationSchema(intl)}
         >
-          {({ errors, touched, values, handleChange, handleBlur, handleSubmit }) => (
+          {({ errors, touched, values, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
             <form autoComplete="off">
               <PublicInput
                 id="firstNameField"
@@ -106,7 +133,12 @@ const Registration = ({ intl, history }) => {
                 label={intl.formatMessage(messages.repeatedPasswordLabel)}
               />
               <Styled.ButtonsContainer>
-                <Styled.SubmitButton type="submit" onClick={handleSubmit}>
+                <Styled.SubmitButton
+                  type="submit"
+                  onClick={handleSubmit}
+                  loading={loading && isSubmitting}
+                  disabled={loading && isSubmitting}
+                >
                   <FormattedMessage {...messages.buttonTitle} />
                 </Styled.SubmitButton>
                 <Styled.Link to="/login">
@@ -116,16 +148,43 @@ const Registration = ({ intl, history }) => {
             </form>
           )}
         </Formik>
+        {!isEmpty(errors) && <InformationBox fullWidth>{head(errors)}</InformationBox>}
       </Styled.Box>
     </Styled.Container>
   )
 }
 
+const withMutation = Component => props => (
+  <Mutation mutation={REGISTER_MUTATION}>
+    {(mutate, { loading, error }) => (
+      <Component {...props} registerAction={mutate} loading={loading} errors={formatGraphqlErrors(error)} />
+    )}
+  </Mutation>
+)
+
 Registration.propTypes = {
   intl: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired,
+  registerAction: PropTypes.func,
+  errors: PropTypes.array,
+  loading: PropTypes.bool,
 }
 
-Registration.defaultProps = {}
+Registration.defaultProps = {
+  errors: [],
+  loading: false,
+  registerAction: () => {},
+}
 
-export default injectIntl(Registration)
+const mapDispatchToProps = {
+  storeUserData: UserActions.storeData,
+}
+
+export default compose(
+  connect(
+    null,
+    mapDispatchToProps,
+  ),
+  withMutation,
+  injectIntl,
+)(Registration)

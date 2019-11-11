@@ -11,11 +11,11 @@ export const scope = 'app.components.TaskTile'
 export default defineMessages({
   title: {
     id: `${scope}.title`,
-    defaultMessage: 'Are you sure you want to delete ',
+    defaultMessage: 'Please confirm',
   },
   description: {
     id: `${scope}.description`,
-    defaultMessage: 'You have to confirm the deletion of ',
+    defaultMessage: 'You have to confirm the deletion of {taskName}.',
   },
   taskStatusLabel: {
     id: `${scope}.taskStatusLabel`,

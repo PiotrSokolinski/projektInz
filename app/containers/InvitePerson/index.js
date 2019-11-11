@@ -69,7 +69,7 @@ const InvitePerson = ({ intl, history, alreadyInSystem, onClose }) => {
             } = formikProps
             return (
               <React.Fragment>
-                <Styled.InputsContainer>
+                <Styled.InputsContainer className="inputs-container">
                   <Input
                     id="person1Field"
                     label={intl.formatMessage(messages[alreadyInSystem ? 'universalLabel' : 'person1Label'])}

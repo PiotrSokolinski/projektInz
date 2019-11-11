@@ -14,6 +14,7 @@ import CurrentGroupTasks from 'containers/CurrentGroupTasks'
 import EventInformation from 'components/EventInformation'
 import InformationTile from 'components/InformationTile'
 import MembersList from 'containers/MembersList'
+import GroupSettings from 'containers/GroupSettings'
 import Modal from 'components/Modal'
 import TaskInformation from 'components/TaskInformation'
 import TextChat from 'containers/TextChat'
@@ -57,7 +58,9 @@ const Dashboard = () => {
           <TabPanel>
             <CurrentGroupTasks />
           </TabPanel>
-          <TabPanel>Content 3</TabPanel>
+          <TabPanel>
+            <GroupSettings />
+          </TabPanel>
         </Tabs>
       </Styled.TabsContainer>
       <TextChat />

@@ -55,7 +55,9 @@ export const InfoContainer = styled.div`
   margin-top: 5px;
 `
 
-export const TaskName = styled.div``
+export const TaskName = styled.div`
+  cursor: pointer;
+`
 
 export const Status = styled.div`
   display: flex;

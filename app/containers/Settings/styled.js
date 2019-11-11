@@ -9,6 +9,7 @@ export const EditPhotoButton = styled(Button)`
 `
 
 export const EditButton = styled(Button)`
+  margin-top: 15px;
   width: 120px;
   height: 30px;
 `
@@ -16,6 +17,7 @@ export const EditButton = styled(Button)`
 export const ChangeButton = styled(Button)`
   width: 200px;
   height: 50px;
+  margin-top: 35px;
 `
 
 export const Container = styled.div`
@@ -33,13 +35,15 @@ export const ContentWrapper = styled.div`
 export const Header = styled.div`
   font-size: 25px;
   font-weight: bold;
-  margin: 25px;
+  margin: 25px 25px 0;
   text-align: center;
 `
 
 export const PhotoWrapper = styled.div`
   display: flex;
   align-items: center;
+  border-bottom: 1px solid ${Colors.edward};
+  padding: 0 30px 20px;
 `
 
 export const InformationWrapper = styled.div`
@@ -50,45 +54,24 @@ export const InformationWrapper = styled.div`
 export const DetailsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-`
-
-export const InputsWrapper = styled.div`
   margin-top: 25px;
+  width: 300px;
 `
 
 export const AccoutInput = styled(Input)`
   margin-top: 25px;
 `
 
-export const EmailPasswordContainer = styled.div`
-  margin-top: 125px;
-  display: flex;
-  flex-direction: column;
-`
-
-export const ButtonsContainer = styled.div`
-  margin-left: 100px;
-  display: flex;
-  align-items: center;
-  & > div:first-of-type {
-    margin-right: 50px;
-  }
-`
-
-export const ChangeTitle = styled.div`
-  font-size: 16px;
-  margin-bottom: 25px;
-`
-
-export const ChangeContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
 export const ChangeHeader = styled.div`
   font-size: 19px;
+  margin-top: 25px;
   font-weight: bold;
   text-align: center;
+`
+
+export const CredentialsContainer = styled.div`
   margin-left: 100px;
-  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `

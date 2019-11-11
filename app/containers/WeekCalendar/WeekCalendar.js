@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import moment from 'moment'
 
 import MyModal from 'components/Modal'
+import NewEvent from 'containers/NewEvent'
+
 import * as Utils from './Utils'
 import CalendarHeader from './CalendarHeader'
 import CalendarBody from './CalendarBody'
@@ -478,7 +480,6 @@ class WeekCalendar extends React.Component {
       nextProps.startTime !== this.props.startTime ||
       nextProps.endTime !== this.props.endTime
     ) {
-      console.log('halo halo')
       const scaleIntervals = Utils.getIntervalsByDuration(nextProps.scaleUnit, nextProps.startTime, nextProps.endTime)
       this.setState({
         scaleIntervals,
@@ -739,24 +740,23 @@ class WeekCalendar extends React.Component {
     const { preselectedInterval, updateEvent } = this.state
     const currentCase = updateEvent ? ACTION_TYPES.EDIT : ACTION_TYPES.CREATE
     const shouldRenderModal = preselectedInterval && useModal && showModalCase.includes(currentCase)
-
     if (shouldRenderModal) {
-      const ModalComponent = this.props.modalComponent
+      // const ModalComponent = this.props.modalComponent
       return (
-        <div className="calendarModal">
-          <div className="calendarModal__backdrop" onClick={this.closeModule} />
-          <div className="calendarModal__content">
-            <ModalComponent
-              {...preselectedInterval}
-              onRemove={this.removePreselectedInterval}
-              onSave={this.submitPreselectedInterval}
-              actionType={currentCase}
-            />
-          </div>
-        </div>
-        // <MyModal visible title="Title" onClose={this.removePreselectedInterval}>
-        //   Children
-        // </MyModal>
+        // <div className="calendarModal">
+        //   <div className="calendarModal__backdrop" onClick={this.closeModule} />
+        //   <div className="calendarModal__content">
+        //     <ModalComponent
+        //       {...preselectedInterval}
+        //       onRemove={this.removePreselectedInterval}
+        //       onSave={this.submitPreselectedInterval}
+        //       actionType={currentCase}
+        //     />
+        //   </div>
+        // </div>
+        <MyModal visible title="Title" onClose={this.removePreselectedInterval}>
+          <NewEvent {...preselectedInterval} onSave={this.submitPreselectedInterval} />
+        </MyModal>
       )
     }
 
@@ -777,7 +777,6 @@ class WeekCalendar extends React.Component {
     } = this.props
 
     const isSelection = this.state.startSelectionPosition != null
-
     return (
       <StyledWeekCalendar isSelection={isSelection}>
         <StyledWeekCalendarScaleHeader>

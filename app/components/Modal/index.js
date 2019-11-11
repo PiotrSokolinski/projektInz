@@ -38,7 +38,16 @@ const backgroundVisibleAnimationConfig = {
   transition: defaultTransition,
 }
 
-const Modal = ({ description, title, children, onClose, visible: shouldBeVisible, maxWidth, className }) => {
+const Modal = ({
+  description,
+  title,
+  children,
+  onClose,
+  visible: shouldBeVisible,
+  maxWidth,
+  className,
+  isConfirmation,
+}) => {
   const [renderModal, setRenderModal] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const modalContainer = useRef(null)
@@ -106,7 +115,7 @@ const Modal = ({ description, title, children, onClose, visible: shouldBeVisible
           <Styled.Header className="modal-header">
             <Styled.TextContainer>
               <Styled.Title className="modal-title">{title}</Styled.Title>
-              <Styled.Description>{description}</Styled.Description>
+              <Styled.Description isConfirmation={isConfirmation}>{description}</Styled.Description>
             </Styled.TextContainer>
             <Styled.Close size="22" onClick={onClose} />
           </Styled.Header>
@@ -119,17 +128,19 @@ const Modal = ({ description, title, children, onClose, visible: shouldBeVisible
 
 Modal.propTypes = {
   children: PropTypes.node,
-  description: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   maxWidth: PropTypes.number,
   onClose: PropTypes.func.isRequired,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   visible: PropTypes.bool,
+  isConfirmation: PropTypes.bool,
 }
 
 Modal.defaultProps = {
   description: '',
   maxWidth: 500,
   visible: true,
+  isConfirmation: false,
 }
 
 export default Modal

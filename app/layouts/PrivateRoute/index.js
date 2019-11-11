@@ -1,9 +1,10 @@
 import React from 'react'
 import includes from 'lodash/includes'
 import PropTypes from 'prop-types'
+import validatePageAccess from 'utils/validatePageAccess'
 import Navbar from 'components/Navbar'
 import Sidebar from 'components/Sidebar'
-import { Route /* Redirect */ } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 import { WholePageContainer } from './styled'
 
 const CREATE_GROUP_PATHNAME = '/create-group'
@@ -17,9 +18,9 @@ const PrivateRoute = ({ component: Component, store, wrapper: Wrapper, ...props 
   <Route
     {...props}
     render={({ location, ...restProps }) => {
-      // if (!validatePageAccess(store, setTheme)) {
-      //   return <Redirect to={{ pathname: '/login', state: { from: location } }} />
-      // }
+      if (!validatePageAccess(store)) {
+        return <Redirect to={{ pathname: '/login', state: { from: location } }} />
+      }
       if (isPublicLayout(location))
         return (
           <Wrapper location={location}>

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { Colors } from 'themes'
+
 export const Container = styled.div`
   align-items: center;
   background-color: transparent;
@@ -9,6 +11,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  ${props => props.withBorder && `border: 1px solid ${props.borderColor};`};
 
   .avatar-image {
     border-radius: 100vw;

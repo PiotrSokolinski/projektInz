@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InformationBox /> Should render and match the snapshot 1`] = `
+<div
+  class="styled__Container-wfp3xe-0 bjgfMP"
+  type="other"
+>
+  <img
+    class="styled__Icon-wfp3xe-1 dzrHpH"
+    src="IMAGE_MOCK"
+  />
+  <p
+    class="styled__Text-wfp3xe-2 jMStTs"
+    type="other"
+  />
+</div>
+`;
+
+exports[`<InformationBox /> Should render error and match the snapshot 1`] = `
+<div
+  class="styled__Container-wfp3xe-0 iTEjFd"
+  type="error"
+>
+  <img
+    class="styled__Icon-wfp3xe-1 dzrHpH"
+    src="IMAGE_MOCK"
+  />
+  <p
+    class="styled__Text-wfp3xe-2 igxWPW"
+    type="error"
+  />
+</div>
+`;
