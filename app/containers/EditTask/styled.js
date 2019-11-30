@@ -104,6 +104,7 @@ export const Dot = styled.div`
 
 export const NonEditableInfo = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
@@ -120,6 +121,7 @@ export const FullNameContainer = styled.div`
 export const InfoContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 `
 
 export const CreatedAt = styled.div`

@@ -5,20 +5,31 @@
  */
 
 import React from 'react'
+import dayjs from 'dayjs'
 import * as Yup from 'yup'
 import find from 'lodash/find'
 import get from 'lodash/get'
+import isEmpty from 'lodash/isEmpty'
+import map from 'lodash/map'
+import head from 'lodash/head'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
+import { compose, Mutation, Query } from 'react-apollo'
 
+import appLocalStorage from 'utils/localStorage'
 import Input from 'components/Input'
 import TextArea from 'components/TextArea'
 import Button from 'components/Button'
 import UserAvatar from 'components/UserAvatar'
+import InformationBox from 'components/InformationBox'
+import Spinner from 'components/Spinner'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 
 import messages from './messages'
 import * as Styled from './styled'
+import GET_TASK_QUERY from './getTask.gql'
+import EDIT_TASK_MUTATION from './editTask.gql'
 
 const selectPriority = [
   {
@@ -47,35 +58,42 @@ const selectPriority = [
   },
 ]
 
-const selectAssignee = [
-  {
-    value: 'John',
-    label: (
-      <Styled.LabelContainer>
-        <Styled.SelectName>John</Styled.SelectName>
-        <UserAvatar image="" size="tiny" />
-      </Styled.LabelContainer>
-    ),
-  },
-  {
-    value: 'John2',
-    label: (
-      <Styled.LabelContainer>
-        <Styled.SelectName>John</Styled.SelectName>
-        <UserAvatar image="" size="tiny" />
-      </Styled.LabelContainer>
-    ),
-  },
-  {
-    value: 'John3',
-    label: (
-      <Styled.LabelContainer>
-        <Styled.SelectName>John3</Styled.SelectName>
-        <UserAvatar image="" size="tiny" />
-      </Styled.LabelContainer>
-    ),
-  },
-]
+// const selectAssignee = [
+//   {
+//     value: 'John',
+//     label: (
+//       <Styled.LabelContainer>
+//         <Styled.SelectName>John</Styled.SelectName>
+//         <UserAvatar image="" size="tiny" />
+//       </Styled.LabelContainer>
+//     ),
+//   },
+//   {
+//     value: 'John2',
+//     label: (
+//       <Styled.LabelContainer>
+//         <Styled.SelectName>John</Styled.SelectName>
+//         <UserAvatar image="" size="tiny" />
+//       </Styled.LabelContainer>
+//     ),
+//   },
+//   {
+//     value: 'John3',
+//     label: (
+//       <Styled.LabelContainer>
+//         <Styled.SelectName>John3</Styled.SelectName>
+//         <UserAvatar image="" size="tiny" />
+//       </Styled.LabelContainer>
+//     ),
+//   },
+// ]
+
+const Label = ({ user: { firstName, avatarUrl } }) => (
+  <Styled.LabelContainer>
+    <Styled.SelectName>{firstName}</Styled.SelectName>
+    <UserAvatar image={avatarUrl} size="tiny" />
+  </Styled.LabelContainer>
+)
 
 const selectStatus = [
   {
@@ -104,13 +122,13 @@ const selectStatus = [
   },
 ]
 
-const initialValues = ({ taskName, taskDescription, assignee, priority, status }) => {
+const initialValues = ({ name, description, assignee, priority, status }, assigneeOptions) => {
   const priorityObject = find(selectPriority, option => option.value === priority)
   const statusObject = find(selectStatus, option => option.value === status)
-  const assigneeObject = find(selectAssignee, option => option.value === assignee.firstName)
+  const assigneeObject = find(assigneeOptions, option => option.value === assignee.id)
   return {
-    taskName,
-    taskDescription,
+    taskName: name,
+    taskDescription: description,
     assignee: assigneeObject,
     priority: priorityObject,
     status: statusObject,
@@ -126,13 +144,49 @@ const validationSchema = intl =>
     status: Yup.string().required(intl.formatMessage(messages.statusEmptyError)),
   })
 
-const EditTask = ({ intl, task }) => {
-  const createNewTask = () => {}
+const EditTask = ({ intl, data, editTaskAction, loading, errors, onClose }) => {
+  const task = get(data, 'getTask', null)
+  const groupMembers = get(data, 'group.members', null)
+  const assigneeOptions = map(groupMembers, user => ({ value: user.id, label: <Label user={user} /> }))
+  const editTask = async (values, actions) => {
+    const data = {
+      id: task.id,
+      name: values.taskName,
+      description: values.taskDescription,
+      assignee: values.assignee.value,
+      priority: values.priority.value,
+      status: values.status.value,
+    }
+    const result = await editTaskAction({
+      variables: {
+        data,
+      },
+    })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+    if (!isEmpty(mutationData)) {
+      onClose()
+    }
+  }
   return (
     <Styled.Container>
       <Styled.Wrapper>
-        <Formik onSubmit={createNewTask} initialValues={initialValues(task)} validationSchema={validationSchema(intl)}>
-          {({ errors, touched, values, handleChange, handleBlur, handleSubmit, setFieldValue, setFieldTouched }) => (
+        <Formik
+          onSubmit={editTask}
+          initialValues={initialValues(task, assigneeOptions)}
+          validationSchema={validationSchema(intl)}
+        >
+          {({
+            errors,
+            touched,
+            values,
+            handleChange,
+            handleBlur,
+            handleSubmit,
+            setFieldValue,
+            setFieldTouched,
+            isSubmitting,
+          }) => (
             <React.Fragment>
               <Input
                 id="taskNameField"
@@ -165,12 +219,12 @@ const EditTask = ({ intl, task }) => {
                 label={intl.formatMessage(messages.taskAssigneeLabel)}
                 error={touched.assignee && errors.assignee}
                 id="assigneeSelect"
-                options={selectAssignee}
+                options={assigneeOptions}
                 selectProps={{
                   name: 'assignee',
                   value: values.assignee,
                   onChange: e =>
-                    setFieldValue('assignee', selectAssignee.find(option => option.value === e.value), false),
+                    setFieldValue('assignee', assigneeOptions.find(option => option.value === e.value), false),
                   onBlur: () => setFieldTouched('assignee', true),
                   isSearchable: false,
                   // disabled: currentUser.id === author.id
@@ -219,11 +273,16 @@ const EditTask = ({ intl, task }) => {
                 </Styled.InfoContainer>
                 <Styled.InfoContainer>
                   <FormattedMessage {...messages.createdAt} />
-                  <Styled.CreatedAt>{get(task, 'createdAt', '')}</Styled.CreatedAt>
+                  <Styled.CreatedAt>{dayjs(get(task, 'createdAt', '')).format('DD/MM/YYYY HH:mm:ss')}</Styled.CreatedAt>
                 </Styled.InfoContainer>
               </Styled.NonEditableInfo>
               <Styled.ButtonContainer>
-                <Button type="submit" onClick={handleSubmit}>
+                <Button
+                  type="submit"
+                  onClick={handleSubmit}
+                  loading={loading && isSubmitting}
+                  disabled={loading && isSubmitting}
+                >
                   <FormattedMessage {...messages.saveChanges} />
                 </Button>
               </Styled.ButtonContainer>
@@ -231,6 +290,7 @@ const EditTask = ({ intl, task }) => {
           )}
         </Formik>
       </Styled.Wrapper>
+      {!isEmpty(errors) && <InformationBox fullWidth>{head(errors)}</InformationBox>}
     </Styled.Container>
   )
 }
@@ -238,6 +298,35 @@ const EditTask = ({ intl, task }) => {
 EditTask.propTypes = {
   intl: PropTypes.object,
   task: PropTypes.object,
+  editTaskAction: PropTypes.func,
+  loading: PropTypes.bool,
+  errors: PropTypes.array,
 }
 
-export default injectIntl(EditTask)
+const withQuery = Component => props => (
+  <Query
+    query={GET_TASK_QUERY}
+    variables={{ taskId: get(props, 'taskId', 0), groupId: appLocalStorage.getSession().group.id }}
+  >
+    {({ loading, error, data }) => {
+      if (loading) return <Spinner />
+      const errors = formatGraphqlErrors(error)
+      if (!isEmpty(errors)) return <InformationBox fullWidth>{head(errors)}</InformationBox>
+      return <Component {...props} data={data} />
+    }}
+  </Query>
+)
+
+const withMutation = Component => props => (
+  <Mutation mutation={EDIT_TASK_MUTATION}>
+    {(mutate, { loading, error }) => (
+      <Component {...props} editTaskAction={mutate} loading={loading} errors={formatGraphqlErrors(error)} />
+    )}
+  </Mutation>
+)
+
+export default compose(
+  withQuery,
+  withMutation,
+  injectIntl,
+)(EditTask)

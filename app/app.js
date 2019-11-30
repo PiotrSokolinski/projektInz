@@ -12,7 +12,7 @@ import '@babel/polyfill'
 import React from 'react'
 // import FontFaceObserver from 'fontfaceobserver'
 import ReactDOM from 'react-dom'
-// import get from 'lodash/get'
+import get from 'lodash/get'
 
 import { ApolloClient } from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
@@ -27,7 +27,7 @@ import { createUploadLink } from 'apollo-upload-client'
 import App from 'containers/App'
 
 // Import local storage
-// import EFClocalStorage from 'utils/localStorage'
+import appLocalStorage from 'utils/localStorage'
 
 // Import BaseUrl
 // import baseCleanURL from 'lib/ApiUrl'
@@ -65,11 +65,12 @@ const MOUNT_NODE = document.getElementById('app')
 
 // Apollo client config
 const authLink = setContext((_, { headers }) => {
-  //const storedUser = EFClocalStorage.getSession()
+  const storedUser = appLocalStorage.getSession()
 
   return {
     headers: {
       ...headers,
+      Authorization: `Bearer ${get(storedUser, 'token', '')}`,
       // uid: get(storedUser, 'token.uid'),
       // 'access-token': get(storedUser, 'token.accessToken'),
       // client: get(storedUser, 'token.client'),

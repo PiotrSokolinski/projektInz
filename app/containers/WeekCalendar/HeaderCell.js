@@ -1,14 +1,12 @@
-/* eslint-disable */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import { StyledTitle } from './styled'
+import { DAY_FORMAT } from './constants'
 
-const HeaderCell = ({ date, dayFormat }) => <StyledTitle>{date.format(dayFormat)}</StyledTitle>
+const HeaderCell = ({ date }) => <StyledTitle>{date.format(DAY_FORMAT)}</StyledTitle>
 
 HeaderCell.propTypes = {
   date: PropTypes.object.isRequired,
-  dayFormat: PropTypes.string.isRequired,
 }
 export default HeaderCell

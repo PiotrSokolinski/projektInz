@@ -17,4 +17,8 @@ export default defineMessages({
     id: `${scope}.invated`,
     defaultMessage: 'Invited members',
   },
+  host: {
+    id: `${scope}.host`,
+    defaultMessage: '- host',
+  },
 })

@@ -7,7 +7,13 @@ export default gql`
       email
       firstName
       lastName
+      role
+      avatarUrl
       token
+      color
+      group {
+        id
+      }
     }
   }
 `

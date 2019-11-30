@@ -40,4 +40,5 @@ export const InvitedMemberContainer = styled.div`
 
 export const FullName = styled.div`
   margin-right: 15px;
+  ${props => props.isAuthor && 'font-weight: bold;'};
 `

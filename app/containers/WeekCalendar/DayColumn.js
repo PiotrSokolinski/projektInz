@@ -1,18 +1,11 @@
-/* eslint-disable */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import DayCell from './DayCell'
+import { CELL_HEIGHT } from './constants'
 import { StyledCalendarBodyCell, StyledCalendarBodyColumn } from './styled'
 
-const DayColumn = ({
-  onCellMouseEnter,
-  onSelectionStart,
-  cellHeight,
-  colPos,
-  dayIntervals,
-  dayCellComponent: DayCell,
-}) => {
+const DayColumn = ({ onCellMouseEnter, onSelectionStart, colPos, dayIntervals }) => {
   const handleMouseEnter = (col, row) => () => {
     onCellMouseEnter(col, row)
   }
@@ -22,13 +15,16 @@ const DayColumn = ({
   }
 
   const dayCells = dayIntervals.map((interval, rowPos) => (
-    <StyledCalendarBodyCell key={rowPos} style={{ height: cellHeight }} onMouseEnter={handleMouseEnter(colPos, rowPos)}>
+    <StyledCalendarBodyCell
+      key={rowPos}
+      style={{ height: CELL_HEIGHT }}
+      onMouseEnter={handleMouseEnter(colPos, rowPos)}
+    >
       <DayCell
         colPos={colPos}
         rowPos={rowPos}
         startTime={interval.start}
         endTime={interval.end}
-        cellHeight={cellHeight}
         startSelection={handleStartSelection(colPos, rowPos)}
       />
     </StyledCalendarBodyCell>
@@ -40,8 +36,6 @@ const DayColumn = ({
 DayColumn.propTypes = {
   colPos: PropTypes.number.isRequired,
   dayIntervals: PropTypes.array.isRequired,
-  cellHeight: PropTypes.number.isRequired,
-  dayCellComponent: PropTypes.func.isRequired,
   onSelectionStart: PropTypes.func.isRequired,
   onCellMouseEnter: PropTypes.func.isRequired,
 }

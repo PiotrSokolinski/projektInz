@@ -4,207 +4,78 @@
 //  *
 //  */
 
-// import React, { useState } from 'react'
-// // import PropTypes from 'prop-types'
-// import ReactCalendar from 'react-calendar'
-// import dayjs from 'dayjs'
-// import 'dayjs/locale/en-gb'
-// import times from 'lodash/times'
-// import findIndex from 'lodash/findIndex'
-// import minBy from 'lodash/minBy'
-// import maxBy from 'lodash/maxBy'
-// import isMatch from 'lodash/isMatch'
-// import isEmpty from 'lodash/isEmpty'
-// import some from 'lodash/some'
-// import { FormattedMessage } from 'react-intl'
-
-// import Modal from 'components/Modal'
-// import NewEvent from 'containers/NewEvent'
-
-// import messages from './messages'
-// import * as Styled from './styled'
-// dayjs.locale('en-gb')
-
-// // const mockEvents = [
-// //   {
-// //     arranger: {
-// //       firstName: 'Bob',
-// //       lastName: 'Doe',
-// //       avatarUrl: '',
-// //     },
-// //     from: '2019-10-22T10:00:00.000Z',
-// //     to: '2019-10-22T13:00:00.000Z',
-// //     eventName: 'Name1',
-// //     description: 'description',
-// //   },
-// //   {
-// //     arranger: {
-// //       firstName: 'Bob',
-// //       lastName: 'Doe',
-// //       avatarUrl: '',
-// //     },
-// //     from: '2019-10-23T11:00:00.000Z',
-// //     to: '2019-10-23T15:00:00.000Z',
-// //     eventName: 'Name1',
-// //     description: 'description',
-// //   },
-// // ]
-
-// const dayNames = [
-//   <FormattedMessage {...messages.monday} />,
-//   <FormattedMessage {...messages.tuesday} />,
-//   <FormattedMessage {...messages.wednesday} />,
-//   <FormattedMessage {...messages.thursday} />,
-//   <FormattedMessage {...messages.friday} />,
-//   <FormattedMessage {...messages.saturday} />,
-//   <FormattedMessage {...messages.sunday} />,
-// ]
-// const DAYS_NUMBER = 7
-// const HOURS_NUMBER = 24
-
-// const Calendar = () => {
-//   const [selected, setSelected] = useState([])
-//   const [modalEventVisible, setModalEventVisible] = useState(false)
-//   const [modalCalendarVisible, setModalCalendarVisible] = useState(false)
-//   const [weekFirstDay, setFirstDay] = useState(
-//     dayjs()
-//       .startOf('week')
-//       .startOf('day'),
-//   )
-//   // const [weekLastDay, setLastDay] = useState(
-//   //   dayjs()
-//   //     .endOf('week')
-//   //     .endOf('day'),
-//   // )
-//   const removeHour = (array, value) => array.filter(element => !isMatch(element, value))
-
-//   const onHourClick = (indexDay, indexHour) => {
-//     if (
-//       !isSelected(indexDay, indexHour) &&
-//       ((isTheSameDay(indexDay) && isNextOrPreviousHour(indexHour)) || isEmpty(selected))
-//     )
-//       setSelected([...selected, { indexDay, indexHour }])
-//     else setSelected(removeHour(selected, { indexDay, indexHour }))
-//   }
-//   const isSelected = (indexDay, indexHour) =>
-//     findIndex(selected, object => isMatch(object, { indexDay, indexHour })) > -1
-
-//   const isTheSameDay = indexDay => some(selected, object => object.indexDay === indexDay)
-
-//   const isNextOrPreviousHour = indexHour =>
-//     some(selected, object => object.indexHour === indexHour + 1 || object.indexHour === indexHour - 1)
-
-//   const setModalEventOpen = () => setModalEventVisible(true)
-//   const setModalEventClose = () => setModalEventVisible(false)
-//   const setModalCalendarOpen = () => setModalCalendarVisible(true)
-//   const setModalCalendarClose = () => setModalCalendarVisible(false)
-//   const setNextWeek = () => {
-//     setSelected([])
-//     setFirstDay(dayjs(weekFirstDay).add(DAYS_NUMBER, 'days'))
-//   }
-//   const setPreviousWeek = () => {
-//     setSelected([])
-//     setFirstDay(dayjs(weekFirstDay).subtract(DAYS_NUMBER, 'days'))
-//   }
-//   const onCalendarChange = date => {
-//     setFirstDay(
-//       dayjs(date)
-//         .startOf('week')
-//         .startOf('day'),
-//     )
-//     setModalCalendarClose()
-//   }
-
-//   return (
-//     <Styled.Container>
-//       <Styled.LeftArrow size="30" onClick={setPreviousWeek} />
-//       <Styled.CalendarContainer>
-//         {times(DAYS_NUMBER, indexDay => (
-//           <Styled.CalendarDay>
-//             <Styled.DayName key={`el-day-in-week-${indexDay}`}>
-//               {weekFirstDay.add(indexDay, 'days').format('DD.MM.YY')}
-//               &nbsp;
-//               {dayNames[indexDay]}
-//             </Styled.DayName>
-//             {times(HOURS_NUMBER, indexHour => (
-//               <Styled.CalendarHour
-//                 key={`el-hour-in-day-${indexDay}-${indexHour}`}
-//                 onMouseDown={() => onHourClick(indexDay, indexHour)}
-//                 selected={isSelected(indexDay, indexHour)}
-//               >
-//                 {indexHour}:00
-//               </Styled.CalendarHour>
-//             ))}
-//           </Styled.CalendarDay>
-//         ))}
-//       </Styled.CalendarContainer>
-// <Styled.CalendarOptionsContainer>
-//   <Styled.RightArrow size="30" onClick={setNextWeek} />
-//   <Styled.ActionsContainer>
-//     <Styled.Action>
-//       <Styled.ActionTitle>
-//         <FormattedMessage {...messages.addEvent} />
-//       </Styled.ActionTitle>
-//       <Styled.AddEvent size="50" onClick={setModalEventOpen} />
-//     </Styled.Action>
-//     <Styled.Action>
-//       <Styled.ActionTitle>
-//         <FormattedMessage {...messages.changeDate} />
-//       </Styled.ActionTitle>
-//       <Styled.ChangeDate size="40" onClick={setModalCalendarOpen} />
-//     </Styled.Action>
-//   </Styled.ActionsContainer>
-// </Styled.CalendarOptionsContainer>
-//       <Modal visible={modalEventVisible} title="Add new event" onClose={setModalEventClose}>
-//         <NewEvent
-//           weekStart={weekFirstDay}
-//           startTime={minBy(selected, 'indexHour')}
-//           endTime={maxBy(selected, 'indexHour')}
-//         />
-//       </Modal>
-//       <Modal visible={modalCalendarVisible} title="Select a date to display" onClose={setModalCalendarClose}>
-//         <ReactCalendar onChange={onCalendarChange} value={new Date()} />
-//       </Modal>
-//     </Styled.Container>
-//   )
-// }
-// Calendar.propTypes = {}
-
-// export default Calendar
-
 import React, { useState, useReducer } from 'react'
 import dayjs from 'dayjs'
+import get from 'lodash/get'
+import head from 'lodash/head'
+import isEmpty from 'lodash/isEmpty'
+import filter from 'lodash/filter'
+import intersection from 'lodash/intersection'
+import map from 'lodash/map'
 import 'dayjs/locale/en-gb'
-import WeekCalendar from 'containers/WeekCalendar'
 import { FormattedMessage } from 'react-intl'
 import ReactCalendar from 'react-calendar'
-import moment from 'moment'
+import { compose, Query } from 'react-apollo'
 
+import WeekCalendar, { WeekCalendar2 } from 'containers/WeekCalendar'
+import appLocalStorage from 'utils/localStorage'
 import Modal from 'components/Modal'
 import NewEvent from 'containers/NewEvent'
 import CalendarUsersList from 'containers/CalendarUsersList'
+import Spinner from 'components/Spinner'
+import InformationBox from 'components/InformationBox'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 
 import messages from './messages'
 import * as Styled from './styled'
 import reducer from './reducer'
+import GET_EVENTS_QUERY from './getEvents.gql'
 
 dayjs.locale('en-gb')
 
 const DAYS_NUMBER = 7
-const initialState = []
+// const initialState = []
 
-const Calendar = () => {
+const mapEvents = events => {
+  const arrayOfEvents = []
+  for (let i = 0; i < events.length; i += 1) {
+    const amountOfEvents = dayjs(events[i].endDate).diff(dayjs(events[i].startDate), 'day') + 1
+    if (amountOfEvents === 1) {
+      const event = {
+        id: events[i].id,
+        start: dayjs(events[i].startDate),
+        end: dayjs(events[i].endDate),
+        value: events[i].name,
+        invitedMembers: events[i].invitedMembers,
+        author: events[i].author,
+      }
+      arrayOfEvents.push(event)
+    } else {
+      for (let j = 0; j < amountOfEvents; j += 1) {
+        const event = {
+          id: events[i].id,
+          start: dayjs(events[i].startDate).add(j, 'days'),
+          end: dayjs(events[i].endDate).subtract(amountOfEvents - j - 1, 'days'),
+          value: events[i].name,
+          invitedMembers: events[i].invitedMembers,
+          author: events[i].author,
+        }
+        arrayOfEvents.push(event)
+      }
+    }
+  }
+  return arrayOfEvents
+}
+const Calendar = ({ data, weekFirstDay, setFirstDay }) => {
+  const events = get(data, 'getEvents', [])
+  const groupMembers = get(data, 'group.members', [])
+
   const [modalEventVisible, setModalEventVisible] = useState(false)
   const [modalCalendarVisible, setModalCalendarVisible] = useState(false)
   const [modalUsersVisible, setModalUsersVisible] = useState(false)
-  const [lastUid, setLastUid] = useState(1)
-  const [selectedIntervals, setSelectedIntervals] = useState([])
-  const [weekFirstDay, setFirstDay] = useState(
-    moment()
-      .startOf('isoWeek')
-      .startOf('day'),
-  )
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const mappedEvents = mapEvents(events)
+  const [selectedIntervals, setSelectedIntervals] = useState(mappedEvents)
+  const [state, dispatch] = useReducer(reducer, groupMembers)
 
   const setModalEventOpen = () => setModalEventVisible(true)
   const setModalEventClose = () => setModalEventVisible(false)
@@ -232,30 +103,33 @@ const Calendar = () => {
   const handleSelect = newIntervals => {
     const intervals = newIntervals.map((interval, index) => ({
       ...interval,
-      uid: lastUid + index,
     }))
     setSelectedIntervals(selectedIntervals.concat(intervals))
-    setLastUid(lastUid + newIntervals.length)
   }
 
   const setNextWeek = () => {
-    setFirstDay(moment(weekFirstDay).add(DAYS_NUMBER, 'days'))
+    setFirstDay(dayjs(weekFirstDay).add(DAYS_NUMBER, 'days'))
   }
   const setPreviousWeek = () => {
-    setFirstDay(moment(weekFirstDay).subtract(DAYS_NUMBER, 'days'))
+    setFirstDay(dayjs(weekFirstDay).subtract(DAYS_NUMBER, 'days'))
   }
 
   const onDateChange = date => {
     setFirstDay(
-      moment(date)
-        .startOf('isoWeek')
+      dayjs(date)
+        .startOf('week')
         .startOf('day'),
     )
     setModalCalendarClose()
   }
 
   const saveUsers = () => {
-    console.log('state', state)
+    const newEvents = filter(mappedEvents, event => {
+      const invitedMembersIds = map(event.invitedMembers, member => member.id)
+      const choosenMembersIds = map(state, member => member.id)
+      return !isEmpty(intersection(invitedMembersIds, choosenMembersIds))
+    })
+    setSelectedIntervals(newEvents)
     setModalUsersClose()
   }
 
@@ -263,14 +137,13 @@ const Calendar = () => {
     <Styled.Container>
       <Styled.LeftArrow size="30" onClick={setPreviousWeek} />
       <WeekCalendar
-        firstDay={weekFirstDay}
+        firstDay={dayjs(weekFirstDay)}
         selectedIntervals={selectedIntervals}
         onIntervalSelect={handleSelect}
         onIntervalUpdate={handleEventUpdate}
         onIntervalRemove={handleEventRemove}
-        scaleUnit={60}
-        cellHeight={30}
-        dayFormat="dddd DD.MM.YY"
+        // onEventClick={() => alert('eee')}
+        groupMembers={groupMembers}
       />
       <Styled.RightArrow size="30" onClick={setNextWeek} />
       <Styled.CalendarOptionsContainer>
@@ -289,23 +162,56 @@ const Calendar = () => {
           </Styled.Action>
           <Styled.Action>
             <Styled.ActionTitle>
-              <FormattedMessage {...messages.changeDate} />
+              <FormattedMessage {...messages.chooseMember} />
             </Styled.ActionTitle>
             <Styled.UsersIcon size="40" onClick={setModalUsersOpen} />
           </Styled.Action>
         </Styled.ActionsContainer>
       </Styled.CalendarOptionsContainer>
       <Modal visible={modalEventVisible} title="Add new event" onClose={setModalEventClose}>
-        <NewEvent />
+        <NewEvent onIntervalSelect={handleSelect} onClose={setModalEventClose} groupMembers={groupMembers} />
       </Modal>
       <Modal visible={modalCalendarVisible} title="Select a date to display" onClose={setModalCalendarClose}>
         <ReactCalendar onChange={onDateChange} value={new Date()} />
       </Modal>
       <Modal visible={modalUsersVisible} title="Select users to display" onClose={setModalUsersClose}>
-        <CalendarUsersList dispatch={dispatch} onSave={saveUsers} />
+        <CalendarUsersList state={state} dispatch={dispatch} onSave={saveUsers} groupMembers={groupMembers} />
       </Modal>
     </Styled.Container>
   )
 }
 
-export default Calendar
+const withQuery = Component => props => {
+  const [weekFirstDay, setFirstDay] = useState(
+    dayjs()
+      .startOf('week')
+      .startOf('day'),
+  )
+  const dateFrom = weekFirstDay.format()
+  const dateTo = weekFirstDay.add(DAYS_NUMBER, 'days').format()
+  return (
+    <Query
+      query={GET_EVENTS_QUERY}
+      fetchPolicy="cache-and-network"
+      variables={{
+        id: appLocalStorage.getSession().group.id,
+        dateFrom,
+        dateTo,
+      }}
+    >
+      {({ loading, error, data }) => {
+        if (loading)
+          return (
+            <Styled.SpinnerContainer>
+              <Spinner size={15} border={1.5} />
+            </Styled.SpinnerContainer>
+          )
+        const errors = formatGraphqlErrors(error)
+        if (!isEmpty(errors)) return <InformationBox fullWidth>{head(errors)}</InformationBox>
+        return <Component {...props} data={data} weekFirstDay={weekFirstDay} setFirstDay={setFirstDay} />
+      }}
+    </Query>
+  )
+}
+
+export default compose(withQuery)(Calendar)

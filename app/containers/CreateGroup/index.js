@@ -8,18 +8,24 @@ import React, { useState, useRef } from 'react'
 import * as Yup from 'yup'
 import countryList from 'react-select-country-list'
 import head from 'lodash/head'
+import get from 'lodash/get'
+import parseInt from 'lodash/parseInt'
 import isEmpty from 'lodash/isEmpty'
 import Dropzone from 'react-dropzone'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
+import { compose, Mutation } from 'react-apollo'
 
 import UserAvatar from 'components/UserAvatar'
 import Select from 'components/Select'
 import Input from 'components/Input'
+import InformationBox from 'components/InformationBox'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 
 import messages from './messages'
 import * as Styled from './styled'
+import CREATE_GROUP_MUTATION from './createGroup.gql'
 
 const initialValues = { name: '', address: '', apartmentNumber: '', zipCode: '', city: '', country: '' }
 
@@ -28,7 +34,9 @@ const validationSchema = intl =>
     name: Yup.string().required(intl.formatMessage(messages.nameError)),
   })
 
-const CreateGroup = ({ intl, history }) => {
+const findCountry = group => filter(countryList().getData(), country => country.value === group.country)
+
+const CreateGroup = ({ intl, history, createGroupAction, loading, errors }) => {
   // eslint-disable-next-line no-unused-vars
   const [avatar, setAvatar] = useState(null)
   const [country, setCountry] = useState('')
@@ -47,8 +55,25 @@ const CreateGroup = ({ intl, history }) => {
     }
     return null
   }
-  const createGroup = () => {
-    history.push('/invite')
+  const createGroup = async (values, actions) => {
+    const data = {
+      name: values.name,
+      address: values.address,
+      number: parseInt(values.apartmentNumber),
+      zipCode: values.zipCode,
+      city: values.city,
+      country: country.value,
+    }
+    const result = await createGroupAction({
+      variables: {
+        data,
+      },
+    })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+    if (!isEmpty(mutationData)) {
+      history.push('/invite')
+    }
   }
   const changeZipCodeValue = (event, setFieldValue) => {
     const { value } = event.target
@@ -66,7 +91,7 @@ const CreateGroup = ({ intl, history }) => {
             handleBlur,
             handleChange,
             handleSubmit,
-            // isSubmitting,
+            isSubmitting,
             // setFieldTouched,
             setFieldValue,
             touched,
@@ -172,13 +197,19 @@ const CreateGroup = ({ intl, history }) => {
                   }}
                 />
               </Styled.InputsContainer>
-              <Styled.SubmitButton type="submit" onClick={handleSubmit}>
+              <Styled.SubmitButton
+                type="submit"
+                onClick={handleSubmit}
+                loading={loading && isSubmitting}
+                disabled={loading && isSubmitting}
+              >
                 <FormattedMessage {...messages.submitButton} />
               </Styled.SubmitButton>
             </Styled.FormContainer>
           )
         }}
       </Formik>
+      {!isEmpty(errors) && <InformationBox fullWidth>{head(errors)}</InformationBox>}
     </Styled.Container>
   )
 }
@@ -186,6 +217,25 @@ const CreateGroup = ({ intl, history }) => {
 CreateGroup.propTypes = {
   intl: PropTypes.object,
   history: PropTypes.object,
+  createGroupAction: PropTypes.func,
+  loading: PropTypes.bool,
+  errors: PropTypes.array,
 }
 
-export default injectIntl(CreateGroup)
+CreateGroup.defaultProps = {
+  createGroupAction: () => {},
+  loading: false,
+  errors: [],
+}
+
+const withMutation = Component => props => (
+  <Mutation mutation={CREATE_GROUP_MUTATION}>
+    {(mutate, { loading, error }) => (
+      <Component {...props} createGroupAction={mutate} loading={loading} errors={formatGraphqlErrors(error)} />
+    )}
+  </Mutation>
+)
+export default compose(
+  injectIntl,
+  withMutation,
+)(CreateGroup)

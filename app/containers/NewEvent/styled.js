@@ -20,3 +20,11 @@ export const DateContainer = styled.div`
     margin-left: 0;
   }
 `
+
+export const LabelContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+export const SelectName = styled.div`
+  margin-right: 8px;
+`

@@ -5,6 +5,7 @@
  */
 
 import React, { useState } from 'react'
+import dayjs from 'dayjs'
 import PropTypes from 'prop-types'
 import get from 'lodash/get'
 import { FormattedMessage } from 'react-intl'
@@ -27,7 +28,7 @@ const SingleTask = ({ task }) => {
     <Styled.SingleTaskContainer>
       <Styled.InfoContainer>
         <Styled.TaskName onClick={openTaskModal}>
-          <FormattedMessage {...messages.taskName} values={{ name: get(task, 'taskName', '') }} />
+          <FormattedMessage {...messages.taskName} values={{ name: get(task, 'name', '') }} />
         </Styled.TaskName>
         <Styled.Status>
           <FormattedMessage {...messages.taskStatus} />
@@ -59,7 +60,7 @@ const SingleTask = ({ task }) => {
         <React.Fragment>
           <Styled.DescriptionContainer>
             <FormattedMessage {...messages.description} />
-            <Styled.Description>{get(task, 'taskDescription', '')}</Styled.Description>
+            <Styled.Description>{get(task, 'description', '')}</Styled.Description>
           </Styled.DescriptionContainer>
           <Styled.InfoContainer>
             <Styled.PriorityContainer>
@@ -69,7 +70,7 @@ const SingleTask = ({ task }) => {
             </Styled.PriorityContainer>
             <Styled.CreatedAtContainer>
               <FormattedMessage {...messages.createdAt} />
-              <Styled.CreatedAt>{get(task, 'createdAt', '')}</Styled.CreatedAt>
+              <Styled.CreatedAt>{dayjs(get(task, 'createdAt', '')).format('DD/MM/YYYY HH:mm:ss')}</Styled.CreatedAt>
             </Styled.CreatedAtContainer>
           </Styled.InfoContainer>
         </React.Fragment>
@@ -81,7 +82,7 @@ const SingleTask = ({ task }) => {
         </Styled.ShowMoreButton>
       </Styled.ShowMoreContainer>
       <Modal title="Details" visible={isModalTaskVisible} onClose={closeTaskModal}>
-        <EditTask task={task} />
+        <EditTask taskId={task.id} onClose={closeTaskModal} />
       </Modal>
     </Styled.SingleTaskContainer>
   )

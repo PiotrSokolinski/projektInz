@@ -6,8 +6,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Container, RotationAnimationBox } from './styled'
 import { Colors } from 'themes'
+import { Container, RotationAnimationBox } from './styled'
 
 const SpinnerProps = {
   size: PropTypes.number,

@@ -21,7 +21,6 @@ const Select = ({
   selectProps,
   className,
   id,
-  insideModal,
   withoutElements,
   ...restProps
 }) => {
@@ -38,7 +37,6 @@ const Select = ({
         components={withoutElements ? customComponents : null}
         classNamePrefix="select"
         className="react-select"
-        menuPortalTarget={insideModal && document.getElementById('modal-overlay')}
         isDisabled={disabled}
         {...selectProps}
         {...restProps}

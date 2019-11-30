@@ -65,7 +65,7 @@ export const storeData = (state, { userData, mergeData }) => {
 export const reducer = createReducer(INITIAL_STATE, {
   [Types.CLEAR_DATA]: clearData,
   [Types.STORE_DATA]: storeData,
-  //[Types.UPDATE_AVATAR_URL]: updateAvatarUrl,
-  //[Types.UPDATE_REGISTRATION_STEP]: updateRegistrationStep,
-  //[Types.UPDATE_USER_PROFILE]: updateUserProfile,
+  // [Types.UPDATE_AVATAR_URL]: updateAvatarUrl,
+  // [Types.UPDATE_REGISTRATION_STEP]: updateRegistrationStep,
+  // [Types.UPDATE_USER_PROFILE]: updateUserProfile,
 })

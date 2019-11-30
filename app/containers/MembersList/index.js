@@ -16,40 +16,40 @@ import InvitePerson from 'containers/InvitePerson'
 import messages from './messages'
 import * as Styled from './styled'
 
-const mockUsers = [
-  {
-    firstName: 'Bob',
-    lastName: 'Doe',
-    avatarUrl: '',
-    number: '123123123',
-  },
-  {
-    firstName: 'Bob',
-    lastName: 'Doe',
-    avatarUrl: '',
-    number: '123123123',
-  },
-  {
-    firstName: 'Bob',
-    lastName: 'Doe',
-    avatarUrl: '',
-    number: '123123123',
-  },
-  {
-    firstName: 'Bob',
-    lastName: 'Doe',
-    avatarUrl: '',
-    number: '123123123',
-  },
-]
+// const mockUsers = [
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Doe',
+//     avatarUrl: '',
+//     number: '123123123',
+//   },
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Doe',
+//     avatarUrl: '',
+//     number: '123123123',
+//   },
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Doe',
+//     avatarUrl: '',
+//     number: '123123123',
+//   },
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Doe',
+//     avatarUrl: '',
+//     number: '123123123',
+//   },
+// ]
 
-const MembersList = () => {
+const MembersList = ({ members }) => {
   const [modalVisible, setModalVisible] = useState(false)
   const closeModal = () => setModalVisible(false)
   const openModal = () => setModalVisible(true)
   return (
     <Styled.Container>
-      {map(mockUsers, (member, index) => (
+      {map(members, (member, index) => (
         <MemberTile member={member} key={`el-member-${index}`} />
       ))}
       <Styled.TextButton onClick={openModal}>

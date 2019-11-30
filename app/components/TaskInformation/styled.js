@@ -25,7 +25,6 @@ export const AuthorContainer = styled.div`
   color: ${Colors.black};
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
   margin-top: 15px;
 `
 

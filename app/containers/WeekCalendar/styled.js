@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { Colors } from 'themes'
+
 export const StyledDayCell = styled.div`
   width: 100%;
   height: 100%;
@@ -48,12 +50,13 @@ export const StyledCalendarBodyColumn = styled.div`
 `
 
 export const StyledEvent = styled.div`
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100%;
-  color: #6b6b6b;
-  background-color: rgba(139, 195, 74, 0.4);
+  color: ${Colors.black};
+  background-color: ${props => props.color};
 `
 export const StyledTitle = styled.span``
 

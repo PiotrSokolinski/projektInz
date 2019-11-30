@@ -6,6 +6,7 @@
 
 import React, { useState, useEffect } from 'react'
 import map from 'lodash/map'
+import some from 'lodash/some'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 
@@ -39,30 +40,28 @@ const mockUsers = [
   },
 ]
 
-const CalendarUsersList = ({ dispatch, onSave }) => {
-  return (
-    <React.Fragment>
-      <Styled.CheckboxesContainer>
-        {map(mockUsers, (user, index) => (
-          <UserCheckbox user={user} dispatch={dispatch} key={`el-user-${index}`} />
-        ))}
-      </Styled.CheckboxesContainer>
-      <Button type="submit" onClick={onSave}>
-        <FormattedMessage {...messages.buttonText} />
-      </Button>
-    </React.Fragment>
-  )
-}
+const CalendarUsersList = ({ dispatch, onSave, groupMembers, state }) => (
+  <React.Fragment>
+    <Styled.CheckboxesContainer>
+      {map(groupMembers, (user, index) => (
+        <UserCheckbox user={user} dispatch={dispatch} state={state} key={`el-user-${index}`} />
+      ))}
+    </Styled.CheckboxesContainer>
+    <Button type="submit" onClick={onSave}>
+      <FormattedMessage {...messages.buttonText} />
+    </Button>
+  </React.Fragment>
+)
 
-const UserCheckbox = ({ user, dispatch }) => {
-  const [checked, setChecked] = useState(true)
+const UserCheckbox = ({ user, dispatch, state }) => {
+  const [checked, setChecked] = useState(some(state, member => member.id === user.id))
   const toggleCheckbox = () => setChecked(!checked)
 
   useEffect(() => {
     const type = checked ? 'add' : 'remove'
     dispatch({
       type,
-      value: user.id,
+      value: user,
     })
   }, [checked])
 
@@ -70,7 +69,9 @@ const UserCheckbox = ({ user, dispatch }) => {
     <Styled.CheckboxContainer>
       <Checkbox checked={checked} onChange={toggleCheckbox} />
       <Styled.Label onClick={toggleCheckbox}>
-        <Styled.Name>{user.firstName}</Styled.Name>
+        <Styled.Name>
+          {user.firstName} {user.lastName}
+        </Styled.Name>
         <UserAvatar image={user.avatarUrl} size="small" />
       </Styled.Label>
     </Styled.CheckboxContainer>

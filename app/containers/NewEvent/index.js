@@ -4,57 +4,76 @@
  *
  */
 
-import React, { useState } from 'react'
+import React from 'react'
 import * as Yup from 'yup'
-import moment from 'moment'
+import head from 'lodash/head'
+import map from 'lodash/map'
+import filter from 'lodash/filter'
+import get from 'lodash/get'
+import isEmpty from 'lodash/isEmpty'
+import dayjs from 'dayjs'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
+import { compose, Mutation } from 'react-apollo'
 
+import appLocalStorage from 'utils/localStorage'
 import DatePicker from 'components/DatePicker'
-
 import Input from 'components/Input'
 import TextArea from 'components/TextArea'
 import Button from 'components/Button'
 import Select from 'components/Select'
+import UserAvatar from 'components/UserAvatar'
+import InformationBox from 'components/InformationBox'
+import { getIntervals } from 'containers/WeekCalendar/Utils'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 
 import messages from './messages'
 import * as Styled from './styled'
+import CREATE_EVENT_MUTATION from './createEvent.gql'
 
-const options = [
-  {
-    value: 'Bob',
-    label: 'Bob',
-  },
-  {
-    value: 'Bob2',
-    label: 'Bob2',
-  },
-  {
-    value: 'Bob3',
-    label: 'Bob3',
-  },
-  {
-    value: 'Bob4',
-    label: 'Bob4',
-  },
-  {
-    value: 'Bob5',
-    label: 'Bob5',
-  },
-]
+// const options = [
+//   {
+//     value: 'Bob',
+//     label: 'Bob',
+//   },
+//   {
+//     value: 'Bob2',
+//     label: 'Bob2',
+//   },
+//   {
+//     value: 'Bob3',
+//     label: 'Bob3',
+//   },
+//   {
+//     value: 'Bob4',
+//     label: 'Bob4',
+//   },
+//   {
+//     value: 'Bob5',
+//     label: 'Bob5',
+//   },
+// ]
 
-const initialValues = (start, end) => {
-  return {
-    startDate: start,
-    startTime: start.startOf('hour'),
-    endTime: end.startOf('hour'),
-    endDate: end,
-    name: '',
-    description: '',
-    invitations: [],
-  }
-}
+const Label = ({ user: { firstName, avatarUrl } }) => (
+  <Styled.LabelContainer>
+    <Styled.SelectName>{firstName}</Styled.SelectName>
+    <UserAvatar image={avatarUrl} size="tiny" />
+  </Styled.LabelContainer>
+)
+
+const findCurrentUser = invitationsOptions =>
+  filter(invitationsOptions, option => option.value === appLocalStorage.getSession().id)
+
+const initialValues = (start, end, invitationsOptions) => ({
+  startDate: start,
+  startTime: start.startOf('hour'),
+  endTime: end.startOf('hour'),
+  endDate: end,
+  name: '',
+  description: '',
+  invitations: findCurrentUser(invitationsOptions),
+})
 
 const validationSchema = intl =>
   Yup.object().shape({
@@ -66,17 +85,123 @@ const validationSchema = intl =>
     endTime: Yup.string().required(intl.formatMessage(messages.endTimeError)),
   })
 
-const NewEvent = ({ intl, start = moment(), end = moment().add(1, 'hour'), onSave }) => {
-  const handleSave = values => {
-    onSave({
-      value: values.description,
+const NewEvent = ({
+  intl,
+  start = dayjs().add(1, 'hour'),
+  end = dayjs().add(2, 'hour'),
+  onSave,
+  onClose,
+  onIntervalSelect,
+  fromCalendar,
+  createEventAction,
+  loading,
+  errors,
+  groupMembers,
+}) => {
+  const invitationsOptions = map(groupMembers, user => ({ value: user.id, label: <Label user={user} /> }))
+
+  const handleSave = async (values, actions) => {
+    const start = dayjs(
+      dayjs(values.startDate)
+        .format()
+        .substring(0, 10) +
+        dayjs(values.startTime)
+          .format()
+          .substring(10),
+    ).format()
+    const end = dayjs(
+      dayjs(values.endDate)
+        .format()
+        .substring(0, 10) +
+        dayjs(values.endTime)
+          .format()
+          .substring(10),
+    ).format()
+    const data = {
+      name: values.name,
+      description: values.description,
+      startDate: start,
+      endDate: end,
+      invited: map(values.invitations, invitation => invitation.value),
+      group: appLocalStorage.getSession().group.id,
+    }
+    const result = await createEventAction({
+      variables: {
+        data,
+      },
     })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+    if (!isEmpty(mutationData)) {
+      onSave({
+        value: values.name,
+      })
+    }
   }
-  console.log('asasasasassaassa')
+  const submitPreselectedInterval = async (values, actions) => {
+    const start = dayjs(
+      dayjs(values.startDate)
+        .format()
+        .substring(0, 10) +
+        dayjs(values.startTime)
+          .format()
+          .substring(10),
+    )
+    const end = dayjs(
+      dayjs(values.endDate)
+        .format()
+        .substring(0, 10) +
+        dayjs(values.endTime)
+          .format()
+          .substring(10),
+    )
+    const data = {
+      name: values.name,
+      description: values.description,
+      startDate: start.format(),
+      endDate: end.format(),
+      invited: map(values.invitations, invitation => invitation.value),
+      group: appLocalStorage.getSession().group.id,
+    }
+    const result = await createEventAction({
+      variables: {
+        data,
+      },
+    })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+    if (!isEmpty(mutationData)) {
+      const newValue = {
+        value: values.name,
+      }
+      const intervals = getIntervals(start, end)
+      const result = intervals.map(interval => ({
+        ...interval,
+        ...newValue,
+      }))
+      onIntervalSelect(result)
+      onClose()
+    }
+  }
+  const action = fromCalendar ? handleSave : submitPreselectedInterval
   return (
     <Styled.Container>
-      <Formik onSubmit={handleSave} initialValues={initialValues(start, end)} validationSchema={validationSchema(intl)}>
-        {({ errors, touched, values, handleChange, handleBlur, handleSubmit, setFieldValue, setFieldTouched }) => (
+      <Formik
+        onSubmit={action}
+        initialValues={initialValues(start, end, invitationsOptions)}
+        validationSchema={validationSchema(intl)}
+      >
+        {({
+          errors,
+          touched,
+          values,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          setFieldValue,
+          setFieldTouched,
+          isSubmitting,
+        }) => (
           <React.Fragment>
             <Styled.DateContainer>
               <DatePicker
@@ -146,14 +271,17 @@ const NewEvent = ({ intl, start = moment(), end = moment().add(1, 'hour'), onSav
             <Select
               isMulti
               closeMenuOnSelect={false}
+              isSearchable={false}
               hideSelectedOptions={false}
-              options={options}
+              options={invitationsOptions}
               label={intl.formatMessage(messages.selectLabel)}
               placeholder={intl.formatMessage(messages.selectPlaceholder)}
               selectProps={{
                 name: 'invitations',
                 value: values.invitations,
-                onChange: e => setFieldValue('invitations', options.find(option => option.value === e.value), false),
+                onChange: selectedOptions => {
+                  setFieldValue('invitations', selectedOptions, false)
+                },
               }}
             />
             <TextArea
@@ -167,12 +295,18 @@ const NewEvent = ({ intl, start = moment(), end = moment().add(1, 'hour'), onSav
                 onBlur: handleBlur,
               }}
             />
-            <Button type="submit" onClick={handleSubmit}>
+            <Button
+              type="submit"
+              onClick={handleSubmit}
+              loading={loading && isSubmitting}
+              disabled={loading && isSubmitting}
+            >
               <FormattedMessage {...messages.save} />
             </Button>
           </React.Fragment>
         )}
       </Formik>
+      {!isEmpty(errors) && <InformationBox fullWidth>{head(errors)}</InformationBox>}
     </Styled.Container>
   )
 }
@@ -182,6 +316,28 @@ NewEvent.propTypes = {
   weekStart: PropTypes.object,
   startTime: PropTypes.object,
   endTime: PropTypes.object,
+  fromCalendar: PropTypes.bool,
+  createEventAction: PropTypes.func,
+  loading: PropTypes.bool,
+  errors: PropTypes.array,
 }
 
-export default injectIntl(NewEvent)
+NewEvent.defaultProps = {
+  fromCalendar: false,
+  createEventAction: () => {},
+  loading: false,
+  errors: [],
+}
+
+const withMutation = Component => props => (
+  <Mutation mutation={CREATE_EVENT_MUTATION}>
+    {(mutate, { loading, error }) => (
+      <Component {...props} createEventAction={mutate} loading={loading} errors={formatGraphqlErrors(error)} />
+    )}
+  </Mutation>
+)
+
+export default compose(
+  injectIntl,
+  withMutation,
+)(NewEvent)

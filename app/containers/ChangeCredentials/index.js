@@ -10,11 +10,13 @@ import PropTypes from 'prop-types'
 
 import Input from 'components/Input'
 import Button from 'components/Button'
+import ChangePassword from 'containers/ChangePassword'
+import ChangeMail from 'containers/ChangeMail'
 
 import messages from './messages'
 import * as Styled from './styled'
 
-const ChangeCredentials = ({ intl, children }) => {
+const ChangeCredentials = ({ intl, type, onClose }) => {
   const [isResetting, setIsResetting] = useState(false)
   const [password, setPassword] = useState('')
   const confirmPassword = () => {
@@ -39,7 +41,15 @@ const ChangeCredentials = ({ intl, children }) => {
           </Button>
         </React.Fragment>
       )}
-      {isResetting && <React.Fragment>{children}</React.Fragment>}
+      {isResetting && (
+        <React.Fragment>
+          {type === 'email' ? (
+            <ChangeMail password={password} onClose={onClose} />
+          ) : (
+            <ChangePassword password={password} onClose={onClose} />
+          )}
+        </React.Fragment>
+      )}
     </Styled.Container>
   )
 }

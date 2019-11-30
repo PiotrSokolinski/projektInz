@@ -1,13 +1,14 @@
-/* eslint-disable */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import appLocalStorage from 'utils/localStorage'
+
 import { StyledEvent } from './styled'
 
-const Event = ({ start, end, value }) => {
+const Event = ({ start, end, value, color }) => {
+  const colorToPaint = color || appLocalStorage.getSession().color
   return (
-    <StyledEvent>
+    <StyledEvent color={colorToPaint}>
       <span>{`${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>
       <br />
       <br />

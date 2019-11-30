@@ -8,30 +8,45 @@ import React, { useState, useRef } from 'react'
 import * as Yup from 'yup'
 import countryList from 'react-select-country-list'
 import head from 'lodash/head'
+import parseInt from 'lodash/parseInt'
+import filter from 'lodash/filter'
 import isEmpty from 'lodash/isEmpty'
 import Dropzone from 'react-dropzone'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
+import { compose, Mutation } from 'react-apollo'
 
 import UserAvatar from 'components/UserAvatar'
 import Select from 'components/Select'
 import Input from 'components/Input'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
+import InformationBox from 'components/InformationBox'
+import Spinner from 'components/Spinner'
 
 import messages from './messages'
 import * as Styled from './styled'
+import EDIT_GROUP_MUTATION from './editGroup.gql'
 
-const initialValues = { name: 'Group Name', address: '', apartmentNumber: '', zipCode: '', city: '' }
+const initialValues = group => ({
+  name: group.name,
+  address: group.address,
+  apartmentNumber: group.number,
+  zipCode: group.zipCode,
+  city: group.city,
+})
 
 const validationSchema = intl =>
   Yup.object().shape({
     name: Yup.string().required(intl.formatMessage(messages.nameError)),
   })
 
-const EditGroup = ({ intl }) => {
+const findCountry = group => filter(countryList().getData(), country => country.value === group.country)
+
+const EditGroup = ({ intl, groupData, editGroupAction, editGroupErrors, editGroupLoading }) => {
   // eslint-disable-next-line no-unused-vars
   const [avatar, setAvatar] = useState(null)
-  const [country, setCountry] = useState('')
+  const [country, setCountry] = useState(findCountry(groupData)[0])
   const dropzoneRef = useRef(null)
 
   const onUploadButtonClick = () => {
@@ -47,21 +62,35 @@ const EditGroup = ({ intl }) => {
     }
     return null
   }
-  const editGroup = () => {}
+  const editGroup = async (values, actions) => {
+    const data = {
+      id: groupData.id,
+      name: values.name,
+      avatarUrl: '',
+      address: values.address,
+      number: parseInt(values.apartmentNumber),
+      zipCode: values.zipCode,
+      city: values.city,
+      country: country.value,
+    }
+    await editGroupAction({
+      variables: { data },
+    })
+  }
   const changeZipCodeValue = (event, setFieldValue) => {
     const { value } = event.target
     if (value.length <= 5) setFieldValue('zipCode', value)
   }
   return (
     <Styled.Container>
-      <Formik initialValues={initialValues} onSubmit={editGroup} validationSchema={validationSchema(intl)}>
+      <Formik initialValues={initialValues(groupData)} onSubmit={editGroup} validationSchema={validationSchema(intl)}>
         {formikProps => {
           const {
             errors,
             handleBlur,
             handleChange,
             handleSubmit,
-            // isSubmitting,
+            isSubmitting,
             // setFieldTouched,
             setFieldValue,
             touched,
@@ -173,7 +202,12 @@ const EditGroup = ({ intl }) => {
                 </Styled.InputsContainer>
               </Styled.FormContainer>
               <Styled.ButtonContainer>
-                <Styled.SubmitButton type="submit" onClick={handleSubmit}>
+                <Styled.SubmitButton
+                  type="submit"
+                  onClick={handleSubmit}
+                  loading={isSubmitting && editGroupLoading}
+                  disabled={isSubmitting && editGroupLoading}
+                >
                   <FormattedMessage {...messages.submitButton} />
                 </Styled.SubmitButton>
               </Styled.ButtonContainer>
@@ -181,12 +215,38 @@ const EditGroup = ({ intl }) => {
           )
         }}
       </Formik>
+      {!isEmpty(editGroupErrors) && <InformationBox fullWidth>{head(editGroupErrors)}</InformationBox>}
     </Styled.Container>
   )
 }
 
 EditGroup.propTypes = {
   intl: PropTypes.object,
+  editGroupAction: PropTypes.func,
+  editGroupErrors: PropTypes.array,
+  editGroupLoading: PropTypes.bool,
 }
 
-export default injectIntl(EditGroup)
+EditGroup.defualtProps = {
+  editGroupErrors: [],
+  editGroupLoading: false,
+  editGroupAction: () => {},
+}
+
+const withEditGroupMutation = Component => props => (
+  <Mutation mutation={EDIT_GROUP_MUTATION}>
+    {(mutate, { loading, error }) => (
+      <Component
+        {...props}
+        editGroupAction={mutate}
+        editGroupLoading={loading}
+        editGroupErrors={formatGraphqlErrors(error)}
+      />
+    )}
+  </Mutation>
+)
+
+export default compose(
+  withEditGroupMutation,
+  injectIntl,
+)(EditGroup)

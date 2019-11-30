@@ -5,9 +5,8 @@ const selectUser = () => state => {
   return state.user
 }
 
-export const makeSelectUser = () => {
-  return createSelector(
+export const makeSelectUser = () =>
+  createSelector(
     selectUser(),
     user => user.toJS(),
   )
-}
