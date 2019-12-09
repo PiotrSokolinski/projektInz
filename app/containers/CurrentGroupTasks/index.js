@@ -25,60 +25,6 @@ import messages from './messages'
 import * as Styled from './styled'
 import GET_CURRENT_GROUP_TASKS from './getCurrentGroupTasks.gql'
 
-// const mockTasks = [
-//   {
-//     taskName: 'Task Name',
-//     taskDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-//     author: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//     createdAt: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-//     priority: 'High',
-//     status: 'Done',
-//     assignee: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//   },
-//   {
-//     taskName: 'Task Name',
-//     taskDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-//     author: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//     createdAt: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-//     priority: 'Medium',
-//     status: 'To Do',
-//     assignee: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//   },
-//   {
-//     taskName: 'Task Name',
-//     taskDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-//     author: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//     createdAt: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-//     priority: 'Low',
-//     status: 'Done',
-//     assignee: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       avatarUrl: '',
-//     },
-//   },
-// ]
-
 const CurrentGroupTasks = ({ data }) => {
   const tasks = get(data, 'getGroupTasksToDoInProgress', null)
   const toDo = filter(tasks, task => task.status === 'To Do')
@@ -106,7 +52,11 @@ const CurrentGroupTasks = ({ data }) => {
 }
 
 const withQuery = Component => props => (
-  <Query query={GET_CURRENT_GROUP_TASKS} variables={{ id: appLocalStorage.getSession().group.id }}>
+  <Query
+    query={GET_CURRENT_GROUP_TASKS}
+    variables={{ id: appLocalStorage.getSession().group.id }}
+    fetchPolicy="cache-and-network"
+  >
     {({ loading, error, data }) => {
       if (loading) return <Spinner circle />
       const errors = formatGraphqlErrors(error)

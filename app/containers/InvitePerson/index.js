@@ -6,10 +6,13 @@
 
 import React, { useState } from 'react'
 import * as Yup from 'yup'
+import get from 'lodash/get'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
+import { Redirect } from 'react-router-dom'
 
+import appLocalStorage from 'utils/localStorage'
 import Input from 'components/Input'
 import Button from 'components/Button'
 
@@ -31,6 +34,7 @@ const validationSchema = (intl, alreadyInSystem) => {
 }
 
 const InvitePerson = ({ intl, history, alreadyInSystem, onClose }) => {
+  if (!alreadyInSystem && get(appLocalStorage.getSession(), 'group.id', false)) return <Redirect to="/" />
   const [checked, setChecked] = useState(false)
   const sendInvitations = (values, actions) => {
     if (!alreadyInSystem) history.push('/')

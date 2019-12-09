@@ -97,6 +97,7 @@ const NewEvent = ({
   loading,
   errors,
   groupMembers,
+  refetch,
 }) => {
   const invitationsOptions = map(groupMembers, user => ({ value: user.id, label: <Label user={user} /> }))
 
@@ -137,6 +138,7 @@ const NewEvent = ({
         value: values.name,
       })
     }
+    refetch()
   }
   const submitPreselectedInterval = async (values, actions) => {
     const start = dayjs(
@@ -182,6 +184,7 @@ const NewEvent = ({
       onIntervalSelect(result)
       onClose()
     }
+    refetch()
   }
   const action = fromCalendar ? handleSave : submitPreselectedInterval
   return (

@@ -11,13 +11,13 @@ import { FormattedMessage } from 'react-intl'
 import messages from './messages'
 import * as Styled from './styled'
 
-const InformationTile = ({ icon: Icon, onOpen, title }) => (
+const InformationTile = ({ icon: Icon, onOpen, title, isIcon }) => (
   <Styled.Container>
     <Styled.InfoContainer>
       <Icon size="40" />
       <Styled.Title>{title ? <span>{title}</span> : <FormattedMessage {...messages.upToDate} />}</Styled.Title>
     </Styled.InfoContainer>
-    <Styled.EyeIcon size="22" onClick={onOpen} />
+    {isIcon && <Styled.EyeIcon size="22" onClick={onOpen} />}
   </Styled.Container>
 )
 

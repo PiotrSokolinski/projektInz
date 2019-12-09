@@ -66,7 +66,7 @@ const mapEvents = events => {
   }
   return arrayOfEvents
 }
-const Calendar = ({ data, weekFirstDay, setFirstDay }) => {
+const Calendar = ({ data, weekFirstDay, setFirstDay, refetch }) => {
   const events = get(data, 'getEvents', [])
   const groupMembers = get(data, 'group.members', [])
 
@@ -143,6 +143,7 @@ const Calendar = ({ data, weekFirstDay, setFirstDay }) => {
         onIntervalUpdate={handleEventUpdate}
         onIntervalRemove={handleEventRemove}
         // onEventClick={() => alert('eee')}
+        refetch={refetch}
         groupMembers={groupMembers}
       />
       <Styled.RightArrow size="30" onClick={setNextWeek} />
@@ -169,7 +170,12 @@ const Calendar = ({ data, weekFirstDay, setFirstDay }) => {
         </Styled.ActionsContainer>
       </Styled.CalendarOptionsContainer>
       <Modal visible={modalEventVisible} title="Add new event" onClose={setModalEventClose}>
-        <NewEvent onIntervalSelect={handleSelect} onClose={setModalEventClose} groupMembers={groupMembers} />
+        <NewEvent
+          onIntervalSelect={handleSelect}
+          onClose={setModalEventClose}
+          groupMembers={groupMembers}
+          refetch={refetch}
+        />
       </Modal>
       <Modal visible={modalCalendarVisible} title="Select a date to display" onClose={setModalCalendarClose}>
         <ReactCalendar onChange={onDateChange} value={new Date()} />
@@ -199,7 +205,7 @@ const withQuery = Component => props => {
         dateTo,
       }}
     >
-      {({ loading, error, data }) => {
+      {({ loading, error, data, refetch }) => {
         if (loading)
           return (
             <Styled.SpinnerContainer>
@@ -208,7 +214,9 @@ const withQuery = Component => props => {
           )
         const errors = formatGraphqlErrors(error)
         if (!isEmpty(errors)) return <InformationBox fullWidth>{head(errors)}</InformationBox>
-        return <Component {...props} data={data} weekFirstDay={weekFirstDay} setFirstDay={setFirstDay} />
+        return (
+          <Component {...props} data={data} weekFirstDay={weekFirstDay} setFirstDay={setFirstDay} refetch={refetch} />
+        )
       }}
     </Query>
   )

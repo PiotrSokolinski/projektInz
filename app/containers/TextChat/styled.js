@@ -10,6 +10,14 @@ export const AttachmentIcon = styled(Attachment)`
   cursor: pointer;
 `
 
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 export const SendButton = styled(Button)`
   width: 100px;
   height: 30px;
@@ -76,4 +84,18 @@ export const DayInformation = styled.div`
   font-weight: bold;
   color: ${Colors.ecstasy};
   margin-top: 5px;
+`
+
+export const FetchingMoreSpinnerContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const NoMoreMessages = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: ${Colors.blueRibbon};
 `

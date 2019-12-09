@@ -40,6 +40,7 @@ const PasswordRemind = ({ intl, requestPasswordResetAction, loading, errors }) =
     const mutationSuccess = get(result, 'data.requestPasswordReset.success', null)
 
     if (mutationSuccess) alert('Link sent')
+    actions.resetForm(initialValues)
   }
   return (
     <Styled.Container>

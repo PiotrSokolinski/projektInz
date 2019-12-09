@@ -22,7 +22,9 @@ import { setContext } from 'apollo-link-context'
 
 import { Provider } from 'react-redux'
 import { createUploadLink } from 'apollo-upload-client'
-
+import { split } from 'apollo-link'
+import { WebSocketLink } from 'apollo-link-ws'
+import { getMainDefinition } from 'apollo-utilities'
 // Import root app
 import App from 'containers/App'
 
@@ -79,12 +81,31 @@ const authLink = setContext((_, { headers }) => {
   }
 })
 
-const apolloClient = new ApolloClient({
-  link: authLink.concat(
+const wsLink = new WebSocketLink({
+  uri: `ws://localhost:5000/graphql`,
+  options: {
+    reconnect: true,
+    connectionParams: {
+      authToken: get(appLocalStorage.getSession(), 'token', ''),
+    },
+  },
+})
+
+const link = split(
+  ({ query }) => {
+    const { kind, operation } = getMainDefinition(query)
+    return kind === 'OperationDefinition' && operation === 'subscription'
+  },
+  wsLink,
+  authLink.concat(
     createUploadLink({
       uri: ``,
     }),
   ),
+)
+
+const apolloClient = new ApolloClient({
+  link,
   cache: new InMemoryCache(),
 })
 

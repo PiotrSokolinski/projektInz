@@ -15,6 +15,7 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
 import { compose, Mutation } from 'react-apollo'
 
+import appLocalStorage from 'utils/localStorage'
 import Input from 'components/Input'
 import TextArea from 'components/TextArea'
 import Button from 'components/Button'
@@ -104,7 +105,7 @@ const CreateTask = ({ intl, createTaskAction, loading, errors, groupMembers }) =
   const assigneeOptions = map(groupMembers, user => ({ value: user.id, label: <Label user={user} /> }))
   const createNewTask = async (values, actions) => {
     const data = {
-      group: 1,
+      group: appLocalStorage.getSession().group.id,
       name: values.taskName,
       description: values.taskDescription,
       assignee: parseInt(values.assignee.value),

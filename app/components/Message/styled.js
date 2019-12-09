@@ -8,11 +8,12 @@ export const Container = styled.div`
 `
 
 export const MessageCloud = styled.div`
-  background-color: ${props => (props.isOwner ? Colors.anakiwa : Colors.athensGrayLight)};
+  background-color: ${props => props.color};
   max-width: 75%;
   border-radius: 10px;
   padding: 10px;
   margin: 0 5px;
+  color: ${Colors.black};
   overflow-wrap: break-word;
   ${props => (props.isOwner ? 'border-bottom-right-radius: 0;' : 'border-bottom-left-radius: 0;')}
 `

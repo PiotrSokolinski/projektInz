@@ -16,7 +16,9 @@ import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
 import { compose, Mutation } from 'react-apollo'
+import { Redirect } from 'react-router-dom'
 
+import appLocalStorage from 'utils/localStorage'
 import UserAvatar from 'components/UserAvatar'
 import Select from 'components/Select'
 import Input from 'components/Input'
@@ -37,6 +39,7 @@ const validationSchema = intl =>
 const findCountry = group => filter(countryList().getData(), country => country.value === group.country)
 
 const CreateGroup = ({ intl, history, createGroupAction, loading, errors }) => {
+  if (get(appLocalStorage.getSession(), 'group.id', false)) return <Redirect to="/" />
   // eslint-disable-next-line no-unused-vars
   const [avatar, setAvatar] = useState(null)
   const [country, setCountry] = useState('')
@@ -72,6 +75,7 @@ const CreateGroup = ({ intl, history, createGroupAction, loading, errors }) => {
     actions.setSubmitting(false)
     const mutationData = get(result, 'data', null)
     if (!isEmpty(mutationData)) {
+      appLocalStorage.updateSession('group', mutationData.createGroup)
       history.push('/invite')
     }
   }

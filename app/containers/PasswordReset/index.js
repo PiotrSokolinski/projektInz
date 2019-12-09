@@ -10,9 +10,11 @@ import get from 'lodash/get'
 import isEmpty from 'lodash/isEmpty'
 import head from 'lodash/head'
 import * as Yup from 'yup'
+import queryString from 'query-string'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
 import { compose, Mutation } from 'react-apollo'
+import { Redirect } from 'react-router-dom'
 
 import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 import PublicInput from 'components/PublicInput'
@@ -32,18 +34,18 @@ const validationSchema = intl =>
       .required(intl.formatMessage(messages.passwordConfirmEmpty)),
   })
 
-const PasswordReset = ({ intl, history, setPasswordAction, loading, errors }) => {
+const PasswordReset = ({ intl, history, setPasswordAction, loading, errors, location }) => {
+  const token = queryString.parse(location.search).token
+  if (!token) return <Redirect to="/login" />
   const setNewPassword = async (values, actions) => {
     const result = await setPasswordAction({
       variables: {
         newPassword: values.password,
-        // TO DO: implement token
-        resetPasswordToken: '',
+        resetPasswordToken: token,
       },
     })
     actions.setSubmitting(false)
-    const mutationSuccess = get(result, 'data.requestPasswordReset.success', null)
-
+    const mutationSuccess = get(result, 'data.setPassword.success', null)
     if (mutationSuccess) history.push('/login')
   }
   return (

@@ -5,6 +5,14 @@ import Select from 'components/Select'
 
 import { Colors } from 'themes'
 
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 export const ButtonContainer = styled.div`
   display: flex;
   margin-top: 25px;

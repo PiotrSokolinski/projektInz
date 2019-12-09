@@ -11,14 +11,22 @@ export const scope = 'app.containers.TextChat'
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'Chat with your Group',
+    defaultMessage: 'Chat with {name}',
   },
   textAreaPlaceholder: {
-    id: `${scope}.header`,
+    id: `${scope}.textAreaPlaceholder`,
     defaultMessage: 'Start typing...',
   },
   send: {
-    id: `${scope}.header`,
+    id: `${scope}.send`,
     defaultMessage: 'Send',
+  },
+  you: {
+    id: `${scope}.you`,
+    defaultMessage: 'You',
+  },
+  noMoreMessages: {
+    id: `${scope}.noMoreMessages`,
+    defaultMessage: 'No more messages',
   },
 })

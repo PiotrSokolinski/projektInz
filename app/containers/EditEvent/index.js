@@ -77,6 +77,7 @@ const EditEvent = ({
   deleteEventAction,
   deleteErrors,
   deleteLoading,
+  refetch,
 }) => {
   const event = get(data, 'getEvent', null)
   const invitationsOptions = map(groupMembers, user => ({ value: user.id, label: <Label user={user} /> }))
@@ -115,6 +116,7 @@ const EditEvent = ({
     if (!isEmpty(mutationData)) {
       onClose()
     }
+    refetch()
   }
 
   const deleteEvent = async () => {
@@ -123,6 +125,7 @@ const EditEvent = ({
         id: eventId,
       },
     })
+    refetch()
     onClose()
   }
   const editable =

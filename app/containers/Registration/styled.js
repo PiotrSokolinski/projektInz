@@ -19,8 +19,17 @@ export const Box = styled.div`
 export const Header = styled.div`
   font-size: 30px;
   margin: 0 0 30px;
+  ${props => props.token && 'margin-bottom: 15px;'};
   padding: 0;
   color: ${Colors.white};
+  text-align: center;
+`
+
+export const Subheader = styled.div`
+  font-size: 16px;
+  margin: 0 0 15px;
+  color: ${Colors.ecstasy};
+  padding: 0;
   text-align: center;
 `
 

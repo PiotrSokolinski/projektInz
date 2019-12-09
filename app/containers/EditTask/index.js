@@ -309,7 +309,12 @@ const withQuery = Component => props => (
     variables={{ taskId: get(props, 'taskId', 0), groupId: appLocalStorage.getSession().group.id }}
   >
     {({ loading, error, data }) => {
-      if (loading) return <Spinner />
+      if (loading)
+        return (
+          <Styled.SpinnerContainer>
+            <Spinner />
+          </Styled.SpinnerContainer>
+        )
       const errors = formatGraphqlErrors(error)
       if (!isEmpty(errors)) return <InformationBox fullWidth>{head(errors)}</InformationBox>
       return <Component {...props} data={data} />

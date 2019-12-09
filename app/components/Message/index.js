@@ -11,10 +11,12 @@ import UserAvatar from 'components/UserAvatar'
 
 import * as Styled from './styled'
 
-const Message = ({ text, isOwner, time }) => (
+const Message = ({ text, isOwner, time, avatar, color }) => (
   <Styled.Container isOwner={isOwner}>
-    <UserAvatar size="tiny" />
-    <Styled.MessageCloud isOwner={isOwner}>{text}</Styled.MessageCloud>
+    <UserAvatar size="tiny" image={avatar} />
+    <Styled.MessageCloud isOwner={isOwner} color={color}>
+      {text}
+    </Styled.MessageCloud>
     <Styled.MessageTime>{time}</Styled.MessageTime>
   </Styled.Container>
 )

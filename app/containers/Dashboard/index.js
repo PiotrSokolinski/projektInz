@@ -65,8 +65,18 @@ const Dashboard = ({ data }) => {
           </TabList>
           <TabPanel>
             <MembersList members={groupData.members} />
-            <InformationTile icon={Styled.TaskIcon} onOpen={openModalTask} title={taskData.name} />
-            <InformationTile icon={Styled.EventAvailableIcon} onOpen={openModalEvent} />
+            <InformationTile
+              icon={Styled.TaskIcon}
+              onOpen={openModalTask}
+              title={get(taskData, 'name', 'You are up to date')}
+              isIcon={!!taskData}
+            />
+            <InformationTile
+              icon={Styled.EventAvailableIcon}
+              onOpen={openModalEvent}
+              title={get(eventData, 'name', 'You are up to date')}
+              isIcon={!!eventData}
+            />
           </TabPanel>
           <TabPanel>
             <CurrentGroupTasks />
@@ -76,22 +86,26 @@ const Dashboard = ({ data }) => {
           </TabPanel>
         </Tabs>
       </Styled.TabsContainer>
-      <TextChat />
-      <Modal
-        visible={isModalTaskVisible}
-        title={
-          <Styled.ModalTitleContainer>
-            {taskData.name}
-            <Styled.Arrow size="35" priority={taskData.priority} />
-          </Styled.ModalTitleContainer>
-        }
-        onClose={closeModalTask}
-      >
-        <TaskInformation taskData={taskData} />
-      </Modal>
-      <Modal visible={isModalEventVisible} title={eventData.name} onClose={closeModalEvent}>
-        <EventInformation eventData={eventData} />
-      </Modal>
+      <TextChat members={groupData.members} name={groupData.name} />
+      {taskData && (
+        <Modal
+          visible={isModalTaskVisible}
+          title={
+            <Styled.ModalTitleContainer>
+              {taskData.name}
+              <Styled.Arrow size="35" priority={taskData.priority} />
+            </Styled.ModalTitleContainer>
+          }
+          onClose={closeModalTask}
+        >
+          <TaskInformation taskData={taskData} />
+        </Modal>
+      )}
+      {eventData && (
+        <Modal visible={isModalEventVisible} title={eventData.name} onClose={closeModalEvent}>
+          <EventInformation eventData={eventData} />
+        </Modal>
+      )}
     </Styled.Container>
   )
 }

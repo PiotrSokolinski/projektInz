@@ -592,6 +592,7 @@ class WeekCalendar extends React.Component {
             onSave={this.submitPreselectedInterval}
             groupMembers={groupMembers}
             fromCalendar
+            refetch={this.props.refetch}
           />
         </Modal>
       )
@@ -604,6 +605,7 @@ class WeekCalendar extends React.Component {
           onClose={() => this.setState({ updateEvent: false, preselectedInterval: null })}
         >
           <EditEvent
+            refetch={this.props.refetch}
             eventId={preselectedInterval.id}
             groupMembers={groupMembers}
             onClose={() => this.setState({ updateEvent: false, preselectedInterval: null })}

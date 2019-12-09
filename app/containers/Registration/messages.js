@@ -69,6 +69,14 @@ export default defineMessages({
     id: `${scope}.backToLogin`,
     defaultMessage: 'Back to Login',
   },
+  joinGroup: {
+    id: `${scope}.joinGroup`,
+    defaultMessage: 'Join {name}',
+  },
+  invitationSender: {
+    id: `${scope}.invitationSender`,
+    defaultMessage: 'You were invited by {name}',
+  },
 
   // break - needed???
   errorTitle: {

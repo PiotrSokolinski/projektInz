@@ -8,9 +8,6 @@ export default gql`
       firstName
       lastName
       token
-      group {
-        id
-      }
     }
   }
 `

@@ -12,7 +12,7 @@ import { FormattedMessage } from 'react-intl'
 import messages from './messages'
 import * as Styled from './styled'
 
-const TaskInformation = ({ taskData }) => (
+const TaskInformation = ({ taskData, isTask }) => (
   <Styled.Container>
     <Styled.DescriptionTitle>
       <FormattedMessage {...messages.description} />

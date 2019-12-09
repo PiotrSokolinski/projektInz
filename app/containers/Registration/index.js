@@ -5,23 +5,29 @@
  */
 
 import React from 'react'
-import get from 'lodash/get'
-import isEmpty from 'lodash/isEmpty'
-import head from 'lodash/head'
-import PropTypes from 'prop-types'
 import * as Yup from 'yup'
+import PropTypes from 'prop-types'
+import get from 'lodash/get'
+import head from 'lodash/head'
+import isEmpty from 'lodash/isEmpty'
+import queryString from 'query-string'
+import jwt_decode from 'jwt-decode'
 import { FormattedMessage, injectIntl } from 'react-intl'
-import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
-import { connect } from 'react-redux'
-import appLocalStorage from 'utils/localStorage'
-import { compose, Mutation } from 'react-apollo'
 import { Formik } from 'formik'
+import { compose, Mutation } from 'react-apollo'
+import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
+
 import InformationBox from 'components/InformationBox'
 import PublicInput from 'components/PublicInput'
-import messages from './messages'
+import appLocalStorage from 'utils/localStorage'
+import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
+
 import * as Styled from './styled'
 import REGISTER_MUTATION from './register.gql'
+import REGISTER_WITH_INVITATION_MUTATION from './registerWithInvitation.gql'
 import UserActions from '../../redux/UserRedux'
+import messages from './messages'
 
 const initialValues = { firstName: '', lastName: '', email: '', password: '', repeatedPassword: '' }
 
@@ -38,7 +44,9 @@ const validationSchema = intl =>
       .required(intl.formatMessage(messages.passwordConfirmEmpty)),
   })
 
-const Registration = ({ intl, history, registerAction, loading, errors, storeUserData }) => {
+const Registration = ({ intl, token, history, registerAction, loading, errors, storeUserData }) => {
+  const decodedJwt = token && jwt_decode(token)
+  console.log(token)
   const submitRegistrationForm = async (values, actions) => {
     const data = {
       email: values.email,
@@ -46,25 +54,38 @@ const Registration = ({ intl, history, registerAction, loading, errors, storeUse
       lastName: values.lastName,
       password: values.password,
     }
+    const variables = token ? { data, groupId: decodedJwt.groupId } : { data }
+    console.log(variables)
     const result = await registerAction({
-      variables: { data },
+      variables,
     })
+
     actions.setSubmitting(false)
     const mutationData = get(result, 'data', null)
 
     if (!isEmpty(mutationData)) {
-      const userData = mutationData.register
+      const userData = token ? mutationData.registerWithInvitation : mutationData.register
       appLocalStorage.saveSession(userData)
       storeUserData(userData)
       history.push('/upload-avatar')
     }
   }
+
   return (
     <Styled.Container>
       <Styled.Box>
-        <Styled.Header>
-          <FormattedMessage {...messages.header} />
+        <Styled.Header token={!!token}>
+          {token ? (
+            <FormattedMessage {...messages.joinGroup} values={{ name: decodedJwt.groupName }} />
+          ) : (
+            <FormattedMessage {...messages.header} />
+          )}
         </Styled.Header>
+        {token && (
+          <Styled.Subheader>
+            <FormattedMessage {...messages.invitationSender} values={{ name: decodedJwt.userName }} />
+          </Styled.Subheader>
+        )}
         <Formik
           onSubmit={submitRegistrationForm}
           initialValues={initialValues}
@@ -154,13 +175,23 @@ const Registration = ({ intl, history, registerAction, loading, errors, storeUse
   )
 }
 
-const withMutation = Component => props => (
-  <Mutation mutation={REGISTER_MUTATION}>
-    {(mutate, { loading, error }) => (
-      <Component {...props} registerAction={mutate} loading={loading} errors={formatGraphqlErrors(error)} />
-    )}
-  </Mutation>
-)
+const withMutation = Component => props => {
+  const token = queryString.parse(props.location.search).token
+
+  return (
+    <Mutation mutation={token ? REGISTER_WITH_INVITATION_MUTATION : REGISTER_MUTATION}>
+      {(mutate, { loading, error }) => (
+        <Component
+          {...props}
+          registerAction={mutate}
+          loading={loading}
+          errors={formatGraphqlErrors(error)}
+          token={token}
+        />
+      )}
+    </Mutation>
+  )
+}
 
 Registration.propTypes = {
   intl: PropTypes.object.isRequired,
