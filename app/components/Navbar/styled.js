@@ -35,6 +35,7 @@ export const RightElementsContainer = styled.div`
 
 export const Text = styled.div`
   color: ${Colors.white};
+  margin-right: 5px;
 `
 
 export const Account = styled(AccountBox)`

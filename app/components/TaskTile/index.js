@@ -173,8 +173,9 @@ const withDeleteMutation = Component => props => (
   </Mutation>
 )
 
+export const TaskTileWithIntl = injectIntl(TaskTile)
+
 export default compose(
-  injectIntl,
   withChangeMutation,
   withDeleteMutation,
-)(TaskTile)
+)(TaskTileWithIntl)

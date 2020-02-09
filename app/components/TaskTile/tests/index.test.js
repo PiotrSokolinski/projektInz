@@ -8,10 +8,11 @@
 
 import React from 'react'
 import dayjs from 'dayjs'
-import { render } from '@testing-library/react'
+import { render, waitForElement, fireEvent } from '@testing-library/react'
 import { IntlProvider } from 'react-intl'
+import { MockedProvider } from 'react-apollo/test-utils'
 
-import TaskTile from '../index'
+import TaskTile, { TaskTileWithIntl } from '../index'
 import { DEFAULT_LOCALE } from '../../../i18n'
 
 describe('<TaskTile />', () => {
@@ -25,7 +26,7 @@ describe('<TaskTile />', () => {
     },
     createdAt: dayjs().format('DD/MM/YYYY HH:mm:ss'),
     priority: 'High',
-    status: 'Done',
+    status: 'To Do',
     assignee: {
       firstName: 'John',
       lastName: 'Doe',
@@ -36,7 +37,9 @@ describe('<TaskTile />', () => {
     const spy = jest.spyOn(global.console, 'error')
     render(
       <IntlProvider locale={DEFAULT_LOCALE}>
-        <TaskTile task={task} />
+        <MockedProvider>
+          <TaskTile task={task} />
+        </MockedProvider>
       </IntlProvider>,
     )
     expect(spy).not.toHaveBeenCalled()
@@ -47,9 +50,27 @@ describe('<TaskTile />', () => {
       container: { firstChild },
     } = render(
       <IntlProvider locale={DEFAULT_LOCALE}>
-        <TaskTile task={task} />
+        <MockedProvider>
+          <TaskTile task={task} />
+        </MockedProvider>
       </IntlProvider>,
     )
     expect(firstChild).toMatchSnapshot()
+  })
+
+  it('Should toogle status of the task', async () => {
+    const { container, getByText } = render(
+      <IntlProvider locale={DEFAULT_LOCALE}>
+        <TaskTileWithIntl task={task} />
+      </IntlProvider>,
+    )
+    const select = await waitForElement(() => getByText('To Do'))
+    fireEvent.focus(select)
+    const control = await waitForElement(() => container.querySelector('.select__control'))
+    fireEvent.mouseDown(control)
+    const option = getByText('In Progress')
+    fireEvent.click(option)
+    const chosenInput = container.querySelector('input[name="status"]')
+    expect(chosenInput.value).toBe('In Progress')
   })
 })

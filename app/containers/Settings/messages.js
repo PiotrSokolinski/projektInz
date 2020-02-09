@@ -21,6 +21,10 @@ export default defineMessages({
     id: `${scope}.lastNameLabel`,
     defaultMessage: 'Last Name',
   },
+  changePhoto: {
+    id: `${scope}.changePhoto`,
+    defaultMessage: 'Change Photo',
+  },
   // nickLabel: {
   //   id: `${scope}.nickLabel`,
   //   defaultMessage: 'Nick',
@@ -48,6 +52,10 @@ export default defineMessages({
   changeMail: {
     id: `${scope}.changeMail`,
     defaultMessage: 'Change e-mail',
+  },
+  save: {
+    id: `${scope}.save`,
+    defaultMessage: 'Save Photo',
   },
   changePassword: {
     id: `${scope}.changePassword`,

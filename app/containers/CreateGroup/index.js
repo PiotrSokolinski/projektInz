@@ -8,6 +8,7 @@ import React, { useState, useRef } from 'react'
 import * as Yup from 'yup'
 import countryList from 'react-select-country-list'
 import head from 'lodash/head'
+import FormData from 'form-data'
 import get from 'lodash/get'
 import parseInt from 'lodash/parseInt'
 import isEmpty from 'lodash/isEmpty'
@@ -30,6 +31,21 @@ import * as Styled from './styled'
 import CREATE_GROUP_MUTATION from './createGroup.gql'
 
 const initialValues = { name: '', address: '', apartmentNumber: '', zipCode: '', city: '', country: '' }
+
+const sendRequest = async file => {
+  const storedUser = appLocalStorage.getSession()
+  const formData = new FormData()
+  formData.append('file', file)
+  await fetch('http://localhost:5000/fileupload/group', {
+    method: 'post',
+    body: formData,
+    headers: { Authorization: `Bearer ${get(storedUser, 'token', '')}` },
+  }).then(res => {
+    if (res.ok) {
+      console.log(res.data)
+    }
+  })
+}
 
 const validationSchema = intl =>
   Yup.object().shape({
@@ -76,6 +92,7 @@ const CreateGroup = ({ intl, history, createGroupAction, loading, errors }) => {
     const mutationData = get(result, 'data', null)
     if (!isEmpty(mutationData)) {
       appLocalStorage.updateSession('group', mutationData.createGroup)
+      // sendRequest(avatar)
       history.push('/invite')
     }
   }
@@ -108,7 +125,7 @@ const CreateGroup = ({ intl, history, createGroupAction, loading, errors }) => {
                 {({ acceptedFiles, getInputProps }) => (
                   <Styled.UploadAvatar>
                     <input {...getInputProps()} />
-                    <UserAvatar size="big" image={preparePreviewForUploadedImage(acceptedFiles, setFieldValue)} />
+                    <UserAvatar size="big" image={preparePreviewForUploadedImage(acceptedFiles)} />
                     <Styled.UploadButton type="button" stable onClick={onUploadButtonClick}>
                       <FormattedMessage {...messages.photo} />
                     </Styled.UploadButton>

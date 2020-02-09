@@ -46,7 +46,6 @@ const validationSchema = intl =>
 
 const Registration = ({ intl, token, history, registerAction, loading, errors, storeUserData }) => {
   const decodedJwt = token && jwt_decode(token)
-  console.log(token)
   const submitRegistrationForm = async (values, actions) => {
     const data = {
       email: values.email,
@@ -55,7 +54,6 @@ const Registration = ({ intl, token, history, registerAction, loading, errors, s
       password: values.password,
     }
     const variables = token ? { data, groupId: decodedJwt.groupId } : { data }
-    console.log(variables)
     const result = await registerAction({
       variables,
     })

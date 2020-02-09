@@ -8,14 +8,16 @@ import React, { useRef, useState } from 'react'
 import * as Yup from 'yup'
 import isEmpty from 'lodash/isEmpty'
 import head from 'lodash/head'
+import get from 'lodash/get'
 import Dropzone from 'react-dropzone'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
-import { compose, Mutation } from 'react-apollo'
+import { compose, Mutation, Query } from 'react-apollo'
 import appLocalStorage from 'utils/localStorage'
 
 import InformationBox from 'components/InformationBox'
+import Spinner from 'components/Spinner'
 import Modal from 'components/Modal'
 import UserAvatar from 'components/UserAvatar'
 import ChangeCredentials from 'containers/ChangeCredentials'
@@ -34,8 +36,19 @@ const validationSchema = intl =>
     lastName: Yup.string().required(intl.formatMessage(messages.lastNameEmptyError)),
   })
 
-const Settings = ({ intl, editNameAction, loading, errors }) => {
-  const currentUser = appLocalStorage.getSession()
+const sendRequest = async file => {
+  const storedUser = appLocalStorage.getSession()
+  const formData = new FormData()
+  formData.append('file', file)
+  await fetch('http://localhost:5000/fileupload/user', {
+    method: 'post',
+    body: formData,
+    headers: { Authorization: `Bearer ${get(storedUser, 'token', '')}` },
+  })
+}
+
+const Settings = ({ intl, data, editNameAction, loading, errors, refetch }) => {
+  const currentUser = get(data, 'whoAmI', null)
   const [isEditable, setIsEditable] = useState(false)
   const [isPasswordModalVisible, setIsPasswordModalVisible] = useState(false)
   const [isMailModalVisible, setIsMailModalVisible] = useState(false)
@@ -68,6 +81,11 @@ const Settings = ({ intl, editNameAction, loading, errors }) => {
     appLocalStorage.updateSession('lastName', result.data.editName.lastName)
   }
 
+  const onSaveButtonClick = acceptedFiles => {
+    sendRequest(head(acceptedFiles))
+    refetch()
+  }
+
   return (
     <Styled.Container>
       <Styled.ContentWrapper>
@@ -78,11 +96,21 @@ const Settings = ({ intl, editNameAction, loading, errors }) => {
           <Dropzone accept="image/*" multiple={false} ref={editProfilePhotoDropzone} noDrag onDrop={() => {}}>
             {({ acceptedFiles, getRootProps, getInputProps }) => (
               <React.Fragment>
-                <UserAvatar size="large" image={preparePreviewForUploadedImage(acceptedFiles)} />
-                <Styled.EditPhotoButton {...getRootProps()} inverted stable onClick={onEditPhotoClick}>
-                  <input {...getInputProps()} />
-                  <FormattedMessage {...messages.editPhoto} />
-                </Styled.EditPhotoButton>
+                <UserAvatar
+                  size="large"
+                  image={preparePreviewForUploadedImage(acceptedFiles) || currentUser.avatarUrl}
+                />
+                <Styled.ButtonsContainer>
+                  <Styled.EditPhotoButton {...getRootProps()} inverted stable onClick={onEditPhotoClick}>
+                    <input {...getInputProps()} />
+                    <FormattedMessage {...messages[isEmpty(acceptedFiles) ? 'editPhoto' : 'changePhoto']} />
+                  </Styled.EditPhotoButton>
+                  {!isEmpty(acceptedFiles) && (
+                    <Styled.SaveButton onClick={() => onSaveButtonClick(acceptedFiles)}>
+                      <FormattedMessage {...messages.save} />
+                    </Styled.SaveButton>
+                  )}
+                </Styled.ButtonsContainer>
               </React.Fragment>
             )}
           </Dropzone>
@@ -212,7 +240,24 @@ const withMutation = Component => props => (
   </Mutation>
 )
 
+const withQuery = Component => props => (
+  <Query query={GET_ME_QUERY}>
+    {({ loading, error, data, refetch }) => {
+      if (loading)
+        return (
+          <Styled.SpinnerContainer>
+            <Spinner size={5} border={1} />
+          </Styled.SpinnerContainer>
+        )
+      const errors = formatGraphqlErrors(error)
+      if (!isEmpty(errors)) return <InformationBox fullWidth>{head(errors)}</InformationBox>
+      return <Component {...props} data={data} refetch={refetch} />
+    }}
+  </Query>
+)
+
 export default compose(
   withMutation,
+  withQuery,
   injectIntl,
 )(Settings)

@@ -76,6 +76,7 @@ export const TextArea = styled(Textarea)`
   resize: none;
   width: 100%;
   outline: none;
+  margin-right: 15px;
 `
 
 export const DayInformation = styled.div`

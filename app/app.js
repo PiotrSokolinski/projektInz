@@ -73,9 +73,6 @@ const authLink = setContext((_, { headers }) => {
     headers: {
       ...headers,
       Authorization: `Bearer ${get(storedUser, 'token', '')}`,
-      // uid: get(storedUser, 'token.uid'),
-      // 'access-token': get(storedUser, 'token.accessToken'),
-      // client: get(storedUser, 'token.client'),
     },
     uri: 'http://localhost:5000/graphql',
   }

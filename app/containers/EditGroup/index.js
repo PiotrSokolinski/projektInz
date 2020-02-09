@@ -8,6 +8,7 @@ import React, { useState, useRef } from 'react'
 import * as Yup from 'yup'
 import countryList from 'react-select-country-list'
 import head from 'lodash/head'
+import get from 'lodash/get'
 import parseInt from 'lodash/parseInt'
 import filter from 'lodash/filter'
 import isEmpty from 'lodash/isEmpty'
@@ -17,16 +18,31 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 import { Formik } from 'formik'
 import { compose, Mutation } from 'react-apollo'
 
+import appLocalStorage from 'utils/localStorage'
 import UserAvatar from 'components/UserAvatar'
 import Select from 'components/Select'
 import Input from 'components/Input'
 import { formatGraphqlErrors } from 'utils/formatGraphqlErrors'
 import InformationBox from 'components/InformationBox'
-import Spinner from 'components/Spinner'
 
 import messages from './messages'
 import * as Styled from './styled'
 import EDIT_GROUP_MUTATION from './editGroup.gql'
+
+const sendRequest = async file => {
+  const storedUser = appLocalStorage.getSession()
+  const formData = new FormData()
+  formData.append('file', file)
+  await fetch('http://localhost:5000/fileupload/group', {
+    method: 'post',
+    body: formData,
+    headers: { Authorization: `Bearer ${get(storedUser, 'token', '')}` },
+  }).then(res => {
+    if (res.ok) {
+      console.log(res.data)
+    }
+  })
+}
 
 const initialValues = group => ({
   name: group.name,
@@ -73,9 +89,14 @@ const EditGroup = ({ intl, groupData, editGroupAction, editGroupErrors, editGrou
       city: values.city,
       country: country.value,
     }
-    await editGroupAction({
+    const result = await editGroupAction({
       variables: { data },
     })
+    actions.setSubmitting(false)
+    const mutationData = get(result, 'data', null)
+    if (!isEmpty(mutationData)) {
+      sendRequest(avatar)
+    }
   }
   const changeZipCodeValue = (event, setFieldValue) => {
     const { value } = event.target
@@ -105,7 +126,10 @@ const EditGroup = ({ intl, groupData, editGroupAction, editGroupErrors, editGrou
                     {({ acceptedFiles, getInputProps }) => (
                       <Styled.UploadAvatar>
                         <input {...getInputProps()} />
-                        <UserAvatar size="big" image={preparePreviewForUploadedImage(acceptedFiles, setFieldValue)} />
+                        <UserAvatar
+                          size="big"
+                          image={preparePreviewForUploadedImage(acceptedFiles) || groupData.avatarUrl}
+                        />
                         <Styled.UploadButton type="button" stable onClick={onUploadButtonClick}>
                           <FormattedMessage {...messages.photo} />
                         </Styled.UploadButton>

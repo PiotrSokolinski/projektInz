@@ -9,15 +9,15 @@ import PropTypes from 'prop-types'
 import get from 'lodash/get'
 import { compose, Query } from 'react-apollo'
 import { Icons } from 'themes'
-import { makeSelectUser } from 'utils/globalSelectors'
-import { createStructuredSelector } from 'reselect'
-import { connect } from 'react-redux'
+
+import UserAvatar from 'components/UserAvatar'
 import { FormattedMessage } from 'react-intl'
 import messages from './messages'
 import * as Styled from './styled'
 import GET_ME_QUERY from './getMe.gql'
 
 const Navbar = ({ data }) => {
+  console.log(data)
   const currentUser = get(data, 'whoAmI', {
     firstName: 'Could not',
     lastName: 'fetch',
@@ -32,7 +32,11 @@ const Navbar = ({ data }) => {
           <Styled.Text>
             {currentUser.firstName} {currentUser.lastName}
           </Styled.Text>
-          <Styled.Account size="35" />
+          {currentUser.avatarUrl ? (
+            <UserAvatar size="small" image={currentUser.avatarUrl} />
+          ) : (
+            <Styled.Account size="35" />
+          )}
         </Styled.LinkElement>
         <Styled.LinkElement to="/logout">
           <Styled.Text>

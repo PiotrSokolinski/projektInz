@@ -7,14 +7,27 @@
 import React, { useRef } from 'react'
 import Dropzone from 'react-dropzone'
 import head from 'lodash/head'
+import get from 'lodash/get'
 import isEmpty from 'lodash/isEmpty'
 import PropTypes from 'prop-types'
 import { FormattedMessage, injectIntl } from 'react-intl'
 
+import appLocalStorage from 'utils/localStorage'
 import UserAvatar from 'components/UserAvatar'
 
 import messages from './messages'
 import * as Styled from './styled'
+
+const sendRequest = async file => {
+  const storedUser = appLocalStorage.getSession()
+  const formData = new FormData()
+  formData.append('file', file)
+  await fetch('http://localhost:5000/fileupload/user', {
+    method: 'post',
+    body: formData,
+    headers: { Authorization: `Bearer ${get(storedUser, 'token', '')}` },
+  })
+}
 
 const UploadAvatar = ({ history }) => {
   const dropzoneRef = useRef(null)
@@ -22,18 +35,9 @@ const UploadAvatar = ({ history }) => {
     dropzoneRef.current.open()
   }
 
-  const onSaveButtonClick = () /* async files */ => {
+  const onSaveButtonClick = async files => {
+    sendRequest(head(files))
     history.push('/create-group')
-    // const result = await assignAvatar({
-    //   variables: {
-    //     avatar: head(files),
-    //   },
-    // })
-    // const avatarUrl = get(result, 'data.assignAvatar.avatarUrl')
-    // if (avatarUrl) {
-    //   updateAvatarUrl(avatarUrl)
-    //   history.push('/')
-    // }
   }
 
   const preparePreviewForUploadedImage = files => {

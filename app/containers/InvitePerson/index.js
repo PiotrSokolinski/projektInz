@@ -35,6 +35,7 @@ const validationSchema = (intl, alreadyInSystem) => {
 
 const InvitePerson = ({ intl, history, alreadyInSystem, onClose }) => {
   if (!alreadyInSystem && get(appLocalStorage.getSession(), 'group.id', false)) return <Redirect to="/" />
+
   const [checked, setChecked] = useState(false)
   const sendInvitations = (values, actions) => {
     if (!alreadyInSystem) history.push('/')

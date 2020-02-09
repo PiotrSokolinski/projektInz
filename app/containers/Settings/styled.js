@@ -14,6 +14,24 @@ export const EditButton = styled(Button)`
   height: 30px;
 `
 
+export const SaveButton = styled(Button)`
+  margin: 0 10px;
+`
+
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ButtonsContainer = styled.div`
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+`
+
 export const ChangeButton = styled(Button)`
   width: 200px;
   height: 50px;

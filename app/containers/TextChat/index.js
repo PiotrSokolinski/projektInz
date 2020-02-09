@@ -221,7 +221,7 @@ const TextChat = ({
           spellCheck="false"
           value={newMessage}
         />
-        <Styled.AttachmentIcon size="25" />
+        {/* <Styled.AttachmentIcon size="25" /> */}
         <Styled.SendButton
           type="submit"
           inverted
