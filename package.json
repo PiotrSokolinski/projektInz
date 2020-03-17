@@ -84,7 +84,7 @@
     "jwt-decode": "^2.2.0",
     "lodash": "4.17.13",
     "match-sorter": "^4.0.2",
-    "minimist": "1.2.0",
+    "minimist": "1.2.2",
     "prop-types": "15.7.2",
     "query-string": "^6.9.0",
     "react": "16.8.6",
